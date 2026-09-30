@@ -210,34 +210,42 @@
     return n;
   }
 
-  /* Pin artwork: matte flat-head push pin with a few turns of twine at the neck. Drawn once, reused via <use>. */
+  /* Pin artwork: mushroom-style push pin seen at an angle. Flat cap, short neck, and a knot of yarn
+     wound at the base, which is where the needle enters the board (local origin). Drawn once, reused via <use>. */
   function pinDefs(defs) {
     const rg = (id, attrs, stops) => {
       const g = el('radialGradient', Object.assign({ id }, attrs), defs);
       stops.forEach(([o, c, a]) => el('stop', { offset: o, 'stop-color': c, 'stop-opacity': a ?? 1 }, g));
     };
-    rg('pgShadow', { cx: '50%', cy: '50%', r: '50%' }, [['0', '#000', .5], ['.6', '#000', .2], ['1', '#000', 0]]);
-    rg('pgTop', { cx: '36%', cy: '30%', r: '85%' }, [['0', '#ea5a3e'], ['.5', '#d13a22'], ['1', '#a52a15']]);
-    rg('pgSide', { cx: '50%', cy: '20%', r: '90%' }, [['0', '#a02412'], ['1', '#5e0f06']]);
-    const t = el('linearGradient', { id: 'pgNeedle', x1: '0', x2: '1', y1: '0', y2: '0' }, defs);
-    [['0', '#6f6f6f'], ['.45', '#e9e9e9'], ['1', '#555']].forEach(([o, c]) => el('stop', { offset: o, 'stop-color': c }, t));
+    const lg = (id, stops) => {
+      const g = el('linearGradient', { id, x1: '0', x2: '1', y1: '0', y2: '0' }, defs);
+      stops.forEach(([o, c]) => el('stop', { offset: o, 'stop-color': c }, g));
+    };
+    rg('pgShadow', { cx: '50%', cy: '50%', r: '50%' }, [['0', '#000', .55], ['.55', '#000', .22], ['1', '#000', 0]]);
+    rg('pgCap', { cx: '38%', cy: '34%', r: '80%' }, [['0', '#f8a08a'], ['.5', '#e85e44'], ['1', '#cb432b']]);
+    rg('pgKnot', { cx: '40%', cy: '30%', r: '85%' }, [['0', '#e2573f'], ['.6', '#c23a24'], ['1', '#8a2214']]);
+    lg('pgNeck', [['0', '#f0664b'], ['.45', '#d9472e'], ['1', '#9a2814']]);
+    lg('pgRim', [['0', '#d4432a'], ['.5', '#b93320'], ['1', '#87200f']]);
 
     const pin = el('g', { id: 'pin3d' }, defs);
-    el('ellipse', { cx: 7, cy: 11, rx: 16, ry: 7, fill: 'url(#pgShadow)', transform: 'rotate(20 7 11)' }, pin);
-    el('rect', { x: -1, y: 0, width: 2, height: 11, rx: 1, fill: 'url(#pgNeedle)', transform: 'rotate(-16)' }, pin);
-    /* twine turns around the neck */
-    el('ellipse', { cx: 0, cy: 5.2, rx: 6.6, ry: 2.6, fill: 'none', stroke: '#6b120a', 'stroke-width': 3.4 }, pin);
-    el('ellipse', { cx: 0, cy: 5.2, rx: 6.6, ry: 2.6, fill: 'none', stroke: '#b0281c', 'stroke-width': 2.4 }, pin);
-    el('ellipse', { cx: 0, cy: 3.4, rx: 6.4, ry: 2.5, fill: 'none', stroke: '#6b120a', 'stroke-width': 3.2 }, pin);
-    el('ellipse', { cx: 0, cy: 3.4, rx: 6.4, ry: 2.5, fill: 'none', stroke: '#c03222', 'stroke-width': 2.2 }, pin);
-    /* head: side band then flat top */
-    el('ellipse', { cx: 0, cy: 1.4, rx: 8.6, ry: 6.4, fill: 'url(#pgSide)' }, pin);
-    el('ellipse', { cx: 0, cy: -1.4, rx: 8.6, ry: 6.4, fill: 'url(#pgTop)' }, pin);
-    el('ellipse', { cx: 0, cy: -1.4, rx: 8.6, ry: 6.4, fill: 'none', stroke: 'rgba(255,190,165,.38)', 'stroke-width': .8 }, pin);
-    el('ellipse', { cx: -2.6, cy: -3.4, rx: 3, ry: 1.5, fill: 'rgba(255,255,255,.16)', transform: 'rotate(-24 -2.6 -3.4)' }, pin);
+    el('ellipse', { cx: 9, cy: 6, rx: 17, ry: 6.2, fill: 'url(#pgShadow)', transform: 'rotate(14 9 6)' }, pin);
+    /* neck and cap lean a little to the left, like the reference */
+    const lean = el('g', { transform: 'rotate(-11)' }, pin);
+    el('rect', { x: -2.1, y: -13.5, width: 4.2, height: 13, rx: 1.6, fill: 'url(#pgNeck)' }, lean);
+    el('ellipse', { cx: 0, cy: -13.2, rx: 8, ry: 3.3, fill: '#8f2413' }, lean);                 // underside of the cap
+    el('rect', { x: -8, y: -15.6, width: 16, height: 2.5, fill: 'url(#pgRim)' }, lean);           // cap edge
+    el('ellipse', { cx: 0, cy: -15.6, rx: 8, ry: 3.3, fill: 'url(#pgCap)' }, lean);               // cap top
+    el('ellipse', { cx: -1.6, cy: -16.2, rx: 4.6, ry: 1.5, fill: 'rgba(255,225,210,.22)' }, lean);
+    el('ellipse', { cx: 0, cy: -15.6, rx: 8, ry: 3.3, fill: 'none', stroke: 'rgba(255,200,180,.3)', 'stroke-width': .5 }, lean);
+    /* yarn knot around the base */
+    el('ellipse', { cx: 0, cy: -1.2, rx: 6.4, ry: 4.4, fill: 'url(#pgKnot)' }, pin);
+    [['M-6 -0.4C-3 3.2 3 3.2 6 -0.4', '#a92c19', 1.9], ['M-6.2 -2.2C-3 1.4 3 1.4 6.2 -2.2', '#e0533a', 1.7], ['M-5.6 -4C-2.6 -0.6 2.6 -0.6 5.6 -4', '#c73c25', 1.6], ['M-4.6 -5.6C-2 -3 2 -3 4.6 -5.6', '#e86a51', 1.2]]
+      .forEach(([d, c, w]) => el('path', { d, fill: 'none', stroke: c, 'stroke-width': w, 'stroke-linecap': 'round' }, pin));
+    [['M-6 -2C-9 -3 -10 -5 -9 -7', .55], ['M5.6 -3C8 -4.4 9.4 -3.6 10 -6', .5], ['M-2 -6C-3.4 -9 -2.4 -10.6 -3.6 -12', .4], ['M6 0.4C9 1.4 10.6 0.2 12 2.2', .5]]
+      .forEach(([d, a]) => el('path', { d, fill: 'none', stroke: `rgba(230,96,72,${a})`, 'stroke-width': .5, 'stroke-linecap': 'round' }, pin));
   }
 
-  /* Twine geometry. Tiny slanted strokes along a quadratic curve read as the twist of laid strands. */
+  /* Yarn geometry: a filled body with a wobbling width, fine slanted twist marks, and long curling hairs. */
   function hashStr(str) { let h = 2166136261; for (let k = 0; k < str.length; k++) { h ^= str.charCodeAt(k); h = Math.imul(h, 16777619); } return h >>> 0; }
   function seeded(seed) {
     let t = seed >>> 0;
@@ -246,37 +254,58 @@
   const SMALL = matchMedia('(max-width: 700px)').matches;
   function twine(a, c, b, dist, key) {
     const rnd = seeded(hashStr(key));
-    const step = SMALL ? 3.6 : 2.7;
-    const n = Math.max(6, Math.ceil(dist * 1.06 / step));
-    const half = 2.25;
-    let groove = '', ridge = '', ridge2 = '', fuzz = '';
-    const seg = (x, y, nx, ny, tx, ty, w, lean) =>
-      `M${(x - nx * w - tx * lean).toFixed(1)} ${(y - ny * w - ty * lean).toFixed(1)}L${(x + nx * w + tx * lean).toFixed(1)} ${(y + ny * w + ty * lean).toFixed(1)}`;
+    const step = SMALL ? 2.9 : 2.2;
+    const n = Math.max(8, Math.ceil(dist * 1.06 / step));
+    const ph1 = rnd() * 6.28, ph2 = rnd() * 6.28;
+    const pts = [];
     for (let k = 0; k <= n; k++) {
       const t = k / n, u = 1 - t;
       const x = u * u * a.x + 2 * u * t * c.x + t * t * b.x, y = u * u * a.y + 2 * u * t * c.y + t * t * b.y;
       let tx = 2 * u * (c.x - a.x) + 2 * t * (b.x - c.x), ty = 2 * u * (c.y - a.y) + 2 * t * (b.y - c.y);
       const tl = Math.hypot(tx, ty) || 1; tx /= tl; ty /= tl;
-      const nx = -ty, ny = tx;
-      /* strands lean about 50 degrees off the cross-section; every segment is slightly irregular */
-      const lean = half * (1.05 + (rnd() - 0.5) * 0.5);
-      const jitter = (rnd() - 0.5) * step * 0.55;
-      groove += seg(x + tx * jitter, y + ty * jitter, nx, ny, tx, ty, half * (0.8 + rnd() * 0.22), lean);
-      const o = step * (0.42 + rnd() * 0.16);
-      ridge += seg(x + tx * o, y + ty * o, nx, ny, tx, ty, half * (0.62 + rnd() * 0.25), lean * 0.9);
-      if (rnd() < 0.45) ridge2 += seg(x + tx * step * 0.8, y + ty * step * 0.8, nx, ny, tx, ty, half * 0.5, lean * 1.1);
-      if (!SMALL) {
-        const hairs = rnd() < 0.7 ? 1 : 0;
-        for (let h = 0; h < hairs; h++) {
-          const side = rnd() < 0.5 ? -1 : 1, len = 1.2 + rnd() * 2.4, ang = 0.7 + rnd() * 0.7;   // mostly lying along the strand
-          const sx = x + nx * side * half * (0.75 + rnd() * 0.3), sy = y + ny * side * half * (0.75 + rnd() * 0.3);
-          const dx = nx * side * Math.sin(ang) * 0.6 + tx * Math.cos(ang) * (rnd() < 0.5 ? 1 : -1);
-          const dy = ny * side * Math.sin(ang) * 0.6 + ty * Math.cos(ang) * (rnd() < 0.5 ? 1 : -1);
-          fuzz += `M${sx.toFixed(1)} ${sy.toFixed(1)}L${(sx + dx * len).toFixed(1)} ${(sy + dy * len).toFixed(1)}`;
-        }
-      }
+      const s = k * step;
+      /* yarn is never an even width: slow swell plus a faster wobble */
+      const w = 1.75 + 0.28 * Math.sin(s / 21 + ph1) + 0.18 * Math.sin(s / 7.3 + ph2) + (rnd() - 0.5) * 0.12;
+      pts.push({ x, y, tx, ty, nx: -ty, ny: tx, w });
     }
-    return { groove, ridge, ridge2, fuzz };
+    let left = '', right = '';
+    pts.forEach((p, k) => {
+      left += (k ? 'L' : 'M') + (p.x + p.nx * p.w).toFixed(1) + ' ' + (p.y + p.ny * p.w).toFixed(1);
+    });
+    for (let k = pts.length - 1; k >= 0; k--) { const p = pts[k]; right += 'L' + (p.x - p.nx * p.w).toFixed(1) + ' ' + (p.y - p.ny * p.w).toFixed(1); }
+    const body = left + right + 'Z';
+
+    let grooveA = '', grooveB = '', ridge = '';
+    const seg = (p, off, wf, lean) => {
+      const x = p.x + p.tx * off, y = p.y + p.ty * off, w = p.w * wf, l = p.w * lean;
+      return `M${(x - p.nx * w - p.tx * l).toFixed(1)} ${(y - p.ny * w - p.ty * l).toFixed(1)}L${(x + p.nx * w + p.tx * l).toFixed(1)} ${(y + p.ny * w + p.ty * l).toFixed(1)}`;
+    };
+    pts.forEach(p => {
+      const j = (rnd() - 0.5) * step * 0.6, lean = 0.95 + (rnd() - 0.5) * 0.45;
+      if (rnd() < 0.62) grooveA += seg(p, j, 0.92, lean); else grooveB += seg(p, j, 0.85, lean);
+      if (rnd() < 0.7) ridge += seg(p, step * 0.5 + j, 0.7, lean);
+    });
+
+    /* loose hairs: mostly short, a few long and curling, denser near the ends where the yarn was cut */
+    let hairLight = '', hairDark = '';
+    const hairs = Math.floor(dist / (SMALL ? 16 : 4.6));
+    const addHair = (p, big) => {
+      const side = rnd() < 0.5 ? -1 : 1;
+      const len = big ? 6 + rnd() * 12 : 2.5 + rnd() * rnd() * 11;
+      const dir = rnd() < 0.5 ? 1 : -1;
+      const sx = p.x + p.nx * side * p.w * 0.85, sy = p.y + p.ny * side * p.w * 0.85;
+      const out = 0.35 + rnd() * 0.65, along = (rnd() * 0.9 + 0.1) * dir;
+      let dx = p.nx * side * out + p.tx * along, dy = p.ny * side * out + p.ty * along;
+      const dl = Math.hypot(dx, dy) || 1; dx /= dl; dy /= dl;
+      const curl = (rnd() - 0.5) * len * 0.9;
+      const cx = sx + dx * len * 0.55 - dy * curl, cy = sy + dy * len * 0.55 + dx * curl;
+      const ex = sx + dx * len + dy * curl * 0.5, ey = sy + dy * len - dx * curl * 0.5;
+      const seg2 = `M${sx.toFixed(1)} ${sy.toFixed(1)}Q${cx.toFixed(1)} ${cy.toFixed(1)} ${ex.toFixed(1)} ${ey.toFixed(1)}`;
+      if (rnd() < 0.68) hairLight += seg2; else hairDark += seg2;
+    };
+    for (let h = 0; h < hairs; h++) addHair(pts[Math.floor(rnd() * pts.length)], rnd() < 0.08);
+    for (let h = 0; h < (SMALL ? 3 : 8); h++) { addHair(pts[Math.min(pts.length - 1, Math.floor(rnd() * 5))], true); addHair(pts[Math.max(0, pts.length - 1 - Math.floor(rnd() * 5))], true); }
+    return { body, grooveA, grooveB, ridge, hairLight, hairDark };
   }
 
   function build() {
@@ -335,14 +364,16 @@
 
         const g = el('g', { mask: `url(#${maskId})` }, links);
         const tw = twine(a, { x: cx, y: cy }, b, dist, key);
-        ['t-sh1', 't-sh2', 't-rim', 't-body'].forEach(cls => el('path', { class: cls, d }, g));
+        ['t-sh1', 't-sh2', 't-rim'].forEach(cls => el('path', { class: cls, d }, g));
+        el('path', { class: 't-body', d: tw.body }, g);
         /* fine strand detail is the expensive part: it only switches on once the thread has finished drawing */
         const det = el('g', { class: 'tw-detail' }, g);
-        el('path', { class: 't-groove', d: tw.groove }, det);
+        el('path', { class: 't-grooveA', d: tw.grooveA }, det);
+        el('path', { class: 't-grooveB', d: tw.grooveB }, det);
         el('path', { class: 't-ridge', d: tw.ridge }, det);
-        if (tw.ridge2) el('path', { class: 't-ridge2', d: tw.ridge2 }, det);
         el('path', { class: 't-hl', d }, det);
-        if (tw.fuzz) el('path', { class: 't-fuzz', d: tw.fuzz }, det);
+        el('path', { class: 't-hairD', d: tw.hairDark }, det);
+        el('path', { class: 't-hairL', d: tw.hairLight }, det);
         if (instant) g.classList.add('done');
 
         groups.push({ reveal, g, key, ids: [id0, tid], y: a.y, dur: parseFloat(reveal.style.transitionDuration) || 1 });
@@ -354,7 +385,7 @@
     used.forEach((p, id) => {
       const h = el('g', { class: 'pinhead', transform: `translate(${p.x.toFixed(1)} ${p.y.toFixed(1)})` }, heads);
       const inner = el('g', { class: 'pi' }, h);
-      el('use', { href: '#pin3d' }, inner);
+      el('use', { href: '#pin3d', transform: 'scale(1.3)' }, inner);
       if (reduceMotion) h.classList.add('on', 'now');
       headEls.set(id, h);
     });

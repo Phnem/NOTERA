@@ -165,15 +165,16 @@ html { overflow-x: clip; }
 .thread .reveal { stroke: #fff; stroke-width: 24; stroke-linecap: round; stroke-dasharray: 1; stroke-dashoffset: 1; }
 .thread .reveal.drawn { stroke-dashoffset: 0; transition: stroke-dashoffset 1.6s cubic-bezier(.45, 0, .25, 1); }
 /* jute twine: soft cast shadow, dark rim, matte body, groove and ridge strokes along the twist, loose fibres */
-.thread .t-sh1 { stroke: rgba(0, 0, 0, .16); stroke-width: 11; transform: translate(5px, 12px); stroke-linecap: round; }
-.thread .t-sh2 { stroke: rgba(0, 0, 0, .4); stroke-width: 4.4; transform: translate(2.5px, 6.5px); stroke-linecap: round; }
-.thread .t-rim { stroke: #7a170d; stroke-width: 5.4; stroke-linecap: round; }
-.thread .t-body { stroke: #a5281c; stroke-width: 4.4; stroke-linecap: round; }
-.thread .t-groove { stroke: rgba(66, 9, 4, .5); stroke-width: 1.3; stroke-linecap: round; }
-.thread .t-ridge { stroke: rgba(226, 104, 84, .42); stroke-width: 1.1; stroke-linecap: round; }
-.thread .t-ridge2 { stroke: rgba(240, 130, 108, .3); stroke-width: .8; stroke-linecap: round; }
-.thread .t-hl { stroke: rgba(255, 176, 150, .3); stroke-width: 1.1; stroke-dasharray: 9 4 3 6; stroke-linecap: round; transform: translate(-.7px, -1px); }
-.thread .t-fuzz { stroke: rgba(214, 92, 72, .5); stroke-width: .45; stroke-linecap: round; }
+.thread .t-sh1 { stroke: rgba(0, 0, 0, .15); stroke-width: 9; transform: translate(4px, 10px); stroke-linecap: round; }
+.thread .t-sh2 { stroke: rgba(0, 0, 0, .38); stroke-width: 3.6; transform: translate(2px, 5.5px); stroke-linecap: round; }
+.thread .t-rim { stroke: rgba(120, 20, 10, .5); stroke-width: 4.6; stroke-linecap: round; }
+.thread .t-body { fill: #dc4a30; stroke: rgba(150, 28, 14, .55); stroke-width: .5; }
+.thread .t-grooveA { stroke: rgba(112, 18, 8, .34); stroke-width: .8; stroke-linecap: round; }
+.thread .t-grooveB { stroke: rgba(112, 18, 8, .2); stroke-width: .7; stroke-linecap: round; }
+.thread .t-ridge { stroke: rgba(255, 150, 124, .34); stroke-width: .75; stroke-linecap: round; }
+.thread .t-hl { stroke: rgba(255, 190, 168, .22); stroke-width: .9; stroke-dasharray: 11 3 4 7; stroke-linecap: round; transform: translate(-.5px, -.9px); }
+.thread .t-hairL { stroke: rgba(232, 104, 80, .62); stroke-width: .42; stroke-linecap: round; }
+.thread .t-hairD { stroke: rgba(150, 34, 20, .55); stroke-width: .4; stroke-linecap: round; }
 .thread .tw-detail { display: none; }
 .thread .done .tw-detail { display: inline; animation: twIn .6s ease both; }
 @keyframes twIn { from { opacity: 0; } }
