@@ -3,6 +3,8 @@
 
   /* Set the address that should receive research requests. Empty opens a blank "To:" line. */
   const CONTACT_EMAIL = '';
+  /* Where "Find a project" should lead once project search exists. Empty keeps the button inert. */
+  const FIND_PROJECT_URL = '';
 
   const $ = (s, r = document) => r.querySelector(s);
   const $$ = (s, r = document) => Array.from(r.querySelectorAll(s));
@@ -12,8 +14,8 @@
   /* English lives in the markup; only Russian is stored here. */
   const RU = {
     'nav.deliver': 'Что вы получаете', 'nav.how': 'Как это работает', 'nav.sources': 'Источники', 'nav.sample': 'Пример',
-    'cta.request': 'Заказать исследование', 'cta.sample': 'Смотреть пример исследования',
-    'hero.title': 'Каждый вывод с доказательством.',
+    'cta.request': 'Заказать исследование', 'cta.find': 'Найти проект', 'cta.sample': 'Смотреть пример исследования',
+    'hero.title': 'Каждый вывод подтверждён.',
     'hero.sub': 'Глубокие проверяемые исследования внешней политики, конфликтов, истории, права и международных отношений.',
     'dossier.title': 'Досье, а не отчёт.',
     'dossier.sub': 'Каждое исследование завершается полным делом, которое можно открыть, проверить и процитировать.',
@@ -39,12 +41,12 @@
     'c3.by': 'Показаны оба прочтения. Ни одно не выбрано молча.',
     'c3.src': 'Оригинал на персидском, выступление 26 октября 2005 года.',
     'proc.title': 'От одного вопроса к проверенному отчёту.',
-    'ask.lbl': 'Ваш вопрос', 'ask.q': 'Кто и когда впервые назвал Соединённые Штаты «Большим сатаной»?',
+    'ask.lbl': 'Ваш вопрос', 'ask.q': 'Как менялись отношения Тегерана и Вашингтона между 1953 и 1979 годами?',
     's1': 'Вопрос', 's1.t': 'Вы задаёте вопрос и его границы.',
     's2': 'Параллельно', 's2.t': 'Десятки исследований идут одновременно.',
     's3': 'Проверка', 's3.t': 'Каждый источник проверяется на происхождение и надёжность.',
     's4': 'Связи', 's4.t': 'Находки складываются в граф утверждений и доказательств.',
-    's5': 'Оспаривание', 's5.t': 'Независимая проверка пытается опровергнуть выводы.',
+    's5': 'Оспаривание', 's5.t': 'Независимые ИИ-агенты-рецензенты пытаются опровергнуть выводы.',
     's6': 'Отчёт', 's6.t': 'Итоговый отчёт выходит со всеми ссылками.',
     'src.title': 'Все виды открытых записей.',
     'src.sub': 'Только открытые источники: от официальных текстов до сырой съёмки.',
@@ -64,14 +66,13 @@
     'a2': 'YouTube и медиаавторы', 'a2.t': 'Сценарий из источников, которые можно показать в кадре.',
     'a3': 'Исследователи', 'a3.t': 'Старт с готовой картой доказательств.',
     'a4': 'Аналитики', 'a4.t': 'Записки для решений с выводами, которые выдерживают проверку.',
-    'a5': 'Компании', 'a5.t': 'Оценка политических и правовых рисков с доказательствами.',
     'prin.title': 'Две формы выдачи. Три проверки.',
     'f1': 'Интерактивное досье', 'f1.t': 'Выводы, доказательства, хронология и оригиналы в браузере.',
-    'f2': 'PDF и экспорт', 'f2.t': 'Чистая копия для цитирования редакторам и клиентам.',
+    'f2': 'PDF и экспорт', 'f2.t': 'Чистая копия, из которой удобно цитировать и публиковать.',
     'prin.sub': 'ИИ ускоряет поиск и обработку. Важные выводы всё равно проходят верификацию, red-team и проверку человеком.',
-    'g1': 'Проверка доказательств', 'g1.t': 'Каждое утверждение сопоставлено с первоисточником.',
-    'g2': 'Red-team', 'g2.t': 'Отдельный рецензент защищает противоположную версию.',
-    'g3': 'Проверка человеком', 'g3.t': 'Человек подписывает результат до выдачи.',
+    'g1': 'Проверка доказательств', 'g1.t': 'Агенты-рецензенты сопоставляют каждое утверждение с первоисточником.',
+    'g2': 'Red-team', 'g2.t': 'Состязательные ИИ-агенты пытаются опровергнуть каждый вывод.',
+    'g3': 'Проверка человеком', 'g3.t': 'Человек проверяет результат до выдачи.',
     'req.title': 'Принесите нам вопрос.',
     'req.sub': 'Скажите, что нужно доказать. Мы выстроим исследование вокруг этого.',
     'req.label': 'Что нужно исследовать?',
@@ -187,6 +188,29 @@
     return n;
   }
 
+  /* Pin artwork: base disc, glossy dome, specular highlight, contact shadow. Drawn once, reused via <use>. */
+  function pinDefs(defs) {
+    const rg = (id, attrs, stops) => {
+      const g = el('radialGradient', Object.assign({ id }, attrs), defs);
+      stops.forEach(([o, c, a]) => el('stop', { offset: o, 'stop-color': c, 'stop-opacity': a ?? 1 }, g));
+    };
+    rg('pgShadow', { cx: '50%', cy: '50%', r: '50%' }, [['0', '#000', .5], ['.6', '#000', .22], ['1', '#000', 0]]);
+    rg('pgBase', { cx: '40%', cy: '32%', r: '80%' }, [['0', '#c8351b'], ['.7', '#8e1a08'], ['1', '#4d0c02']]);
+    rg('pgDome', { cx: '34%', cy: '28%', r: '82%' }, [['0', '#ffb7a2'], ['.22', '#ff6a49'], ['.6', '#e8401f'], ['1', '#8a1606']]);
+    const t = el('linearGradient', { id: 'pgNeedle', x1: '0', x2: '1', y1: '0', y2: '0' }, defs);
+    [['0', '#7d7d7d'], ['.45', '#f1f1f1'], ['1', '#5c5c5c']].forEach(([o, c]) => el('stop', { offset: o, 'stop-color': c }, t));
+
+    const pin = el('g', { id: 'pin3d' }, defs);
+    el('ellipse', { cx: 6, cy: 10, rx: 15, ry: 7, fill: 'url(#pgShadow)', transform: 'rotate(18 6 10)' }, pin);
+    el('rect', { x: -1.1, y: -2, width: 2.2, height: 10, rx: 1, fill: 'url(#pgNeedle)', transform: 'rotate(-14)' }, pin);
+    el('ellipse', { cx: 0, cy: 1.2, rx: 10, ry: 8.6, fill: 'url(#pgBase)' }, pin);
+    el('ellipse', { cx: 0, cy: 1.2, rx: 10, ry: 8.6, fill: 'none', stroke: 'rgba(255,140,110,.35)', 'stroke-width': .7 }, pin);
+    el('ellipse', { cx: 0, cy: -1.8, rx: 7.6, ry: 7.2, fill: 'url(#pgDome)' }, pin);
+    el('path', { d: 'M-6.4 -0.4 A7.4 7 0 0 0 6.6 0.2 A8.4 6.2 0 0 1 -6.4 -0.4Z', fill: 'rgba(90,8,0,.28)' }, pin);
+    el('ellipse', { cx: -2.7, cy: -5, rx: 2.8, ry: 1.6, fill: 'rgba(255,255,255,.88)', transform: 'rotate(-28 -2.7 -5)' }, pin);
+    el('circle', { cx: 3.6, cy: 1.6, r: 1.1, fill: 'rgba(255,170,140,.45)' }, pin);
+  }
+
   function build() {
     const doc = document.documentElement;
     const W = doc.clientWidth, H = Math.max(doc.scrollHeight, document.body.scrollHeight);
@@ -206,62 +230,82 @@
     svg.style.height = H + 'px';
 
     const defs = el('defs', {}, svg);
-    const grad = el('radialGradient', { id: 'pinGrad', cx: '35%', cy: '30%', r: '75%' }, defs);
-    el('stop', { offset: '0', 'stop-color': '#ff8a6e' }, grad);
-    el('stop', { offset: '.55', 'stop-color': '#ee4327' }, grad);
-    el('stop', { offset: '1', 'stop-color': '#8f1a08' }, grad);
+    pinDefs(defs);
 
     const links = el('g', {}, svg);
     const heads = el('g', {}, svg);
     const groups = [];
     const used = new Map();
+    let n = 0;
 
-    pins.forEach((a, id) => {
-      a.to.forEach(tid => {
-        const b = pins.get(tid);
-        if (!b) return;
-        const key = id + '>' + tid;
+    pins.forEach((a0, id0) => {
+      a0.to.forEach(tid => {
+        const b0 = pins.get(tid);
+        if (!b0) return;
+        const key = id0 + '>' + tid;
+        /* always draw from the upper pin to the lower one, so a thread grows downward into view */
+        const flip = b0.y < a0.y;
+        const a = flip ? b0 : a0, b = flip ? a0 : b0;
         const dx = b.x - a.x, dy = b.y - a.y, dist = Math.hypot(dx, dy);
         const sag = Math.min(80, dist * 0.05 + Math.abs(dx) * 0.09);
         const cx = (a.x + b.x) / 2, cy = (a.y + b.y) / 2 + sag * 2;
         const d = `M${a.x.toFixed(1)} ${a.y.toFixed(1)} Q${cx.toFixed(1)} ${cy.toFixed(1)} ${b.x.toFixed(1)} ${b.y.toFixed(1)}`;
-        const g = el('g', {}, links);
-        ['sh', 'th', 'hl'].forEach(cls => {
-          const p = el('path', { class: cls, d, pathLength: '1' }, g);
-          if (drawn.has(key) || reduceMotion) { p.style.transition = 'none'; p.classList.add('drawn'); }
-        });
-        groups.push({ g, key, ids: [id, tid], y: Math.min(a.y, b.y) + Math.min(120, Math.abs(dy) / 2) });
-        used.set(id, a); used.set(tid, b);
+
+        const pad = 40;
+        const minx = Math.min(a.x, b.x) - pad, miny = Math.min(a.y, b.y) - pad;
+        const maskId = 'tm' + (n++);
+        const mask = el('mask', {
+          id: maskId, maskUnits: 'userSpaceOnUse',
+          x: minx.toFixed(0), y: miny.toFixed(0),
+          width: (Math.abs(dx) + pad * 2 + 20).toFixed(0), height: (dist + sag * 2 + pad * 2).toFixed(0)
+        }, defs);
+        const reveal = el('path', { class: 'reveal', d, pathLength: '1' }, mask);
+        const instant = drawn.has(key) || reduceMotion;
+        reveal.style.transitionDuration = Math.min(2.6, Math.max(0.9, dist / 800)).toFixed(2) + 's';
+        if (instant) { reveal.style.transition = 'none'; reveal.classList.add('drawn'); }
+
+        const g = el('g', { mask: `url(#${maskId})` }, links);
+        ['t-sh1', 't-sh2', 't-body', 't-shade', 't-twist', 't-hl'].forEach(cls => el('path', { class: cls, d }, g));
+
+        groups.push({ reveal, key, ids: [id0, tid], y: a.y });
+        used.set(id0, a0); used.set(tid, b0);
       });
     });
 
     const headEls = new Map();
     used.forEach((p, id) => {
       const h = el('g', { class: 'pinhead', transform: `translate(${p.x.toFixed(1)} ${p.y.toFixed(1)})` }, heads);
-      el('circle', { cx: 3, cy: 6, r: 8, fill: 'rgba(0,0,0,.5)' }, h);
-      el('circle', { r: 8.5, fill: 'url(#pinGrad)' }, h);
-      el('circle', { cx: -2.6, cy: -2.8, r: 2.1, fill: 'rgba(255,255,255,.8)' }, h);
-      if (reduceMotion) h.classList.add('on');
+      const inner = el('g', { class: 'pi' }, h);
+      el('use', { href: '#pin3d' }, inner);
+      if (reduceMotion) h.classList.add('on', 'now');
       headEls.set(id, h);
     });
 
-    const reveal = (grp) => {
-      grp.g.querySelectorAll('path').forEach(p => p.classList.add('drawn'));
+    const show = (grp, now) => {
+      if (now) grp.reveal.style.transition = 'none';
+      grp.reveal.classList.add('drawn');
       drawn.add(grp.key);
-      grp.ids.forEach(i => headEls.get(i)?.classList.add('on'));
+      grp.ids.forEach(i => {
+        const h = headEls.get(i);
+        if (!h) return;
+        if (now) h.classList.add('now');
+        h.classList.add('on');
+      });
     };
     /* pins already reached stay lit after a rebuild */
-    groups.forEach(grp => { if (drawn.has(grp.key) || reduceMotion) grp.ids.forEach(i => headEls.get(i)?.classList.add('on')); });
+    groups.forEach(grp => {
+      if (drawn.has(grp.key) || reduceMotion) grp.ids.forEach(i => headEls.get(i)?.classList.add('on', 'now'));
+    });
 
     io = new IntersectionObserver((entries) => {
       entries.forEach(e => {
-        if (!e.isIntersecting) return;
         const grp = e.target._grp;
         if (!grp) return;
-        reveal(grp);
-        io.unobserve(e.target);
+        if (e.isIntersecting) { show(grp, false); io.unobserve(e.target); }
+        /* the upper pin is already above the viewport (jumped past or restored scroll): show it without animating */
+        else if (e.boundingClientRect.top < 0) { show(grp, true); io.unobserve(e.target); }
       });
-    }, { rootMargin: '0px 0px -10% 0px' });
+    }, { rootMargin: '0px 0px -8% 0px' });
 
     groups.forEach(grp => {
       if (drawn.has(grp.key) || reduceMotion) return;
@@ -293,6 +337,8 @@
   window.addEventListener('resize', () => scheduleBuild(200));
   document.addEventListener('load', (e) => { if (e.target instanceof HTMLImageElement) scheduleBuild(200); }, true);
   if ('ResizeObserver' in window) new ResizeObserver(() => scheduleBuild(200)).observe(document.body);
+
+  $$('[data-find-project]').forEach(b => b.addEventListener('click', () => { if (FIND_PROJECT_URL) window.location.href = FIND_PROJECT_URL; }));
 
   /* ---------------------------------------------------------------- form */
   const form = $('#request-form');

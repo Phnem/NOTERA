@@ -42,6 +42,15 @@ All images are public domain, sourced via Wikimedia Commons.
 
 Newspaper clippings on the board are typographic illustrations, not reproductions of real publications.
 
-## Fonts and icons
+## Fonts, icons and textures
 
-Loaded from Google Fonts (Dela Gothic One, Unbounded, Onest, Old Standard TT, IBM Plex Mono, Vazirmatn, Amiri, Frank Ruhl Libre) and Phosphor Icons via unpkg. Self-host them for production if you need to avoid third-party requests.
+Everything is self-hosted, no third-party requests.
+
+- `css/fonts.css` and `assets/fonts/`: Google Fonts subsets (latin, cyrillic, arabic, hebrew) for Dela Gothic One, Unbounded, Onest, Old Standard TT, IBM Plex Mono, Vazirmatn, Amiri and Frank Ruhl Libre. All are open-licensed (OFL or Apache-2.0).
+- `assets/vendor/phosphor/`: Phosphor Icons (bold), MIT.
+- `assets/tex/`: paper and board textures generated procedurally for this project.
+
+## Placeholders
+
+- `CONTACT_EMAIL` in `js/main.js` is empty until the request address is decided.
+- "Find a project" does nothing yet. Set `FIND_PROJECT_URL` in `js/main.js` when project search exists.

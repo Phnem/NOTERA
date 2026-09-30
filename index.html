@@ -13,10 +13,9 @@
 <meta name="color-scheme" content="dark">
 <script>document.documentElement.classList.add('js')</script>
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Crect width=%2732%27 height=%2732%27 rx=%277%27 fill=%27%230e0d0c%27/%3E%3Ccircle cx=%2716%27 cy=%2716%27 r=%277%27 fill=%27%23ee4327%27/%3E%3C/svg%3E">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Dela+Gothic+One&family=Frank+Ruhl+Libre:wght@400;700&family=IBM+Plex+Mono:wght@400;500&family=Onest:wght@400;500;600&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Unbounded:wght@500;700;900&family=Vazirmatn:wght@400;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/bold/style.css">
+<link rel="preload" href="assets/fonts/dela-gothic-one-latin-41f77d.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="css/fonts.css">
+<link rel="stylesheet" href="assets/vendor/phosphor/style.css">
 <link rel="stylesheet" href="css/styles.css">
 </head>
 <body id="top">
@@ -36,6 +35,7 @@
       <button type="button" data-lang="en" aria-pressed="true">EN</button>
       <button type="button" data-lang="ru" aria-pressed="false">RU</button>
     </div>
+    <button type="button" class="btn btn--ghost btn--sm btn--find" data-find-project><i class="ph-bold ph-magnifying-glass" aria-hidden="true"></i><span data-i18n="cta.find">Find a project</span></button>
     <a class="btn btn--sm" href="#request" data-i18n="cta.request">Request a research project</a>
   </div>
 </header>
@@ -124,7 +124,7 @@
       <article class="item b-arch" style="--r:2deg" data-reveal>
         <div class="paper scan__sheet"><img src="assets/img/carter-letter.jpg" alt="Declassified letter from President Carter to Ayatollah Khomeini, November 6, 1979" width="960" height="1230" loading="lazy"></div>
         <div class="caption"><h3 data-i18n="d.arch">Archival documents</h3><p data-i18n="d.arch.t">Scans, cables, memos and PDFs.</p></div>
-        <i class="pin" data-pin="d-arch" data-to="d-quote" style="--x:7%;--y:8px"></i>
+        <i class="pin" data-pin="d-arch" data-to="d-quote" style="--x:95%;--y:8px"></i>
       </article>
 
       <article class="item b-chron" style="--r:1.2deg" data-reveal>
@@ -155,7 +155,7 @@
           <h3 data-i18n="d.quote">Quotations</h3>
           <p data-i18n="d.quote.t">Exact words, with page or minute.</p>
         </div>
-        <i class="pin" data-pin="d-quote" data-to="d-unc" style="--x:7%;--y:8px"></i>
+        <i class="pin" data-pin="d-quote" data-to="d-unc" style="--x:95%;--y:8px"></i>
       </article>
 
       <article class="item b-av" style="--r:-2.4deg" data-reveal>
@@ -315,7 +315,7 @@
         <div class="item ask" style="--r:2.4deg" data-reveal>
           <div class="paper typed">
             <h3 class="lbl" data-i18n="ask.lbl">Your question</h3>
-            <p class="typed__q" data-i18n="ask.q">Who first called the United States the &ldquo;Great Satan&rdquo;, and when?</p>
+            <p class="typed__q" data-i18n="ask.q">How did relations between Tehran and Washington change between 1953 and 1979?</p>
           </div>
           <i class="pin" data-pin="ask" data-to="p-1" style="--x:8%;--y:8px"></i>
         </div>
@@ -324,7 +324,7 @@
       <li class="step" style="--i:1" data-reveal><i class="pin" data-pin="p-2" data-to="p-3" style="--x:0;--y:50%"></i><h3 data-i18n="s2">Fan out</h3><p data-i18n="s2.t">Dozens of research runs work in parallel.</p></li>
       <li class="step" style="--i:2" data-reveal><i class="pin" data-pin="p-3" data-to="p-4" style="--x:0;--y:50%"></i><h3 data-i18n="s3">Verify</h3><p data-i18n="s3.t">Every source is checked for origin and reliability.</p></li>
       <li class="step" style="--i:3" data-reveal><i class="pin" data-pin="p-4" data-to="p-5" style="--x:0;--y:50%"></i><h3 data-i18n="s4">Connect</h3><p data-i18n="s4.t">Findings join an evidence graph of claims and proof.</p></li>
-      <li class="step" style="--i:4" data-reveal><i class="pin" data-pin="p-5" data-to="p-6" style="--x:0;--y:50%"></i><h3 data-i18n="s5">Challenge</h3><p data-i18n="s5.t">An independent review tries to break the conclusions.</p></li>
+      <li class="step" style="--i:4" data-reveal><i class="pin" data-pin="p-5" data-to="p-6" style="--x:0;--y:50%"></i><h3 data-i18n="s5">Challenge</h3><p data-i18n="s5.t">Independent AI review agents try to break the conclusions.</p></li>
       <li class="step" style="--i:5" data-reveal><i class="pin" data-pin="p-6" data-to="x-1" style="--x:0;--y:50%"></i><h3 data-i18n="s6">Deliver</h3><p data-i18n="s6.t">The final report ships with every link intact.</p></li>
     </ol>
   </div>
@@ -459,8 +459,7 @@
       <li data-reveal><i class="pin" data-pin="a-1" data-to="a-2" style="--x:0;--y:50%"></i><h3 data-i18n="a1">Journalists</h3><p data-i18n="a1.t">Check a story against primary documents.</p></li>
       <li data-reveal><i class="pin" data-pin="a-2" data-to="a-3" style="--x:0;--y:50%"></i><h3 data-i18n="a2">YouTube and media authors</h3><p data-i18n="a2.t">Script from sources you can show on screen.</p></li>
       <li data-reveal><i class="pin" data-pin="a-3" data-to="a-4" style="--x:0;--y:50%"></i><h3 data-i18n="a3">Researchers</h3><p data-i18n="a3.t">Start from a mapped base of evidence.</p></li>
-      <li data-reveal><i class="pin" data-pin="a-4" data-to="a-5" style="--x:0;--y:50%"></i><h3 data-i18n="a4">Analysts</h3><p data-i18n="a4.t">Brief decision makers with claims that hold.</p></li>
-      <li data-reveal><i class="pin" data-pin="a-5" data-to="f-1" style="--x:0;--y:50%"></i><h3 data-i18n="a5">Companies</h3><p data-i18n="a5.t">Assess political and legal exposure with proof.</p></li>
+      <li data-reveal><i class="pin" data-pin="a-4" data-to="f-1" style="--x:0;--y:50%"></i><h3 data-i18n="a4">Analysts</h3><p data-i18n="a4.t">Brief decision makers with claims that hold.</p></li>
     </ul>
   </div>
 </section>
@@ -490,7 +489,7 @@
           <div class="paper sheet">
             <span class="sheet__badge">PDF</span>
             <h3 data-i18n="f2">PDF and export</h3>
-            <p data-i18n="f2.t">A clean, citable copy for editors and clients.</p>
+            <p data-i18n="f2.t">A clean, citable copy to quote and publish from.</p>
           </div>
           <i class="pin" data-pin="f-2" data-to="g-1" style="--x:88%;--y:8px"></i>
         </article>
@@ -499,9 +498,9 @@
       <div class="gates" data-reveal>
         <p class="sub sub--wide" data-i18n="prin.sub">AI speeds up search and processing. Important conclusions still pass verification, red-team challenge and human review.</p>
         <ol class="gates__list">
-          <li><i class="pin" data-pin="g-1" data-to="g-2" style="--x:0;--y:50%"></i><h3 data-i18n="g1">Evidence check</h3><p data-i18n="g1.t">Each claim is matched to a primary source.</p></li>
-          <li><i class="pin" data-pin="g-2" data-to="g-3" style="--x:0;--y:50%"></i><h3 data-i18n="g2">Red-team</h3><p data-i18n="g2.t">A separate reviewer argues the opposite case.</p></li>
-          <li><i class="pin" data-pin="g-3" data-to="r-1" style="--x:0;--y:50%"></i><h3 data-i18n="g3">Human review</h3><p data-i18n="g3.t">A person signs off before anything ships.</p></li>
+          <li><i class="pin" data-pin="g-1" data-to="g-2" style="--x:0;--y:50%"></i><h3 data-i18n="g1">Evidence check</h3><p data-i18n="g1.t">Review agents match every claim to a primary source.</p></li>
+          <li><i class="pin" data-pin="g-2" data-to="g-3" style="--x:0;--y:50%"></i><h3 data-i18n="g2">Red-team</h3><p data-i18n="g2.t">Adversarial AI agents try to disprove each conclusion.</p></li>
+          <li><i class="pin" data-pin="g-3" data-to="r-1" style="--x:0;--y:50%"></i><h3 data-i18n="g3">Human review</h3><p data-i18n="g3.t">A person reviews the result before it ships.</p></li>
         </ol>
       </div>
     </div>
@@ -529,8 +528,20 @@
 </main>
 
 <footer class="foot">
-  <div class="wrap foot__grid">
-    <a class="foot__brand" href="#top">NOTERA<i class="nav__dot"></i></a>
+  <div class="wrap">
+    <a class="foot__word" href="#top" aria-label="NOTERA, back to top">NOTERA<i class="foot__dot"></i></a>
+    <div class="foot__row">
+      <nav class="foot__links" aria-label="Footer">
+        <a href="#dossier" data-i18n="nav.deliver">What you get</a>
+        <a href="#process" data-i18n="nav.how">How it works</a>
+        <a href="#sources" data-i18n="nav.sources">Sources</a>
+        <a href="#sample" data-i18n="nav.sample">Sample</a>
+      </nav>
+      <div class="foot__cta">
+        <a class="btn btn--sm" href="#request" data-i18n="cta.request">Request a research project</a>
+        <button type="button" class="btn btn--ghost btn--sm" data-find-project><i class="ph-bold ph-magnifying-glass" aria-hidden="true"></i><span data-i18n="cta.find">Find a project</span></button>
+      </div>
+    </div>
     <p class="foot__note" data-i18n="foot.note">Illustrative board. Photographs are public domain, sourced via Wikimedia Commons. Newspaper clippings are typographic illustrations, not reproductions.</p>
   </div>
 </footer>
