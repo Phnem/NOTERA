@@ -1,0 +1,540 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NOTERA - Verifiable Research</title>
+<meta name="description" content="NOTERA produces deep, verifiable research on foreign policy, conflict, history, law and international relations. Every significant conclusion opens to evidence and the original source.">
+<meta name="theme-color" content="#0e0d0c">
+<meta property="og:title" content="NOTERA - Proof behind every claim">
+<meta property="og:description" content="Research dossiers where every conclusion traces to a primary source: documents, archives, quotes, video and audio with timecodes.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="assets/img/camp-david-1978.jpg">
+<meta name="color-scheme" content="dark">
+<script>document.documentElement.classList.add('js')</script>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Crect width=%2732%27 height=%2732%27 rx=%277%27 fill=%27%230e0d0c%27/%3E%3Ccircle cx=%2716%27 cy=%2716%27 r=%277%27 fill=%27%23ee4327%27/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Dela+Gothic+One&family=Frank+Ruhl+Libre:wght@400;700&family=IBM+Plex+Mono:wght@400;500&family=Onest:wght@400;500;600&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Unbounded:wght@500;700;900&family=Vazirmatn:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/bold/style.css">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body id="top">
+
+<svg id="thread" class="thread" aria-hidden="true" focusable="false"></svg>
+
+<header class="nav">
+  <a class="nav__brand" href="#top" aria-label="NOTERA">NOTERA<i class="nav__dot"></i></a>
+  <nav class="nav__links" aria-label="Primary">
+    <a href="#dossier" data-i18n="nav.deliver">What you get</a>
+    <a href="#process" data-i18n="nav.how">How it works</a>
+    <a href="#sources" data-i18n="nav.sources">Sources</a>
+    <a href="#sample" data-i18n="nav.sample">Sample</a>
+  </nav>
+  <div class="nav__end">
+    <div class="lang" role="group" aria-label="Language">
+      <button type="button" data-lang="en" aria-pressed="true">EN</button>
+      <button type="button" data-lang="ru" aria-pressed="false">RU</button>
+    </div>
+    <a class="btn btn--sm" href="#request" data-i18n="cta.request">Request a research project</a>
+  </div>
+</header>
+
+<main>
+
+<!-- HERO -->
+<section class="hero" aria-labelledby="hero-title">
+  <div class="wrap hero__grid">
+    <div class="hero__copy">
+      <h1 id="hero-title" class="display" data-i18n="hero.title">Proof behind every claim.</h1>
+      <p class="lede" data-i18n="hero.sub">Deep, verifiable research on foreign policy, conflict, history, law and international relations.</p>
+      <div class="cta-row">
+        <a class="btn" href="#sample" data-i18n="cta.sample">View sample research</a>
+        <a class="btn btn--ghost" href="#request" data-i18n="cta.request">Request a research project</a>
+      </div>
+    </div>
+
+    <div class="cluster" aria-hidden="true">
+      <div class="item poster drop" style="--r:-4deg;--d:.05s">
+        <div class="poster__card">
+          <div class="poster__word"><span>NO</span><span>TE</span><span>RA</span></div>
+          <i class="poster__dot"></i>
+        </div>
+        <i class="pin" data-pin="h-poster" data-to="h-letter h-photo" style="--x:84%;--y:87%"></i>
+      </div>
+
+      <figure class="item photo drop" style="--r:5deg;--d:.2s">
+        <div class="paper photo__frame">
+          <div class="halftone"><img src="assets/img/camp-david-1978.jpg" alt="" width="1280" height="853" loading="eager"></div>
+          <figcaption>Camp David, 1978</figcaption>
+        </div>
+        <span class="tape" style="--x:50%;--y:-10px;--tr:-4deg"></span>
+        <span class="stamp stamp--blue" style="right:10px;bottom:8px">Verified</span>
+        <i class="pin" data-pin="h-photo" data-to="h-clip" style="--x:50%;--y:6px"></i>
+      </figure>
+
+      <div class="item scan drop" style="--r:-6deg;--d:.35s">
+        <div class="paper scan__sheet"><img src="assets/img/carter-letter.jpg" alt="" width="960" height="1230"></div>
+        <i class="pin" data-pin="h-letter" data-to="h-map h-clip" style="--x:50%;--y:8px"></i>
+      </div>
+
+      <article class="item clip clip--fa drop" lang="fa" dir="rtl" style="--r:3deg;--d:.5s">
+        <div class="paper torn-a">
+          <div class="clip__mast">روزنامه</div>
+          <h3>کودتای ۲۸ مرداد</h3>
+          <p>دولت دکتر مصدق در ۲۸ مرداد ۱۳۳۲ سرنگون شد.</p>
+          <span class="clip__lines"></span>
+        </div>
+        <i class="pin" data-pin="h-clip" style="--x:50%;--y:8px"></i>
+      </article>
+
+      <div class="item map drop" style="--r:2deg;--d:.65s">
+        <div class="paper map__sheet">
+          <svg class="map__svg" data-map viewBox="0 0 320 214" role="presentation"></svg>
+          <span class="map__label">Plotting sheet</span>
+        </div>
+        <i class="pin" data-pin="h-map" data-to="d-conc" style="--x:88%;--y:6px"></i>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHAT YOU GET -->
+<section id="dossier" class="sec dossier" aria-labelledby="dossier-title">
+  <div class="wrap">
+    <div class="board">
+      <div class="board__head b-head" data-reveal>
+        <h2 id="dossier-title" class="h2" data-i18n="dossier.title">A research dossier, not a report.</h2>
+        <p class="sub" data-i18n="dossier.sub">Every engagement ends in a complete case file you can open, question and cite.</p>
+      </div>
+
+      <article class="item b-conc" style="--r:-1.5deg" data-reveal>
+        <div class="paper index">
+          <h3 data-i18n="d.conc">Conclusions</h3>
+          <p data-i18n="d.conc.t">Findings ranked by the strength of their evidence.</p>
+          <ul class="ranks">
+            <li><span class="chip chip--ok" data-i18n="chip.verified">Verified</span></li>
+            <li><span class="chip chip--warn" data-i18n="chip.contested">Contested</span></li>
+            <li><span class="chip chip--open" data-i18n="chip.open">Open question</span></li>
+          </ul>
+        </div>
+        <i class="pin" data-pin="d-conc" data-to="d-prim" style="--x:93%;--y:8px"></i>
+      </article>
+
+      <article class="item b-arch" style="--r:2deg" data-reveal>
+        <div class="paper scan__sheet"><img src="assets/img/carter-letter.jpg" alt="Declassified letter from President Carter to Ayatollah Khomeini, November 6, 1979" width="960" height="1230" loading="lazy"></div>
+        <div class="caption"><h3 data-i18n="d.arch">Archival documents</h3><p data-i18n="d.arch.t">Scans, cables, memos and PDFs.</p></div>
+        <i class="pin" data-pin="d-arch" data-to="d-quote" style="--x:7%;--y:8px"></i>
+      </article>
+
+      <article class="item b-chron" style="--r:1.2deg" data-reveal>
+        <div class="paper strip">
+          <h3 data-i18n="d.chron">Chronology</h3>
+          <p data-i18n="d.chron.t">Events placed on a dated timeline.</p>
+          <ol class="ticks" aria-hidden="true">
+            <li><b>1953</b></li><li><b>1968</b></li><li><b>1979</b></li><li><b>1985</b></li><li><b>1987</b></li>
+          </ol>
+        </div>
+        <i class="pin" data-pin="d-chron" data-to="d-av" style="--x:7%;--y:calc(100% - 10px)"></i>
+      </article>
+
+      <article class="item b-prim" style="--r:-2deg" data-reveal>
+        <div class="paper index index--blue">
+          <h3 data-i18n="d.prim">Primary sources</h3>
+          <p data-i18n="d.prim.t">Originals, linked beside every claim.</p>
+          <p class="mono cite"><i class="ph-bold ph-link"></i> archive.gov / NSC / 1979-11-06</p>
+        </div>
+        <i class="pin" data-pin="d-prim" data-to="d-arch" style="--x:93%;--y:8px"></i>
+      </article>
+
+      <article class="item b-quote" style="--r:2.2deg" data-reveal>
+        <div class="paper typed">
+          <div class="typed__mark" aria-hidden="true">&ldquo;</div>
+          <p class="typed__q">The people of the United States desire to have relations with Iran based upon equality, mutual respect, and friendship.</p>
+          <p class="typed__by">Jimmy Carter, November 6, 1979</p>
+          <h3 data-i18n="d.quote">Quotations</h3>
+          <p data-i18n="d.quote.t">Exact words, with page or minute.</p>
+        </div>
+        <i class="pin" data-pin="d-quote" data-to="d-unc" style="--x:7%;--y:8px"></i>
+      </article>
+
+      <article class="item b-av" style="--r:-2.4deg" data-reveal>
+        <div class="paper ticket">
+          <div class="ticket__top"><i class="ph-bold ph-play-circle"></i><span class="mono">00:14:32</span></div>
+          <div class="wave" data-wave aria-hidden="true"></div>
+          <h3 data-i18n="d.av">Audio and video</h3>
+          <p data-i18n="d.av.t">Clips cued to the exact timecode.</p>
+        </div>
+        <i class="pin" data-pin="d-av" data-to="t-tabs" style="--x:8%;--y:8px"></i>
+      </article>
+
+      <article class="item b-contra" style="--r:1deg" data-reveal>
+        <div class="paper memo">
+          <h3 data-i18n="d.contra">Contradictions</h3>
+          <p data-i18n="d.contra.t">Where sources disagree, side by side.</p>
+          <div class="memo__cols">
+            <p><b>Source A</b><span class="mono">March 1979</span></p>
+            <p><b>Source B</b><span class="mono">May 1979</span></p>
+          </div>
+          <span class="stamp stamp--red" style="right:14px;top:14px">Conflict</span>
+        </div>
+        <i class="pin" data-pin="d-contra" data-to="d-chron" style="--x:7%;--y:8px"></i>
+      </article>
+
+      <article class="item b-unc" style="--r:-3deg" data-reveal>
+        <div class="paper tag">
+          <div class="tag__q" aria-hidden="true">?</div>
+          <h3 data-i18n="d.unc">Uncertainties</h3>
+          <p data-i18n="d.unc.t">What is still unknown, stated plainly.</p>
+        </div>
+        <i class="pin" data-pin="d-unc" data-to="d-contra" style="--x:92%;--y:8px"></i>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- EVIDENCE TRAIL -->
+<section id="evidence" class="sec trail" aria-labelledby="trail-title">
+  <div class="wrap trail__grid">
+    <div class="trail__side">
+      <div data-reveal>
+        <h2 id="trail-title" class="h2" data-i18n="trail.title">Open any claim. See the proof.</h2>
+        <p class="sub" data-i18n="trail.sub">Each significant conclusion unfolds into evidence, and each piece of evidence into its original source.</p>
+      </div>
+      <div class="item tabs-item" style="--r:-1deg" data-reveal>
+        <div class="paper tabs" role="tablist" aria-label="Sample claims">
+          <button type="button" role="tab" id="tab-1" aria-controls="panel-1" aria-selected="true">
+            <span class="chip chip--ok" data-i18n="chip.verified">Verified</span>
+            <span data-i18n="c1.tab">Washington reached out to Tehran</span>
+          </button>
+          <button type="button" role="tab" id="tab-2" aria-controls="panel-2" aria-selected="false" tabindex="-1">
+            <span class="chip chip--ok" data-i18n="chip.verified">Verified</span>
+            <span data-i18n="c2.tab">A president changed his account</span>
+          </button>
+          <button type="button" role="tab" id="tab-3" aria-controls="panel-3" aria-selected="false" tabindex="-1">
+            <span class="chip chip--warn" data-i18n="chip.contested">Contested</span>
+            <span data-i18n="c3.tab">One sentence, two translations</span>
+          </button>
+        </div>
+        <i class="pin" data-pin="t-tabs" data-to="t-claim-1-i" style="--x:8%;--y:8px"></i>
+      </div>
+    </div>
+
+    <div class="trail__stage">
+      <!-- panel 1 -->
+      <div class="panel" role="tabpanel" id="panel-1" aria-labelledby="tab-1">
+        <article class="item p-claim" style="--r:-2deg">
+          <div class="paper index">
+            <h3 class="lbl" data-i18n="lbl.claim">Claim</h3>
+            <p class="claim" data-i18n="c1.claim">Within two days of the embassy seizure, Washington asked Tehran's new leadership for direct talks.</p>
+            <span class="chip chip--ok" data-i18n="chip.verified">Verified</span>
+          </div>
+          <i class="pin" data-pin="t-claim-1-i" style="--x:10%;--y:8px"></i><i class="pin" data-pin="t-claim-1-o" data-to="t-ev-1-i" style="--x:90%;--y:8px"></i>
+        </article>
+        <article class="item p-ev" style="--r:1.5deg">
+          <div class="paper typed">
+            <h3 class="lbl" data-i18n="lbl.evidence">Evidence</h3>
+            <p class="typed__q">&hellip;to discuss with you and your designees the situation in Tehran and the full range of current issues between the U.S. and Iran.</p>
+            <p class="typed__by">Letter dated November 6, 1979</p>
+          </div>
+          <i class="pin" data-pin="t-ev-1-i" style="--x:10%;--y:8px"></i><i class="pin" data-pin="t-ev-1-o" data-to="t-src-1-i" style="--x:90%;--y:8px"></i>
+        </article>
+        <article class="item p-src" style="--r:-1deg">
+          <div class="paper scan__sheet"><img src="assets/img/carter-letter.jpg" alt="Scan of the letter from President Carter to Ayatollah Khomeini" width="960" height="1230" loading="lazy"></div>
+          <div class="caption"><h3 class="lbl" data-i18n="lbl.source">Original source</h3><p data-i18n="c1.src">Carter to Khomeini, declassified NSC copy. Public domain.</p></div>
+          <i class="pin" data-pin="t-src-1-i" style="--x:10%;--y:8px"></i><i class="pin" data-pin="t-src-1-o" data-to="p-1" style="--x:90%;--y:8px"></i>
+        </article>
+      </div>
+
+      <!-- panel 2 -->
+      <div class="panel" role="tabpanel" id="panel-2" aria-labelledby="tab-2" hidden>
+        <article class="item p-claim" style="--r:1.5deg">
+          <div class="paper index">
+            <h3 class="lbl" data-i18n="lbl.claim">Claim</h3>
+            <p class="claim" data-i18n="c2.claim">In 1987 President Reagan conceded that the arms sales to Iran had turned into a trade for hostages.</p>
+            <span class="chip chip--ok" data-i18n="chip.verified">Verified</span>
+          </div>
+          <i class="pin" data-pin="t-claim-2-i" style="--x:10%;--y:8px"></i><i class="pin" data-pin="t-claim-2-o" data-to="t-ev-2-i" style="--x:90%;--y:8px"></i>
+        </article>
+        <article class="item p-ev" style="--r:-1.5deg">
+          <div class="paper typed">
+            <h3 class="lbl" data-i18n="lbl.evidence">Evidence</h3>
+            <p class="typed__q">My heart and my best intentions still tell me that's true, but the facts and the evidence tell me it is not.</p>
+            <p class="typed__by">Address to the Nation, March 4, 1987</p>
+          </div>
+          <i class="pin" data-pin="t-ev-2-i" style="--x:10%;--y:8px"></i><i class="pin" data-pin="t-ev-2-o" data-to="t-src-2-i" style="--x:90%;--y:8px"></i>
+        </article>
+        <article class="item p-src" style="--r:2deg">
+          <div class="paper photo__frame">
+            <div class="halftone"><img src="assets/img/reagan-1987.jpg" alt="President Reagan at the Oval Office desk during his March 1987 address" width="960" height="958" loading="lazy"></div>
+            <figcaption data-i18n="c2.src">Oval Office, March 1987</figcaption>
+          </div>
+          <span class="tape" style="--x:50%;--y:-10px;--tr:3deg"></span>
+          <i class="pin" data-pin="t-src-2-i" style="--x:10%;--y:6px"></i><i class="pin" data-pin="t-src-2-o" data-to="p-1" style="--x:90%;--y:6px"></i>
+        </article>
+      </div>
+
+      <!-- panel 3 -->
+      <div class="panel" role="tabpanel" id="panel-3" aria-labelledby="tab-3" hidden>
+        <article class="item p-claim" style="--r:-1.5deg">
+          <div class="paper index">
+            <h3 class="lbl" data-i18n="lbl.claim">Claim</h3>
+            <p class="claim" data-i18n="c3.claim">A 2005 remark about Israel circulates in two competing English renderings.</p>
+            <span class="chip chip--warn" data-i18n="chip.contested">Contested</span>
+          </div>
+          <i class="pin" data-pin="t-claim-3-i" style="--x:10%;--y:8px"></i><i class="pin" data-pin="t-claim-3-o" data-to="t-ev-3-i" style="--x:90%;--y:8px"></i>
+        </article>
+        <article class="item p-ev" style="--r:2deg">
+          <div class="paper typed">
+            <h3 class="lbl" data-i18n="lbl.evidence">Evidence</h3>
+            <p class="typed__q" data-i18n="c3.ev">Some outlets print &ldquo;wiped off the map&rdquo;. Other translators read &ldquo;vanish from the page of time&rdquo;.</p>
+            <p class="typed__by" data-i18n="c3.by">Both readings shown. Neither is chosen silently.</p>
+          </div>
+          <i class="pin" data-pin="t-ev-3-i" style="--x:10%;--y:8px"></i><i class="pin" data-pin="t-ev-3-o" data-to="t-src-3-i" style="--x:90%;--y:8px"></i>
+        </article>
+        <article class="item p-src" style="--r:-2deg">
+          <div class="paper typed original" lang="fa" dir="rtl">
+            <p class="original__fa">این رژیم اشغالگر قدس باید از صفحه روزگار محو شود</p>
+          </div>
+          <div class="caption"><h3 class="lbl" data-i18n="lbl.source">Original source</h3><p data-i18n="c3.src">Persian original, speech of October 26, 2005.</p></div>
+          <i class="pin" data-pin="t-src-3-i" style="--x:10%;--y:8px"></i><i class="pin" data-pin="t-src-3-o" data-to="p-1" style="--x:90%;--y:8px"></i>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section id="process" class="sec process" aria-labelledby="process-title">
+  <div class="wrap">
+    <div class="process__head" data-reveal>
+      <h2 id="process-title" class="h2" data-i18n="proc.title">From one question to a reviewed report.</h2>
+    </div>
+    <ol class="steps">
+      <li class="ask-wrap" aria-hidden="false">
+        <div class="item ask" style="--r:2.4deg" data-reveal>
+          <div class="paper typed">
+            <h3 class="lbl" data-i18n="ask.lbl">Your question</h3>
+            <p class="typed__q" data-i18n="ask.q">Who first called the United States the &ldquo;Great Satan&rdquo;, and when?</p>
+          </div>
+          <i class="pin" data-pin="ask" data-to="p-1" style="--x:8%;--y:8px"></i>
+        </div>
+      </li>
+      <li class="step" style="--i:0" data-reveal><i class="pin" data-pin="p-1" data-to="p-2" style="--x:0;--y:50%"></i><h3 data-i18n="s1">Ask</h3><p data-i18n="s1.t">You set the question and its boundaries.</p></li>
+      <li class="step" style="--i:1" data-reveal><i class="pin" data-pin="p-2" data-to="p-3" style="--x:0;--y:50%"></i><h3 data-i18n="s2">Fan out</h3><p data-i18n="s2.t">Dozens of research runs work in parallel.</p></li>
+      <li class="step" style="--i:2" data-reveal><i class="pin" data-pin="p-3" data-to="p-4" style="--x:0;--y:50%"></i><h3 data-i18n="s3">Verify</h3><p data-i18n="s3.t">Every source is checked for origin and reliability.</p></li>
+      <li class="step" style="--i:3" data-reveal><i class="pin" data-pin="p-4" data-to="p-5" style="--x:0;--y:50%"></i><h3 data-i18n="s4">Connect</h3><p data-i18n="s4.t">Findings join an evidence graph of claims and proof.</p></li>
+      <li class="step" style="--i:4" data-reveal><i class="pin" data-pin="p-5" data-to="p-6" style="--x:0;--y:50%"></i><h3 data-i18n="s5">Challenge</h3><p data-i18n="s5.t">An independent review tries to break the conclusions.</p></li>
+      <li class="step" style="--i:5" data-reveal><i class="pin" data-pin="p-6" data-to="x-1" style="--x:0;--y:50%"></i><h3 data-i18n="s6">Deliver</h3><p data-i18n="s6.t">The final report ships with every link intact.</p></li>
+    </ol>
+  </div>
+</section>
+
+<!-- SOURCES -->
+<section id="sources" class="sec sources" aria-labelledby="sources-title">
+  <div class="wrap">
+    <div data-reveal>
+      <h2 id="sources-title" class="h2" data-i18n="src.title">Every kind of public record.</h2>
+      <p class="sub" data-i18n="src.sub">Public sources only, from official texts to raw footage.</p>
+    </div>
+    <ul class="tags" data-reveal>
+      <li><i class="ph-bold ph-globe"></i><span data-i18n="tg.web">Web</span></li>
+      <li><i class="ph-bold ph-bank"></i><span data-i18n="tg.gov">Official documents</span></li>
+      <li><i class="ph-bold ph-graduation-cap"></i><span data-i18n="tg.acad">Academic work</span></li>
+      <li><i class="ph-bold ph-books"></i><span data-i18n="tg.books">Books and archives</span></li>
+      <li><i class="ph-bold ph-x-logo"></i><span data-i18n="tg.social">X and social media</span></li>
+      <li><i class="ph-bold ph-file-pdf"></i><span>PDF</span></li>
+      <li><i class="ph-bold ph-image"></i><span data-i18n="tg.img">Images</span></li>
+      <li><i class="ph-bold ph-microphone"></i><span data-i18n="tg.audio">Audio</span></li>
+      <li><i class="ph-bold ph-video-camera"></i><span data-i18n="tg.video">Video</span></li>
+    </ul>
+
+    <div class="spread" aria-hidden="true">
+      <article class="item clip clip--en" lang="en" style="--r:-3deg" data-reveal>
+        <div class="paper torn-b"><div class="clip__mast">DAILY RECORD</div><h3>Hostages seized in Tehran</h3><p>Militants stormed the U.S. embassy on November 4, 1979.</p><span class="clip__lines"></span></div>
+        <i class="pin" data-pin="x-1" data-to="x-2" style="--x:50%;--y:8px"></i>
+      </article>
+      <article class="item clip clip--he" lang="he" dir="rtl" style="--r:2.5deg" data-reveal>
+        <div class="paper torn-a"><div class="clip__mast">עיתון</div><h3>הסכמי קמפ דייוויד</h3><p>נחתמו בבית הלבן, 17 בספטמבר 1978.</p><span class="clip__lines"></span></div>
+        <i class="pin" data-pin="x-2" data-to="x-3" style="--x:50%;--y:8px"></i>
+      </article>
+      <article class="item clip clip--ru" lang="ru" style="--r:-1.8deg" data-reveal>
+        <div class="paper torn-c"><div class="clip__mast">ГАЗЕТА</div><h3>Шах покинул Иран</h3><p>Мохаммед Реза Пехлеви выехал из страны 16 января 1979 года.</p><span class="clip__lines"></span></div>
+        <i class="pin" data-pin="x-3" data-to="x-4" style="--x:50%;--y:8px"></i>
+      </article>
+      <article class="item clip clip--fr" lang="fr" style="--r:3.2deg" data-reveal>
+        <div class="paper torn-b"><div class="clip__mast">JOURNAL</div><h3>Le Shah a quitt&eacute; l'Iran</h3><p>Le souverain a quitt&eacute; T&eacute;h&eacute;ran le 16 janvier 1979.</p><span class="clip__lines"></span></div>
+        <i class="pin" data-pin="x-4" data-to="x-5" style="--x:50%;--y:8px"></i>
+      </article>
+      <article class="item clip clip--ar" lang="ar" dir="rtl" style="--r:-2.6deg" data-reveal>
+        <div class="paper torn-c"><div class="clip__mast">جريدة</div><h3>اتفاقيات كامب ديفيد</h3><p>وُقّعت الاتفاقيات في واشنطن في 17 سبتمبر 1978.</p><span class="clip__lines"></span></div>
+        <i class="pin" data-pin="x-5" data-to="x-6" style="--x:50%;--y:8px"></i>
+      </article>
+      <article class="item clip clip--de" lang="de" style="--r:1.6deg" data-reveal>
+        <div class="paper torn-a"><div class="clip__mast">ZEITUNG</div><h3>Geiselnahme in Teheran</h3><p>Studenten besetzten am 4. November 1979 die US-Botschaft.</p><span class="clip__lines"></span></div>
+        <i class="pin" data-pin="x-6" data-to="n-1" style="--x:50%;--y:8px"></i>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- SAMPLE -->
+<section id="sample" class="sec sample" aria-labelledby="sample-title">
+  <div class="wrap">
+    <div class="sample__head" data-reveal>
+      <p class="eyebrow" data-i18n="sample.eyebrow">Sample research</p>
+      <h2 id="sample-title" class="h2 h2--xl" data-i18n="sample.title">Iran, Israel and the United States.</h2>
+      <p class="sub" data-i18n="sample.sub">How the conflict was built: the Great and Little Satan rhetoric, ideology, security calculations and the quiet periods of cooperation.</p>
+    </div>
+
+    <div class="casefile">
+      <article class="item n n-1" style="--r:-2deg" data-reveal>
+        <div class="paper photo__frame">
+          <div class="halftone"><img src="assets/img/mosaddegh.jpg" alt="Portrait of Mohammad Mosaddegh" width="960" height="1288" loading="lazy"></div>
+          <figcaption>1953</figcaption>
+        </div>
+        <div class="note"><h3 data-i18n="n1.h">A coup removes Mosaddegh</h3><p data-i18n="n1.t">US and British intelligence backed the operation against the prime minister.</p><span class="chip chip--ok" data-i18n="chip.verified">Verified</span></div>
+        <span class="tape" style="--x:50%;--y:-10px;--tr:-3deg"></span>
+        <i class="pin" data-pin="n-1" data-to="n-2" style="--x:50%;--y:6px"></i>
+      </article>
+
+      <article class="item n n-2" style="--r:1.8deg" data-reveal>
+        <div class="paper index index--blue">
+          <p class="date">1968</p>
+          <h3 data-i18n="n2.h">Iran and Israel co-found a pipeline company</h3>
+          <p data-i18n="n2.t">Quiet partnership under the Shah, driven by oil and shared security concerns.</p>
+          <span class="chip chip--ok" data-i18n="chip.verified">Verified</span>
+        </div>
+        <i class="pin" data-pin="n-2" data-to="n-3" style="--x:50%;--y:8px"></i>
+      </article>
+
+      <article class="item n n-3" style="--r:-1.6deg" data-reveal>
+        <div class="paper photo__frame">
+          <div class="halftone"><img src="assets/img/nixon-shah-1973.jpg" alt="President Nixon and the Shah of Iran in the Oval Office" width="1280" height="844" loading="lazy"></div>
+          <figcaption>Nixon and the Shah</figcaption>
+        </div>
+        <div class="note"><h3 data-i18n="n3.h">Tehran, Washington's regional partner</h3><p data-i18n="n3.t">Security ties that later fed the revolution's anti-American language.</p><span class="chip chip--ok" data-i18n="chip.verified">Verified</span></div>
+        <span class="tape" style="--x:50%;--y:-10px;--tr:2deg"></span>
+        <i class="pin" data-pin="n-3" data-to="n-4" style="--x:50%;--y:6px"></i>
+      </article>
+
+      <article class="item n n-4" style="--r:2.2deg" data-reveal>
+        <div class="paper index">
+          <p class="date">1979</p>
+          <h3 data-i18n="n4.h">Revolution, hostages, and a new vocabulary</h3>
+          <p data-i18n="n4.t">The United States becomes the &ldquo;Great Satan&rdquo;. Israel, the &ldquo;Little Satan&rdquo;. First documented use of each term is still being traced.</p>
+          <span class="chip chip--open" data-i18n="chip.open">Open question</span>
+        </div>
+        <i class="pin" data-pin="n-4" data-to="n-5" style="--x:50%;--y:8px"></i>
+      </article>
+
+      <article class="item n n-5" style="--r:-2.2deg" data-reveal>
+        <div class="paper typed">
+          <p class="date">1980s</p>
+          <h3 data-i18n="n5.h">Hostile in public, supplied in private</h3>
+          <p data-i18n="n5.t">During the war with Iraq, arms reached Iran through Israeli channels. The scale is disputed.</p>
+          <span class="chip chip--warn" data-i18n="chip.contested">Contested</span>
+        </div>
+        <i class="pin" data-pin="n-5" data-to="n-6" style="--x:50%;--y:8px"></i>
+      </article>
+
+      <article class="item n n-6" style="--r:1.4deg" data-reveal>
+        <div class="paper photo__frame">
+          <div class="halftone"><img src="assets/img/reagan-1987.jpg" alt="President Reagan addressing the nation on Iran-Contra" width="960" height="958" loading="lazy"></div>
+          <figcaption>1987</figcaption>
+        </div>
+        <div class="note"><h3 data-i18n="n6.h">Iran-Contra reaches the Oval Office</h3><p data-i18n="n6.t">Secret arms sales to Tehran, publicly acknowledged.</p><span class="chip chip--ok" data-i18n="chip.verified">Verified</span></div>
+        <span class="tape" style="--x:50%;--y:-10px;--tr:-2deg"></span>
+        <i class="pin" data-pin="n-6" data-to="a-1" style="--x:50%;--y:6px"></i>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- AUDIENCE -->
+<section id="audience" class="sec audience" aria-labelledby="aud-title">
+  <div class="wrap">
+    <h2 id="aud-title" class="h2" data-reveal data-i18n="aud.title">Built for people who have to be right.</h2>
+    <ul class="rows">
+      <li data-reveal><i class="pin" data-pin="a-1" data-to="a-2" style="--x:0;--y:50%"></i><h3 data-i18n="a1">Journalists</h3><p data-i18n="a1.t">Check a story against primary documents.</p></li>
+      <li data-reveal><i class="pin" data-pin="a-2" data-to="a-3" style="--x:0;--y:50%"></i><h3 data-i18n="a2">YouTube and media authors</h3><p data-i18n="a2.t">Script from sources you can show on screen.</p></li>
+      <li data-reveal><i class="pin" data-pin="a-3" data-to="a-4" style="--x:0;--y:50%"></i><h3 data-i18n="a3">Researchers</h3><p data-i18n="a3.t">Start from a mapped base of evidence.</p></li>
+      <li data-reveal><i class="pin" data-pin="a-4" data-to="a-5" style="--x:0;--y:50%"></i><h3 data-i18n="a4">Analysts</h3><p data-i18n="a4.t">Brief decision makers with claims that hold.</p></li>
+      <li data-reveal><i class="pin" data-pin="a-5" data-to="f-1" style="--x:0;--y:50%"></i><h3 data-i18n="a5">Companies</h3><p data-i18n="a5.t">Assess political and legal exposure with proof.</p></li>
+    </ul>
+  </div>
+</section>
+
+<!-- FORMATS + PRINCIPLE -->
+<section id="principle" class="sec principle" aria-labelledby="prin-title">
+  <div class="wrap">
+    <h2 id="prin-title" class="h2" data-reveal data-i18n="prin.title">Delivered two ways. Reviewed three times.</h2>
+    <div class="prin__grid">
+      <div class="formats">
+        <article class="item fmt fmt--web" style="--r:-2deg" data-reveal>
+          <div class="paper window">
+            <div class="window__bar"><i></i><i></i><i></i></div>
+            <div class="window__body">
+              <h3 data-i18n="f1">Interactive dossier</h3>
+              <p data-i18n="f1.t">Browse claims, evidence, timeline and originals online.</p>
+              <div class="window__rows" aria-hidden="true">
+                <span class="chip chip--ok" data-i18n="chip.verified">Verified</span>
+                <span class="chip chip--warn" data-i18n="chip.contested">Contested</span>
+                <span class="chip chip--open" data-i18n="chip.open">Open question</span>
+              </div>
+            </div>
+          </div>
+          <i class="pin" data-pin="f-1" data-to="f-2" style="--x:6%;--y:8px"></i>
+        </article>
+        <article class="item fmt fmt--pdf" style="--r:3deg" data-reveal>
+          <div class="paper sheet">
+            <span class="sheet__badge">PDF</span>
+            <h3 data-i18n="f2">PDF and export</h3>
+            <p data-i18n="f2.t">A clean, citable copy for editors and clients.</p>
+          </div>
+          <i class="pin" data-pin="f-2" data-to="g-1" style="--x:88%;--y:8px"></i>
+        </article>
+      </div>
+
+      <div class="gates" data-reveal>
+        <p class="sub sub--wide" data-i18n="prin.sub">AI speeds up search and processing. Important conclusions still pass verification, red-team challenge and human review.</p>
+        <ol class="gates__list">
+          <li><i class="pin" data-pin="g-1" data-to="g-2" style="--x:0;--y:50%"></i><h3 data-i18n="g1">Evidence check</h3><p data-i18n="g1.t">Each claim is matched to a primary source.</p></li>
+          <li><i class="pin" data-pin="g-2" data-to="g-3" style="--x:0;--y:50%"></i><h3 data-i18n="g2">Red-team</h3><p data-i18n="g2.t">A separate reviewer argues the opposite case.</p></li>
+          <li><i class="pin" data-pin="g-3" data-to="r-1" style="--x:0;--y:50%"></i><h3 data-i18n="g3">Human review</h3><p data-i18n="g3.t">A person signs off before anything ships.</p></li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- REQUEST -->
+<section id="request" class="sec request" aria-labelledby="req-title">
+  <div class="wrap request__grid">
+    <div data-reveal>
+      <h2 id="req-title" class="h2 h2--xl" data-i18n="req.title">Bring us a question.</h2>
+      <p class="sub" data-i18n="req.sub">Tell us what needs to be proven. We will scope the research around it.</p>
+    </div>
+    <form class="item form" style="--r:1deg" data-reveal id="request-form" novalidate>
+      <div class="paper index">
+        <label for="brief" data-i18n="req.label">What should we investigate?</label>
+        <textarea id="brief" name="brief" rows="5" required></textarea>
+        <p class="form__err" id="brief-err" role="alert" hidden data-i18n="req.err">Describe the question in a sentence or two.</p>
+        <button type="submit" class="btn" data-i18n="cta.request">Request a research project</button>
+      </div>
+      <i class="pin" data-pin="r-1" style="--x:50%;--y:8px"></i>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer class="foot">
+  <div class="wrap foot__grid">
+    <a class="foot__brand" href="#top">NOTERA<i class="nav__dot"></i></a>
+    <p class="foot__note" data-i18n="foot.note">Illustrative board. Photographs are public domain, sourced via Wikimedia Commons. Newspaper clippings are typographic illustrations, not reproductions.</p>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
