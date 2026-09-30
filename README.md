@@ -2,6 +2,8 @@
 
 Landing page for NOTERA, a platform for deep, verifiable historical, geopolitical and OSINT research. Every significant conclusion opens to evidence and the original source.
 
+Live: <https://phnem.github.io/NOTERA/> (GitHub Pages, served from `main`).
+
 Static site: no build step.
 
 ```bash
@@ -48,7 +50,7 @@ Everything is self-hosted, no third-party requests.
 
 - `css/fonts.css` and `assets/fonts/`: Google Fonts subsets (latin, cyrillic, arabic, hebrew) for Dela Gothic One, Unbounded, Onest, Old Standard TT, IBM Plex Mono, Vazirmatn, Amiri and Frank Ruhl Libre. All are open-licensed (OFL or Apache-2.0).
 - `assets/vendor/phosphor/`: Phosphor Icons (bold), MIT.
-- `assets/tex/`: paper and board textures generated procedurally for this project.
+- `assets/tex/`: paper texture generated procedurally for this project.
 
 ## Placeholders
 

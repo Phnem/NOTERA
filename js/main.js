@@ -94,11 +94,32 @@
   }
   $$('.lang button').forEach(b => b.addEventListener('click', () => applyLang(b.dataset.lang)));
 
+  /* -------------------------------------------------------------- reveal setup */
+  /* Papers swing about their own pin, so the pin stays put while the card settles. */
+  $$('.item').forEach(it => {
+    const pin = it.querySelector(':scope > .pin');
+    if (!pin) return;
+    it.style.setProperty('--ox', pin.style.getPropertyValue('--x') || '50%');
+    it.style.setProperty('--oy', pin.style.getPropertyValue('--y') || '0');
+  });
+  /* Text rises inside its wrapper (never the wrapper itself, which owns the pin anchors). */
+  const RISE = '.h2, .sub, .eyebrow, .step h3, .step p, .rows h3, .rows p, .gates__list h3, .gates__list p, .tags li, .note, .caption, .foot__row > *, .foot__note';
+  $$(RISE).forEach(e => e.classList.add('rise'));
+  $$('.step h3').forEach(e => e.classList.add('rise--left'));
+  $$('.rise').forEach(e => {
+    const sibs = Array.from(e.parentElement.children).filter(c => c.classList.contains('rise'));
+    e.style.setProperty('--rd', Math.min(sibs.indexOf(e) * 0.08, 0.6).toFixed(2) + 's');
+  });
+  $$('.ticks li, .window__rows .chip, .ranks .chip').forEach((e, _i, all) => {
+    const idx = Array.from(e.parentElement.children).indexOf(e);
+    e.style.setProperty('--i', idx);
+  });
+
   /* -------------------------------------------------------------- reveal */
   const revealIO = new IntersectionObserver((entries) => {
     entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); revealIO.unobserve(e.target); } });
   }, { threshold: 0.12, rootMargin: '0px 0px -6% 0px' });
-  $$('[data-reveal]').forEach(el => revealIO.observe(el));
+  $$('[data-reveal], .rise').forEach(el => revealIO.observe(el));
 
   /* ---------------------------------------------------------------- tabs */
   const tabs = $$('[role="tab"]');
@@ -131,6 +152,7 @@
       const h = 18 + Math.abs(Math.sin(i * 0.7) * 34 + Math.sin(i * 1.9) * 26 + Math.cos(i * 0.31) * 18);
       const bar = document.createElement('i');
       bar.style.setProperty('--h', Math.min(100, h).toFixed(0) + '%');
+      bar.style.setProperty('--i', i);
       wave.appendChild(bar);
     }
   }
@@ -188,33 +210,80 @@
     return n;
   }
 
-  /* Pin artwork: base disc, glossy dome, specular highlight, contact shadow. Drawn once, reused via <use>. */
+  /* Pin artwork: matte flat-head push pin with a few turns of twine at the neck. Drawn once, reused via <use>. */
   function pinDefs(defs) {
     const rg = (id, attrs, stops) => {
       const g = el('radialGradient', Object.assign({ id }, attrs), defs);
       stops.forEach(([o, c, a]) => el('stop', { offset: o, 'stop-color': c, 'stop-opacity': a ?? 1 }, g));
     };
-    rg('pgShadow', { cx: '50%', cy: '50%', r: '50%' }, [['0', '#000', .5], ['.6', '#000', .22], ['1', '#000', 0]]);
-    rg('pgBase', { cx: '40%', cy: '32%', r: '80%' }, [['0', '#c8351b'], ['.7', '#8e1a08'], ['1', '#4d0c02']]);
-    rg('pgDome', { cx: '34%', cy: '28%', r: '82%' }, [['0', '#ffb7a2'], ['.22', '#ff6a49'], ['.6', '#e8401f'], ['1', '#8a1606']]);
+    rg('pgShadow', { cx: '50%', cy: '50%', r: '50%' }, [['0', '#000', .5], ['.6', '#000', .2], ['1', '#000', 0]]);
+    rg('pgTop', { cx: '36%', cy: '30%', r: '85%' }, [['0', '#ea5a3e'], ['.5', '#d13a22'], ['1', '#a52a15']]);
+    rg('pgSide', { cx: '50%', cy: '20%', r: '90%' }, [['0', '#a02412'], ['1', '#5e0f06']]);
     const t = el('linearGradient', { id: 'pgNeedle', x1: '0', x2: '1', y1: '0', y2: '0' }, defs);
-    [['0', '#7d7d7d'], ['.45', '#f1f1f1'], ['1', '#5c5c5c']].forEach(([o, c]) => el('stop', { offset: o, 'stop-color': c }, t));
+    [['0', '#6f6f6f'], ['.45', '#e9e9e9'], ['1', '#555']].forEach(([o, c]) => el('stop', { offset: o, 'stop-color': c }, t));
 
     const pin = el('g', { id: 'pin3d' }, defs);
-    el('ellipse', { cx: 6, cy: 10, rx: 15, ry: 7, fill: 'url(#pgShadow)', transform: 'rotate(18 6 10)' }, pin);
-    el('rect', { x: -1.1, y: -2, width: 2.2, height: 10, rx: 1, fill: 'url(#pgNeedle)', transform: 'rotate(-14)' }, pin);
-    el('ellipse', { cx: 0, cy: 1.2, rx: 10, ry: 8.6, fill: 'url(#pgBase)' }, pin);
-    el('ellipse', { cx: 0, cy: 1.2, rx: 10, ry: 8.6, fill: 'none', stroke: 'rgba(255,140,110,.35)', 'stroke-width': .7 }, pin);
-    el('ellipse', { cx: 0, cy: -1.8, rx: 7.6, ry: 7.2, fill: 'url(#pgDome)' }, pin);
-    el('path', { d: 'M-6.4 -0.4 A7.4 7 0 0 0 6.6 0.2 A8.4 6.2 0 0 1 -6.4 -0.4Z', fill: 'rgba(90,8,0,.28)' }, pin);
-    el('ellipse', { cx: -2.7, cy: -5, rx: 2.8, ry: 1.6, fill: 'rgba(255,255,255,.88)', transform: 'rotate(-28 -2.7 -5)' }, pin);
-    el('circle', { cx: 3.6, cy: 1.6, r: 1.1, fill: 'rgba(255,170,140,.45)' }, pin);
+    el('ellipse', { cx: 7, cy: 11, rx: 16, ry: 7, fill: 'url(#pgShadow)', transform: 'rotate(20 7 11)' }, pin);
+    el('rect', { x: -1, y: 0, width: 2, height: 11, rx: 1, fill: 'url(#pgNeedle)', transform: 'rotate(-16)' }, pin);
+    /* twine turns around the neck */
+    el('ellipse', { cx: 0, cy: 5.2, rx: 6.6, ry: 2.6, fill: 'none', stroke: '#6b120a', 'stroke-width': 3.4 }, pin);
+    el('ellipse', { cx: 0, cy: 5.2, rx: 6.6, ry: 2.6, fill: 'none', stroke: '#b0281c', 'stroke-width': 2.4 }, pin);
+    el('ellipse', { cx: 0, cy: 3.4, rx: 6.4, ry: 2.5, fill: 'none', stroke: '#6b120a', 'stroke-width': 3.2 }, pin);
+    el('ellipse', { cx: 0, cy: 3.4, rx: 6.4, ry: 2.5, fill: 'none', stroke: '#c03222', 'stroke-width': 2.2 }, pin);
+    /* head: side band then flat top */
+    el('ellipse', { cx: 0, cy: 1.4, rx: 8.6, ry: 6.4, fill: 'url(#pgSide)' }, pin);
+    el('ellipse', { cx: 0, cy: -1.4, rx: 8.6, ry: 6.4, fill: 'url(#pgTop)' }, pin);
+    el('ellipse', { cx: 0, cy: -1.4, rx: 8.6, ry: 6.4, fill: 'none', stroke: 'rgba(255,190,165,.38)', 'stroke-width': .8 }, pin);
+    el('ellipse', { cx: -2.6, cy: -3.4, rx: 3, ry: 1.5, fill: 'rgba(255,255,255,.16)', transform: 'rotate(-24 -2.6 -3.4)' }, pin);
+  }
+
+  /* Twine geometry. Tiny slanted strokes along a quadratic curve read as the twist of laid strands. */
+  function hashStr(str) { let h = 2166136261; for (let k = 0; k < str.length; k++) { h ^= str.charCodeAt(k); h = Math.imul(h, 16777619); } return h >>> 0; }
+  function seeded(seed) {
+    let t = seed >>> 0;
+    return () => { t += 0x6D2B79F5; let r = Math.imul(t ^ (t >>> 15), 1 | t); r ^= r + Math.imul(r ^ (r >>> 7), 61 | r); return ((r ^ (r >>> 14)) >>> 0) / 4294967296; };
+  }
+  const SMALL = matchMedia('(max-width: 700px)').matches;
+  function twine(a, c, b, dist, key) {
+    const rnd = seeded(hashStr(key));
+    const step = SMALL ? 3.6 : 2.7;
+    const n = Math.max(6, Math.ceil(dist * 1.06 / step));
+    const half = 2.25;
+    let groove = '', ridge = '', ridge2 = '', fuzz = '';
+    const seg = (x, y, nx, ny, tx, ty, w, lean) =>
+      `M${(x - nx * w - tx * lean).toFixed(1)} ${(y - ny * w - ty * lean).toFixed(1)}L${(x + nx * w + tx * lean).toFixed(1)} ${(y + ny * w + ty * lean).toFixed(1)}`;
+    for (let k = 0; k <= n; k++) {
+      const t = k / n, u = 1 - t;
+      const x = u * u * a.x + 2 * u * t * c.x + t * t * b.x, y = u * u * a.y + 2 * u * t * c.y + t * t * b.y;
+      let tx = 2 * u * (c.x - a.x) + 2 * t * (b.x - c.x), ty = 2 * u * (c.y - a.y) + 2 * t * (b.y - c.y);
+      const tl = Math.hypot(tx, ty) || 1; tx /= tl; ty /= tl;
+      const nx = -ty, ny = tx;
+      /* strands lean about 50 degrees off the cross-section; every segment is slightly irregular */
+      const lean = half * (1.05 + (rnd() - 0.5) * 0.5);
+      const jitter = (rnd() - 0.5) * step * 0.55;
+      groove += seg(x + tx * jitter, y + ty * jitter, nx, ny, tx, ty, half * (0.8 + rnd() * 0.22), lean);
+      const o = step * (0.42 + rnd() * 0.16);
+      ridge += seg(x + tx * o, y + ty * o, nx, ny, tx, ty, half * (0.62 + rnd() * 0.25), lean * 0.9);
+      if (rnd() < 0.45) ridge2 += seg(x + tx * step * 0.8, y + ty * step * 0.8, nx, ny, tx, ty, half * 0.5, lean * 1.1);
+      if (!SMALL) {
+        const hairs = rnd() < 0.7 ? 1 : 0;
+        for (let h = 0; h < hairs; h++) {
+          const side = rnd() < 0.5 ? -1 : 1, len = 1.2 + rnd() * 2.4, ang = 0.7 + rnd() * 0.7;   // mostly lying along the strand
+          const sx = x + nx * side * half * (0.75 + rnd() * 0.3), sy = y + ny * side * half * (0.75 + rnd() * 0.3);
+          const dx = nx * side * Math.sin(ang) * 0.6 + tx * Math.cos(ang) * (rnd() < 0.5 ? 1 : -1);
+          const dy = ny * side * Math.sin(ang) * 0.6 + ty * Math.cos(ang) * (rnd() < 0.5 ? 1 : -1);
+          fuzz += `M${sx.toFixed(1)} ${sy.toFixed(1)}L${(sx + dx * len).toFixed(1)} ${(sy + dy * len).toFixed(1)}`;
+        }
+      }
+    }
+    return { groove, ridge, ridge2, fuzz };
   }
 
   function build() {
     const doc = document.documentElement;
-    const W = doc.clientWidth, H = Math.max(doc.scrollHeight, document.body.scrollHeight);
     const sx = window.scrollX, sy = window.scrollY;
+    /* measured from the footer, not scrollHeight, so the overlay can never inflate its own size */
+    const W = doc.clientWidth, H = Math.ceil($('.foot').getBoundingClientRect().bottom + sy);
 
     const pins = new Map();
     $$('[data-pin]').forEach(a => {
@@ -265,9 +334,18 @@
         if (instant) { reveal.style.transition = 'none'; reveal.classList.add('drawn'); }
 
         const g = el('g', { mask: `url(#${maskId})` }, links);
-        ['t-sh1', 't-sh2', 't-body', 't-shade', 't-twist', 't-hl'].forEach(cls => el('path', { class: cls, d }, g));
+        const tw = twine(a, { x: cx, y: cy }, b, dist, key);
+        ['t-sh1', 't-sh2', 't-rim', 't-body'].forEach(cls => el('path', { class: cls, d }, g));
+        /* fine strand detail is the expensive part: it only switches on once the thread has finished drawing */
+        const det = el('g', { class: 'tw-detail' }, g);
+        el('path', { class: 't-groove', d: tw.groove }, det);
+        el('path', { class: 't-ridge', d: tw.ridge }, det);
+        if (tw.ridge2) el('path', { class: 't-ridge2', d: tw.ridge2 }, det);
+        el('path', { class: 't-hl', d }, det);
+        if (tw.fuzz) el('path', { class: 't-fuzz', d: tw.fuzz }, det);
+        if (instant) g.classList.add('done');
 
-        groups.push({ reveal, key, ids: [id0, tid], y: a.y });
+        groups.push({ reveal, g, key, ids: [id0, tid], y: a.y, dur: parseFloat(reveal.style.transitionDuration) || 1 });
         used.set(id0, a0); used.set(tid, b0);
       });
     });
@@ -282,7 +360,8 @@
     });
 
     const show = (grp, now) => {
-      if (now) grp.reveal.style.transition = 'none';
+      if (now) { grp.reveal.style.transition = 'none'; grp.g.classList.add('done'); }
+      else setTimeout(() => grp.g.classList.add('done'), grp.dur * 1000 + 120);
       grp.reveal.classList.add('drawn');
       drawn.add(grp.key);
       grp.ids.forEach(i => {
