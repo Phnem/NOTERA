@@ -19,16 +19,29 @@ Then open <http://localhost:8000>.
 | `index.html` | All sections and English copy |
 | `css/styles.css` | Design tokens, layout, responsive rules |
 | `js/main.js` | EN/RU switch, evidence tabs, red-thread overlay, request form |
+| `projects/`, `css/pages.css`, `js/pages.js`, `js/projects.js`, `js/report.js` | Project list and report reader |
 | `assets/img/` | Public-domain photographs and a declassified document scan |
 
 ## Configuration
 
-- `CONTACT_EMAIL` in `js/main.js`: address that receives research requests from the form (it opens the visitor's mail client). Empty by default.
-- Russian copy lives in the `RU` dictionary in `js/main.js`. English stays in the markup.
+- Research requests: GitHub Pages has no server, so the form posts to [Web3Forms](https://web3forms.com), which emails each request (question + reply address) to the inbox that owns the access key. Create a key there with your inbox and put it in `FORM_ACCESS_KEY` in `js/main.js`; the key is public by design. Without a key the form opens the visitor's mail client addressed to `CONTACT_EMAIL`.
+- Russian copy lives in the `RU` dictionary in `js/main.js` (landing) and in `js/pages.js` (projects and reports).
+
+## Projects
+
+`projects/` lists `projects/projects.json`; each project lives in `projects/<slug>/` and is produced from an audited publication by the researcher repo:
+
+```bash
+uv run --no-sync python scripts/export_site_project.py <RUN_ID> <slug> --visibility public
+```
+
+For `--visibility closed`, set `NOTERA_PROJECT_PASSWORD` first. The report and every material are encrypted with AES-256-GCM under a PBKDF2-SHA256 key (600k iterations); the password is never written. Making a published project closed later does not remove its earlier public files from git history.
+
+The reader (`projects/_report.html`, `js/report.js`) marks sourced words with small citation bubbles: a number for quotations, icons for images, video, audio and documents, stacked when one passage has several kinds. A bubble opens a floating source panel with the quotation, its author and a copy button, image previews that open full size with download, and document downloads. Saved HTML pages ship as plain text so archived scripts never run on the site.
 
 ## How the thread works
 
-Every `data-pin` element is an anchor. `data-to` lists the pins it connects to. `js/main.js` measures the anchors and draws sagging red threads and pin heads in one SVG overlay, then redraws on resize, language change and tab change. Threads draw in as they scroll into view and are static under `prefers-reduced-motion`.
+Every `data-pin` element is an anchor. `data-to` lists the pins it connects to. `js/main.js` measures the anchors and draws sagging red threads and pin heads in one SVG overlay, then redraws on resize, language change and tab change. Threads draw in as they scroll into view and are static under `prefers-reduced-motion`. A thread carries a mask only while it draws; in-page links settle everything on the way first and hide fibre detail until the scroll ends, so jumps do not replay dozens of animations at once.
 
 ## Image credits
 
@@ -54,5 +67,4 @@ Everything is self-hosted, no third-party requests.
 
 ## Placeholders
 
-- `CONTACT_EMAIL` in `js/main.js` is empty until the request address is decided.
-- "Find a project" does nothing yet. Set `FIND_PROJECT_URL` in `js/main.js` when project search exists.
+- `FORM_ACCESS_KEY` and `CONTACT_EMAIL` in `js/main.js` are empty until the request inbox is decided.

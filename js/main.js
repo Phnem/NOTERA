@@ -1,10 +1,13 @@
 (() => {
   'use strict';
 
-  /* Set the address that should receive research requests. Empty opens a blank "To:" line. */
+  /* Request delivery. GitHub Pages has no server, so the form posts to Web3Forms, which emails the
+     request to the address registered for FORM_ACCESS_KEY (the key is public by design).
+     Without a key the form falls back to the visitor's mail client addressed to CONTACT_EMAIL. */
+  const FORM_ENDPOINT = 'https://api.web3forms.com/submit';
+  const FORM_ACCESS_KEY = '';
   const CONTACT_EMAIL = '';
-  /* Where "Find a project" should lead once project search exists. Empty keeps the button inert. */
-  const FIND_PROJECT_URL = '';
+  const FIND_PROJECT_URL = 'projects/';
 
   const $ = (s, r = document) => r.querySelector(s);
   const $$ = (s, r = document) => Array.from(r.querySelectorAll(s));
@@ -13,8 +16,8 @@
   /* ---------------------------------------------------------------- i18n */
   /* English lives in the markup; only Russian is stored here. */
   const RU = {
-    'nav.deliver': 'Что вы получаете', 'nav.how': 'Как это работает', 'nav.sources': 'Источники', 'nav.sample': 'Пример',
-    'cta.request': 'Заказать исследование', 'cta.find': 'Найти проект', 'cta.sample': 'Смотреть пример исследования',
+    'nav.deliver': 'Что вы получаете', 'nav.how': 'Как это работает', 'nav.sources': 'Источники', 'nav.projects': 'Проекты',
+    'cta.request': 'Заказать исследование', 'cta.find': 'Найти проект', 'cta.projects': 'Проекты',
     'hero.title': 'Каждый вывод подтверждён.',
     'hero.sub': 'Глубокие проверяемые исследования внешней политики, конфликтов, истории, права и международных отношений.',
     'dossier.title': 'Досье, а не отчёт.',
@@ -52,15 +55,6 @@
     'src.sub': 'Только открытые источники: от официальных текстов до сырой съёмки.',
     'tg.web': 'Веб', 'tg.gov': 'Официальные документы', 'tg.acad': 'Научные работы', 'tg.books': 'Книги и архивы',
     'tg.social': 'X и соцсети', 'tg.img': 'Изображения', 'tg.audio': 'Аудио', 'tg.video': 'Видео',
-    'sample.eyebrow': 'Пример исследования',
-    'sample.title': 'Иран, Израиль и США.',
-    'sample.sub': 'Как строился конфликт: риторика «Большого» и «Малого сатаны», идеология, расчёты безопасности и тихие периоды сотрудничества.',
-    'n1.h': 'Переворот против Мосаддыка', 'n1.t': 'Спецслужбы США и Британии поддержали операцию против премьер-министра.',
-    'n2.h': 'Иран и Израиль основывают нефтепроводную компанию', 'n2.t': 'Тихое партнёрство при шахе: нефть и общие соображения безопасности.',
-    'n3.h': 'Тегеран как региональный партнёр Вашингтона', 'n3.t': 'Связи в сфере безопасности, из которых позже выросла антиамериканская риторика революции.',
-    'n4.h': 'Революция, заложники и новый словарь', 'n4.t': 'США становятся «Большим сатаной», Израиль «Малым сатаной». Первое зафиксированное употребление каждого термина ещё устанавливается.',
-    'n5.h': 'Враждебны публично, поставки тайно', 'n5.t': 'Во время войны с Ираком оружие шло в Иран через израильские каналы. Масштаб оспаривается.',
-    'n6.h': 'Иран-контрас доходит до Овального кабинета', 'n6.t': 'Тайные продажи оружия Тегерану, признанные публично.',
     'aud.title': 'Для тех, кому нельзя ошибаться.',
     'a1': 'Журналисты', 'a1.t': 'Сверка материала с первичными документами.',
     'a2': 'YouTube и медиаавторы', 'a2.t': 'Сценарий из источников, которые можно показать в кадре.',
@@ -77,8 +71,21 @@
     'req.sub': 'Скажите, что нужно доказать. Мы выстроим исследование вокруг этого.',
     'req.label': 'Что нужно исследовать?',
     'req.err': 'Опишите вопрос одним-двумя предложениями.',
+    'req.email': 'Почта для ответа',
+    'req.emailErr': 'Укажите адрес, на который можно ответить.',
+    'req.note': 'Почта нужна только для ответа на эту заявку.',
+    'req.sending': 'Отправляем…',
+    'req.sent': 'Заявка отправлена. Мы ответим на указанную почту.',
+    'req.failed': 'Не удалось отправить. Попробуйте ещё раз или напишите нам письмом.',
     'foot.note': 'Иллюстративная доска. Фотографии находятся в общественном достоянии (Wikimedia Commons). Газетные вырезки это типографские иллюстрации, а не копии.'
   };
+
+  const EN_STATUS = {
+    'req.sending': 'Sending…',
+    'req.sent': 'Request sent. We will reply to the email you gave.',
+    'req.failed': 'Could not send. Try again or write to us by email.'
+  };
+  const tr = key => (lang === 'ru' ? RU[key] : EN_STATUS[key]) || key;
 
   let lang = 'en';
   function applyLang(next) {
@@ -202,6 +209,8 @@
   const drawn = new Set();
   let io = null;
   let ready = false;
+  let liveGroups = [];
+  let showGroup = null;
 
   function el(tag, attrs, parent) {
     const n = document.createElementNS(NS, tag);
@@ -351,18 +360,21 @@
 
         const pad = 40;
         const minx = Math.min(a.x, b.x) - pad, miny = Math.min(a.y, b.y) - pad;
-        const maskId = 'tm' + (n++);
-        const mask = el('mask', {
-          id: maskId, maskUnits: 'userSpaceOnUse',
-          x: minx.toFixed(0), y: miny.toFixed(0),
-          width: (Math.abs(dx) + pad * 2 + 20).toFixed(0), height: (dist + sag * 2 + pad * 2).toFixed(0)
-        }, defs);
-        const reveal = el('path', { class: 'reveal', d, pathLength: '1' }, mask);
         const instant = drawn.has(key) || reduceMotion;
-        reveal.style.transitionDuration = Math.min(2.6, Math.max(0.9, dist / 800)).toFixed(2) + 's';
-        if (instant) { reveal.style.transition = 'none'; reveal.classList.add('drawn'); }
-
-        const g = el('g', { mask: `url(#${maskId})` }, links);
+        /* A mask is only needed while the thread draws in; settled threads carry none (masks are costly to raster). */
+        let mask = null, reveal = null;
+        const g = el('g', {}, links);
+        if (!instant) {
+          const maskId = 'tm' + (n++);
+          mask = el('mask', {
+            id: maskId, maskUnits: 'userSpaceOnUse',
+            x: minx.toFixed(0), y: miny.toFixed(0),
+            width: (Math.abs(dx) + pad * 2 + 20).toFixed(0), height: (dist + sag * 2 + pad * 2).toFixed(0)
+          }, defs);
+          reveal = el('path', { class: 'reveal', d, pathLength: '1' }, mask);
+          reveal.style.transitionDuration = Math.min(2.6, Math.max(0.9, dist / 800)).toFixed(2) + 's';
+          g.setAttribute('mask', `url(#${maskId})`);
+        }
         const tw = twine(a, { x: cx, y: cy }, b, dist, key);
         ['t-sh1', 't-sh2', 't-rim'].forEach(cls => el('path', { class: cls, d }, g));
         el('path', { class: 't-body', d: tw.body }, g);
@@ -376,7 +388,7 @@
         el('path', { class: 't-hairL', d: tw.hairLight }, det);
         if (instant) g.classList.add('done');
 
-        groups.push({ reveal, g, key, ids: [id0, tid], y: a.y, dur: parseFloat(reveal.style.transitionDuration) || 1 });
+        groups.push({ reveal, mask, g, key, ids: [id0, tid], y: a.y, dur: reveal ? parseFloat(reveal.style.transitionDuration) : 0 });
         used.set(id0, a0); used.set(tid, b0);
       });
     });
@@ -390,10 +402,20 @@
       headEls.set(id, h);
     });
 
+    const unmask = grp => {
+      grp.g.classList.add('done');
+      grp.g.removeAttribute('mask');
+      grp.mask?.remove();
+      grp.mask = grp.reveal = null;
+    };
     const show = (grp, now) => {
-      if (now) { grp.reveal.style.transition = 'none'; grp.g.classList.add('done'); }
-      else setTimeout(() => grp.g.classList.add('done'), grp.dur * 1000 + 120);
-      grp.reveal.classList.add('drawn');
+      if (!grp.reveal) unmask(grp);
+      else if (now) unmask(grp);
+      else {
+        const r = grp.reveal;
+        r.classList.add('drawn');
+        setTimeout(() => { if (grp.reveal === r) unmask(grp); }, grp.dur * 1000 + 120);
+      }
       drawn.add(grp.key);
       grp.ids.forEach(i => {
         const h = headEls.get(i);
@@ -417,6 +439,8 @@
       });
     }, { rootMargin: '0px 0px -8% 0px' });
 
+    liveGroups = groups;
+    showGroup = show;
     groups.forEach(grp => {
       if (drawn.has(grp.key) || reduceMotion) return;
       const s = document.createElement('div');
@@ -450,22 +474,95 @@
 
   $$('[data-find-project]').forEach(b => b.addEventListener('click', () => { if (FIND_PROJECT_URL) window.location.href = FIND_PROJECT_URL; }));
 
+  /* ------------------------------------------------------- in-page jumps
+     A smooth scroll across the whole board used to fire every reveal, thread draw-in and filter
+     transition on the way at once. Everything the scroll passes is now settled first (one batched
+     read, then writes), transitions are off and fine yarn detail is hidden until the scroll ends. */
+  const root = document.documentElement;
+  function settleUpTo(bottom) {
+    const pending = $$('[data-reveal]:not(.in), .rise:not(.in)');
+    const tops = pending.map(e => e.getBoundingClientRect().top + window.scrollY);
+    pending.forEach((e, i) => { if (tops[i] < bottom) { e.classList.add('in'); revealIO.unobserve(e); } });
+    if (showGroup) liveGroups.forEach(g => { if (g.y < bottom) showGroup(g, true); });
+  }
+  function jumpTo(target, hash) {
+    const navH = $('.nav')?.offsetHeight || 0;
+    const y = target === document.body ? 0 : Math.max(0, target.getBoundingClientRect().top + window.scrollY - navH - 16);
+    root.classList.add('jumping');
+    settleUpTo(Math.max(y, window.scrollY) + window.innerHeight * 1.2);
+    let done = false;
+    const finish = () => { if (done) return; done = true; root.classList.remove('jumping'); };
+    window.addEventListener('scrollend', finish, { once: true });
+    setTimeout(finish, 1800);
+    window.scrollTo({ top: y, behavior: reduceMotion ? 'auto' : 'smooth' });
+    if (hash && hash !== '#top') history.pushState(null, '', hash);
+    if (target !== document.body) {
+      target.setAttribute('tabindex', '-1');
+      target.focus({ preventScroll: true });
+    }
+  }
+  document.addEventListener('click', (e) => {
+    const a = e.target.closest('a[href^="#"]');
+    if (!a || e.defaultPrevented || e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey) return;
+    const hash = a.getAttribute('href');
+    const target = hash === '#top' ? document.body : document.getElementById(hash.slice(1));
+    if (!target) return;
+    e.preventDefault();
+    jumpTo(target, hash);
+  });
+
+
   /* ---------------------------------------------------------------- form */
   const form = $('#request-form');
   if (form) {
     const box = $('#brief'), err = $('#brief-err');
-    form.addEventListener('submit', (e) => {
+    const mail = $('#email'), mailErr = $('#email-err');
+    const status = $('#form-status');
+    const submit = form.querySelector('button[type="submit"]');
+    const setInvalid = (input, msg, bad) => {
+      input.setAttribute('aria-invalid', String(bad));
+      if (bad) input.setAttribute('aria-describedby', msg.id); else input.removeAttribute('aria-describedby');
+      msg.hidden = !bad;
+    };
+    const say = (key, kind) => { status.hidden = false; status.dataset.kind = kind; status.textContent = tr(key); };
+    form.addEventListener('submit', async (e) => {
       e.preventDefault();
-      const text = box.value.trim();
-      const bad = text.length < 8;
-      box.setAttribute('aria-invalid', String(bad));
-      if (bad) { box.setAttribute('aria-describedby', 'brief-err'); }
-      else { box.removeAttribute('aria-describedby'); }
-      err.hidden = !bad;
+      const text = box.value.trim(), email = mail.value.trim();
+      const badText = text.length < 8;
+      const badMail = !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+      setInvalid(box, err, badText);
+      setInvalid(mail, mailErr, badMail);
       scheduleBuild();
-      if (bad) { box.focus(); return; }
-      const subject = encodeURIComponent('Research request');
-      window.location.href = `mailto:${CONTACT_EMAIL}?subject=${subject}&body=${encodeURIComponent(text)}`;
+      if (badText) { box.focus(); return; }
+      if (badMail) { mail.focus(); return; }
+      if (form.elements.botcheck.checked) return;
+      if (!FORM_ACCESS_KEY) {
+        const body = encodeURIComponent(text + '\n\nReply to: ' + email);
+        window.location.href = 'mailto:' + CONTACT_EMAIL + '?subject=' + encodeURIComponent('Research request') + '&body=' + body;
+        return;
+      }
+      submit.disabled = true;
+      say('req.sending', 'busy');
+      try {
+        const res = await fetch(FORM_ENDPOINT, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+          body: JSON.stringify({
+            access_key: FORM_ACCESS_KEY,
+            subject: 'NOTERA research request',
+            from_name: 'NOTERA website',
+            email, replyto: email, message: text, language: lang
+          })
+        });
+        const data = await res.json().catch(() => ({}));
+        if (!res.ok || !data.success) throw new Error('send failed');
+        form.reset();
+        say('req.sent', 'ok');
+      } catch (_) {
+        say('req.failed', 'error');
+      } finally {
+        submit.disabled = false;
+      }
     });
   }
 

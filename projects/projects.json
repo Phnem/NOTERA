@@ -1,0 +1,21 @@
+[
+  {
+    "slug": "great-satan",
+    "visibility": "closed",
+    "title": {
+      "en": "Great Satan: a documented designation, an unresolved origin",
+      "ru": "«Великий сатана»: документированное обозначение и неустановленное происхождение"
+    },
+    "question": null,
+    "date": "2026-10-04",
+    "languages": [
+      "en",
+      "ru"
+    ],
+    "reading_minutes": {
+      "compact": 8,
+      "full": 15
+    },
+    "sources_referenced": 10
+  }
+]
