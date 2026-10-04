@@ -49,7 +49,8 @@
   }
 
   /* ------------------------------------------------------------ bubbles */
-  const ICON = { image: 'ph-image', video: 'ph-video-camera', audio: 'ph-speaker-high', document: 'ph-file-pdf', webpage: 'ph-file-code' };
+  const ICON = { image: 'ph-image', video: 'ph-video-camera', audio: 'ph-speaker-high', document: 'ph-file-text', webpage: 'ph-globe-simple' };
+  const KINDS = ['image', 'video', 'audio', 'document', 'webpage'];
   function tally(ids, citations) {
     const n = { text: 0, image: 0, video: 0, audio: 0, document: 0, webpage: 0 };
     ids.forEach(id => (citations[id]?.materials || []).forEach(m => { if (m.type in n) n[m.type] += 1; }));
@@ -59,37 +60,52 @@
     const n = tally(ids, citations);
     const parts = [];
     if (n.text) parts.push(`<span class="bub">${n.text}</span>`);
-    ['image', 'video', 'audio', 'document', 'webpage'].forEach(k => { if (n[k]) parts.push(`<span class="bub bub--${k}"><i class="ph-bold ${ICON[k]}" aria-hidden="true"></i></span>`); });
-    if (!parts.length) parts.push('<span class="bub"><i class="ph-bold ph-link" aria-hidden="true"></i></span>');
+    KINDS.forEach(k => { if (n[k]) parts.push(`<span class="bub bub--icon"><i class="ph-fill ${ICON[k]}" aria-hidden="true"></i></span>`); });
+    if (!parts.length) parts.push('<span class="bub bub--icon"><i class="ph-fill ph-link" aria-hidden="true"></i></span>');
     const words = [];
     if (n.text) words.push(`${n.text} ${t(n.text > 1 ? 'r.texts' : 'r.text')}`);
     [['image', 'r.image'], ['video', 'r.video1'], ['audio', 'r.audio1'], ['document', 'r.document'], ['webpage', 'r.webpage']]
       .forEach(([k, s]) => { if (n[k]) words.push(`${n[k]} ${t(s)}`); });
     return `<button type="button" class="cite" data-cites="${ids.join(' ')}"${anchorRef ? ` data-anchor="${anchorRef}"` : ''} aria-label="${esc(t('r.sources') + ': ' + words.join(', '))}" aria-haspopup="dialog" aria-expanded="false">${parts.join('')}</button>`;
   }
+  function personBubble(pid, anchorRef) {
+    const p = bundle.people?.[pid];
+    if (!p) return '';
+    const L = window.NOTERA.lang;
+    return `<button type="button" class="cite cite--person" data-person="${esc(pid)}" data-anchor="${anchorRef}" aria-label="${esc(t('r.about') + ' ' + (p.name[L] || p.name.en))}" aria-haspopup="dialog" aria-expanded="false"><span class="bub bub--face"><img alt="" data-file="${esc(p.photo.preview || p.photo.file)}" data-mime="${esc(p.photo.preview_mime || p.photo.mime)}"></span></button>`;
+  }
 
   /* ------------------------------------------------------------ render */
+  /* A quotation mark or full stop must never wrap away from the word it belongs to,
+     so each anchor travels with its bubble and adjoining punctuation in one no-wrap unit. */
+  const OPENERS = /[«“„"‘(\[]+$/;
+  const CLOSERS = /^[»”"’)\]]*[.,;:!?…]*/;
   let anchorSeq = 0;
   function sentence(s, citations) {
-    const chars = Array.from(s.text);               // anchor offsets are code points
+    const chars = Array.from(s.text);          // anchor offsets are code points
+    const anchors = (s.anchors || []).slice().sort((a, b) => a.start - b.start);
     let out = '', cursor = 0;
     const anchored = new Set();
-    (s.anchors || []).forEach(a => {
+    anchors.forEach((a, i) => {
+      const before = chars.slice(cursor, a.start).join('');
+      const lead = (before.match(OPENERS) || [''])[0];
+      const limit = i + 1 < anchors.length ? anchors[i + 1].start : chars.length;
+      const after = chars.slice(a.end, limit).join('');
+      const trail = (after.match(CLOSERS) || [''])[0];
       const ref = 'a' + (anchorSeq++);
-      out += esc(chars.slice(cursor, a.start).join(''));
-      out += `<span class="s-anchor" id="${ref}">${esc(chars.slice(a.start, a.end).join(''))}</span>` + bubble([a.citation_id], citations, ref);
-      cursor = a.end;
-      anchored.add(a.citation_id);
+      const mark = a.person ? personBubble(a.person, ref) : bubble([a.citation_id], citations, ref);
+      out += esc(before.slice(0, before.length - lead.length));
+      out += `<span class="nw">${esc(lead)}<span class="s-anchor" id="${ref}">${esc(chars.slice(a.start, a.end).join(''))}</span>${mark}${esc(trail)}</span>`;
+      cursor = a.end + Array.from(trail).length;
+      if (a.citation_id) anchored.add(a.citation_id);
     });
     const rest = (s.citations || []).filter(c => !anchored.has(c));
-    let tail = chars.slice(cursor).join('');
-    let end = '';
-    if (rest.length) {
-      const m = tail.match(/[.!?…]+[»”"’)]*\s*$/);
-      if (m) { end = tail.slice(m.index); tail = tail.slice(0, m.index); }
-      return out + esc(tail) + bubble(rest, citations) + esc(end);
-    }
-    return out + esc(tail);
+    const tail = chars.slice(cursor).join('');
+    if (!rest.length) return out + esc(tail);
+    const m = tail.match(/(\S*?)([.!?…]*[»”"’)]*[.!?…]*\s*)$/);
+    const lastWord = m ? m[1] : '', end = m ? m[2] : '';
+    const body = tail.slice(0, tail.length - lastWord.length - end.length);
+    return out + esc(body) + `<span class="nw">${esc(lastWord)}${bubble(rest, citations)}${esc(end)}</span>`;
   }
 
   function render() {
@@ -116,7 +132,7 @@
       flush();
       return html + '</section>';
     }).join('');
-    const limits = (bundle.limitations || []).map(l => `<li>${esc(l[L] || l.en)}<span class="mono">${esc(l.status)}</span></li>`).join('');
+    const limits = (bundle.limitations || []).map(l => `<li>${esc(l[L] || l.en)}</li>`).join('');
     const m = rep.metrics || {};
     app.innerHTML = `
       <a class="reader__back" href="../"><i class="ph-bold ph-arrow-left" aria-hidden="true"></i>${esc(t('r.back'))}</a>
@@ -129,60 +145,93 @@
         </div>
         <p class="reader__meta"><span>${m.reading_minutes || '?'} ${esc(t('r.read'))}</span><span>${m.word_count || '?'} ${esc(t('r.words'))}</span><span>${esc(t('r.updated'))} ${esc((bundle.finalized_at || '').slice(0, 10))}</span></p>
       </div>
-      <p class="reader__note"><i class="ph-bold ph-info" aria-hidden="true"></i>${esc(bundle.translation_note?.[L] || '')}</p>
-      <article class="paper sheet-doc"><div class="doc">${blocks}<section class="limits"><h2>${esc(t('r.limits'))}</h2><ul>${limits}</ul></section></div></article>`;
+      <article class="paper sheet-doc"><div class="doc">${blocks}${limits ? `<section class="limits"><h2>${esc(t('r.limits'))}</h2><ul>${limits}</ul></section>` : ''}</div></article>`;
     document.title = rep.title + ' - NOTERA';
-    hydrateFigures();
+    hydrateImages(app);
   }
 
-  async function hydrateFigures() {
-    for (const b of app.querySelectorAll('.fig')) {
+  async function hydrateImages(root) {
+    for (const b of root.querySelectorAll('.fig')) {
       const img = b.querySelector('img');
       try { img.src = await fileUrl(b.dataset.preview || b.dataset.file, b.dataset.pmime); } catch (_) { /* leave empty */ }
+    }
+    for (const img of root.querySelectorAll('img[data-file]')) {
+      try { img.src = await fileUrl(img.dataset.file, img.dataset.mime); } catch (_) { /* leave empty */ }
     }
   }
 
   /* ------------------------------------------------------------ side panel */
-  const side = $('#side'), sideBody = $('#side-body'), sideTitle = $('#side-title');
+  const side = $('#side'), sideBody = $('#side-body'), sideTitle = $('#side-title'), sideKicker = $('#side-kicker');
   let opener = null;
   function lit(ref, on) { const el = ref && document.getElementById(ref); if (el) el.classList.toggle('is-lit', on); }
+  const size = b => b > 1e6 ? (b / 1e6).toFixed(1) + ' MB' : Math.max(1, Math.round(b / 1e3)) + ' KB';
+  const imgLabel = (m, L) => (m.caption?.[L] || m.caption?.en || t('k.' + m.kind)) + (m.page ? ' · ' + t('k.page') + ' ' + m.page : '');
+  const thumb = (m, cap) => `<button type="button" class="thumb" data-file="${esc(m.file)}" data-preview="${esc(m.preview || '')}" data-mime="${esc(m.mime)}" data-pmime="${esc(m.preview_mime || m.mime)}" data-name="${esc(m.download_name)}" data-cap="${esc(cap)}"><img alt="" loading="lazy" decoding="async"><span>${esc(cap)}</span></button>`;
+
+  function quoteCard(c, m, i, L) {
+    const rtl = /[֐-ࣿ]/.test(m.text);
+    const author = m.author?.[L] || m.author?.en || '';
+    return `<figure class="paper qcard"${rtl ? ' data-rtl' : ''}>
+      <button type="button" class="qcard__copy" data-copyq="${esc(c.id)}:${i}" title="${esc(t('r.copyQuote'))}" aria-label="${esc(t('r.copyQuote'))}"><i class="ph-bold ph-copy" aria-hidden="true"></i></button>
+      <blockquote class="qcard__text"${rtl ? ' dir="rtl" lang="fa"' : ''}>${esc(m.text)}</blockquote>
+      <figcaption class="qcard__by"><i class="ph-bold ph-copyright" aria-hidden="true"></i><span>${esc(author)}</span></figcaption>
+      <div class="qcard__row">${m.locator ? `<span class="qcard__loc">${esc(m.locator)}</span>` : '<span></span>'}<button type="button" class="pill" data-copy="${esc(c.id)}:${i}"><i class="ph-bold ph-quotes" aria-hidden="true"></i>${esc(t('r.copy'))}</button></div>
+    </figure>`;
+  }
 
   function materialHtml(c, single) {
+    const L = window.NOTERA.lang;
     const texts = c.materials.filter(m => m.type === 'text');
     const images = c.materials.filter(m => m.type === 'image');
     const media = c.materials.filter(m => m.type === 'video' || m.type === 'audio');
     const files = c.materials.filter(m => m.type === 'document' || m.type === 'webpage');
     const links = c.materials.filter(m => m.type === 'link');
-    const L = window.NOTERA.lang;
-    let h = `<div class="side__cit">${single ? '' : `<p class="side__label"><b>[${esc(c.id)}]</b><span>${esc(c.label)}</span></p>`}<p class="side__loc">${single ? `<b>[${esc(c.id)}]</b> ` : ''}${esc(c.locator)}</p>`;
-    if (c.supplementary) h += `<p class="side__flag"><i class="ph-bold ph-warning-circle" aria-hidden="true"></i>${esc(t('r.supp'))}</p>`;
-    if (texts.length) h += `<div class="side__group"><p class="side__h"><i class="ph-bold ph-quotes" aria-hidden="true"></i>${esc(t('r.quote'))}</p>` + texts.map((m, i) => {
-      const rtl = /[֐-ࣿ]/.test(m.text);
-      return `<div class="paper qcard"><p class="qcard__text"${rtl ? ' dir="rtl" lang="fa"' : ''}>${esc(m.text)}</p><p class="qcard__by">— ${esc(m.author?.[L] || m.author?.en || '')}</p><div class="qcard__row"><span class="qcard__loc">${esc(m.locator)}</span><button type="button" class="pill" data-copy="${esc(c.id)}:${i}"><i class="ph-bold ph-copy" aria-hidden="true"></i>${esc(t('r.copy'))}</button></div></div>`;
-    }).join('') + '</div>';
-    if (images.length) h += `<div class="side__group"><p class="side__h"><i class="ph-bold ph-image" aria-hidden="true"></i>${esc(t('r.images'))}</p><div class="thumbs">` + images.map(m =>
-      `<button type="button" class="thumb" data-file="${esc(m.file)}" data-preview="${esc(m.preview || '')}" data-mime="${esc(m.mime)}" data-pmime="${esc(m.preview_mime || m.mime)}" data-name="${esc(m.download_name)}" data-cap="${esc(imgLabel(m, L))}"><img alt="" loading="lazy" decoding="async"><span>${esc(imgLabel(m, L))}</span></button>`).join('') + '</div></div>';
+    let h = `<div class="side__cit">${single ? '' : `<p class="side__label"><b>[${esc(c.id)}]</b><span>${esc(c.label)}</span></p>`}${c.locator ? `<p class="side__loc">${single ? `<b>[${esc(c.id)}]</b> ` : ''}${esc(c.locator)}</p>` : ''}`;
+    if (texts.length) h += `<div class="side__group"><p class="side__h"><i class="ph-bold ph-quotes" aria-hidden="true"></i>${esc(t('r.quote'))}</p>` + texts.map((m, i) => quoteCard(c, m, i, L)).join('') + '</div>';
+    if (images.length) h += `<div class="side__group"><p class="side__h"><i class="ph-bold ph-image" aria-hidden="true"></i>${esc(t('r.images'))}</p><div class="thumbs">` + images.map(m => thumb(m, imgLabel(m, L))).join('') + '</div></div>';
     if (media.length) h += `<div class="side__group"><p class="side__h"><i class="ph-bold ph-play-circle" aria-hidden="true"></i>${esc(t('r.video'))}</p><div class="files">` + media.map(m =>
-      `<div class="file"><i class="ph-bold ${ICON[m.type]}" aria-hidden="true"></i><div><p class="file__name">${esc(m.download_name)}</p><p class="file__sub">${size(m.bytes)}</p></div><div class="file__acts"><button type="button" class="pill pill--dark" data-play="${esc(m.file)}" data-mime="${esc(m.mime)}" data-name="${esc(m.download_name)}" data-kind="${m.type}"><i class="ph-bold ph-play" aria-hidden="true"></i>${esc(t('r.open'))}</button></div></div>`).join('') + '</div></div>';
+      `<div class="file"><i class="ph-fill ${ICON[m.type]}" aria-hidden="true"></i><div><p class="file__name">${esc(m.download_name)}</p><p class="file__sub">${size(m.bytes)}</p></div><div class="file__acts"><button type="button" class="pill pill--dark" data-play="${esc(m.file)}" data-mime="${esc(m.mime)}" data-name="${esc(m.download_name)}" data-kind="${m.type}"><i class="ph-bold ph-play" aria-hidden="true"></i>${esc(t('r.open'))}</button></div></div>`).join('') + '</div></div>';
     if (files.length) h += `<div class="side__group"><p class="side__h"><i class="ph-bold ph-files" aria-hidden="true"></i>${esc(t('r.docs'))}</p><div class="files">` + files.map(m =>
-      `<div class="file"><i class="ph-bold ${ICON[m.type]}" aria-hidden="true"></i><div><p class="file__name">${esc(m.type === 'webpage' ? t('r.snapshot') : (m.kind === 'ARCHIVAL_COPY' ? 'PDF' : m.kind))}</p><p class="file__sub">${esc(m.download_name)} · ${size(m.bytes)}</p></div><div class="file__acts"><button type="button" class="pill pill--dark" data-open="${esc(m.file)}" data-mime="${esc(m.mime)}"><i class="ph-bold ph-arrow-square-out" aria-hidden="true"></i>${esc(t('r.open'))}</button><button type="button" class="pill pill--dark" data-dl="${esc(m.file)}" data-mime="${esc(m.mime)}" data-name="${esc(m.download_name)}"><i class="ph-bold ph-download-simple" aria-hidden="true"></i>${esc(t('r.download'))}</button></div></div>`).join('') + '</div></div>';
+      `<div class="file"><i class="ph-fill ${ICON[m.type]}" aria-hidden="true"></i><div><p class="file__name">${esc(m.type === 'webpage' ? t('r.snapshot') : (m.kind === 'ARCHIVAL_COPY' ? 'PDF' : t('k.' + m.kind)))}</p><p class="file__sub">${esc(m.download_name)} · ${size(m.bytes)}</p></div><div class="file__acts"><button type="button" class="pill pill--dark" data-open="${esc(m.file)}" data-mime="${esc(m.mime)}"><i class="ph-bold ph-arrow-square-out" aria-hidden="true"></i>${esc(t('r.open'))}</button><button type="button" class="pill pill--dark" data-dl="${esc(m.file)}" data-mime="${esc(m.mime)}" data-name="${esc(m.download_name)}"><i class="ph-bold ph-download-simple" aria-hidden="true"></i>${esc(t('r.download'))}</button></div></div>`).join('') + '</div></div>';
     if (links.length) h += `<div class="side__group"><p class="side__h"><i class="ph-bold ph-globe" aria-hidden="true"></i>${esc(t('r.original'))}</p>` + links.map(m =>
       `<a class="link-out" href="${esc(m.url)}" target="_blank" rel="noopener noreferrer"><i class="ph-bold ph-arrow-square-out" aria-hidden="true"></i><span>${esc(m.url)}</span></a>`).join('') + '</div>';
     return h + '</div>';
   }
-  const imgLabel = (m, L) => (m.caption?.[L] || m.caption?.en || t('k.' + m.kind)) + (m.page ? ' · ' + t('k.page') + ' ' + m.page : '');
-  const size = b => b > 1e6 ? (b / 1e6).toFixed(1) + ' MB' : Math.max(1, Math.round(b / 1e3)) + ' KB';
+
+  function personHtml(p) {
+    const L = window.NOTERA.lang;
+    const photo = p.photo;
+    const cap = photo.caption?.[L] || photo.caption?.en || '';
+    const credit = [photo.author, photo.date, photo.license].filter(Boolean).join(' · ');
+    const links = p.links.slice().sort((a, b) => (b.lang === L) - (a.lang === L));
+    return `<div class="person">
+      <div class="person__photo">${thumb(photo, cap)}</div>
+      <p class="person__years">${esc(p.years)}</p>
+      <p class="person__role">${esc(p.role[L] || p.role.en)}</p>
+      <p class="person__credit">${esc(t('r.photo'))}: ${photo.source_url ? `<a href="${esc(photo.source_url)}" target="_blank" rel="noopener noreferrer">${esc(credit)}</a>` : esc(credit)}</p>
+      <div class="side__group"><p class="side__h"><i class="ph-bold ph-book-open" aria-hidden="true"></i>${esc(t('r.whois'))}</p>
+      ${links.map(l => `<a class="link-out" href="${esc(l.url)}" target="_blank" rel="noopener noreferrer"><i class="ph-bold ph-arrow-square-out" aria-hidden="true"></i><span>${esc(l.label)} (${esc(l.lang.toUpperCase())})</span></a>`).join('')}</div>
+    </div>`;
+  }
 
   async function openSide(btn) {
     const L = window.NOTERA.lang;
-    const C = bundle.reports[version][L].citations;
-    const ids = btn.dataset.cites.split(' ').filter(id => C[id]);
     if (opener && opener !== btn) { opener.setAttribute('aria-expanded', 'false'); lit(opener.dataset.anchor, false); }
     opener = btn;
     btn.setAttribute('aria-expanded', 'true');
     lit(btn.dataset.anchor, true);
-    sideTitle.textContent = ids.length > 1 ? t('r.sources') : (C[ids[0]]?.label || t('r.source'));
-    sideBody.innerHTML = ids.map(id => materialHtml(C[id], ids.length === 1)).join('');
+    if (btn.dataset.person) {
+      const p = bundle.people[btn.dataset.person];
+      sideKicker.textContent = t('r.person');
+      sideTitle.textContent = p.name[L] || p.name.en;
+      sideBody.innerHTML = personHtml(p);
+    } else {
+      const C = bundle.reports[version][L].citations;
+      const ids = btn.dataset.cites.split(' ').filter(id => C[id]);
+      sideKicker.textContent = t('r.sources');
+      sideTitle.textContent = ids.length > 1 ? t('r.sources') : (C[ids[0]]?.label || t('r.source'));
+      sideBody.innerHTML = ids.map(id => materialHtml(C[id], ids.length === 1)).join('');
+    }
     sideBody.scrollTop = 0;
     side.hidden = false;
     requestAnimationFrame(() => side.classList.add('is-open'));
@@ -238,6 +287,12 @@
     clearTimeout(toast.t);
     toast.t = setTimeout(() => el.classList.remove('is-on'), 1800);
   }
+  function quoteOf(ref) {
+    const [cid, i] = ref.split(':');
+    const L = window.NOTERA.lang;
+    const c = bundle.reports[version][L].citations[cid];
+    return { c, m: c.materials.filter(x => x.type === 'text')[+i], L };
+  }
 
   /* ------------------------------------------------------------ events */
   document.addEventListener('click', async (e) => {
@@ -253,14 +308,18 @@
     if (fig) { showMedia(fig, 'image'); return; }
     const play = e.target.closest('[data-play]');
     if (play) { showMedia(play, play.dataset.kind); return; }
+    const copyQ = e.target.closest('[data-copyq]');
+    if (copyQ) {
+      const { m } = quoteOf(copyQ.dataset.copyq);
+      try { await navigator.clipboard.writeText(m.text); toast(t('r.copiedQuote')); } catch (_) { /* clipboard blocked */ }
+      return;
+    }
     const copy = e.target.closest('[data-copy]');
     if (copy) {
-      const [cid, i] = copy.dataset.copy.split(':');
-      const L = window.NOTERA.lang;
-      const c = bundle.reports[version][L].citations[cid];
-      const m = c.materials.filter(x => x.type === 'text')[+i];
+      const { c, m, L } = quoteOf(copy.dataset.copy);
       const by = m.author?.[L] || m.author?.en || '';
-      try { await navigator.clipboard.writeText(`“${m.text}” — ${by}. ${c.label}, ${m.locator}`); toast(t('r.copied')); } catch (_) { /* clipboard blocked */ }
+      const where = [c.label, m.locator].filter(Boolean).join(', ');
+      try { await navigator.clipboard.writeText(`“${m.text}” — ${by}. ${where}`); toast(t('r.copied')); } catch (_) { /* clipboard blocked */ }
       return;
     }
     const open = e.target.closest('[data-open]');
