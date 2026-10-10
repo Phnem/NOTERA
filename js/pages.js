@@ -4,7 +4,7 @@ window.NOTERA = (() => {
   'use strict';
   const STR = {
     en: {
-      'nav.deliver': 'What you get', 'nav.how': 'How it works', 'nav.sources': 'Sources', 'nav.projects': 'Projects',
+      'nav.deliver': 'What you get', 'nav.how': 'How it works', 'nav.price': 'Price', 'nav.projects': 'Projects',
       'cta.request': 'Request a research project',
       'p.eyebrow': 'Research files', 'p.title': 'Projects.',
       'p.sub': 'Completed investigations. Open reports read in full; closed ones open only with the owner’s password.',
@@ -32,7 +32,7 @@ window.NOTERA = (() => {
       'k.CROP': 'Fragment', 'k.PAGE_IMAGE': 'Page', 'k.ARCHIVAL_COPY': 'Archival copy', 'k.ORIGINAL_ARTIFACT': 'Original', 'k.RAW_HTML': 'Saved page', 'k.page': 'PDF p.'
     },
     ru: {
-      'nav.deliver': 'Что вы получаете', 'nav.how': 'Как это работает', 'nav.sources': 'Источники', 'nav.projects': 'Проекты',
+      'nav.deliver': 'Что вы получаете', 'nav.how': 'Как это работает', 'nav.price': 'Цена', 'nav.projects': 'Проекты',
       'cta.request': 'Заказать исследование',
       'p.eyebrow': 'Дела', 'p.title': 'Проекты.',
       'p.sub': 'Завершённые расследования. Открытые отчёты читаются целиком, закрытые открываются только паролем владельца.',

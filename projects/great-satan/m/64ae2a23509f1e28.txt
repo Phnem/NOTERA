@@ -1,0 +1,524 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta content="width=device-width" name="viewport">
+
+	
+    <link rel="stylesheet" href="https://use.typekit.net/vgo8rnx.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Lora&display=swap" rel="stylesheet">
+	
+		<!-- All in One SEO 5.0.2 - aioseo.com -->
+		<title>Iran Project – Stanley Center for Peace and Security</title>
+	<meta name="description" content="Released in January 2001, “The Iran Project: The Struggle for Iran” coincided with the 20th anniversary of the release of the American hostages from Iran and examines the changes in modern Iran. This one-hour public radio documentary was hosted by Walter Cronkite and produced by Reese Erlich in association with KQED Public Radio." />
+	<meta name="robots" content="max-image-preview:large" />
+	<link rel="canonical" href="https://stanleycenter.org/about/our-story/radio-archive/iran-project/" />
+	<meta name="generator" content="All in One SEO (AIOSEO) 5.0.2" />
+		<meta property="og:locale" content="en_US" />
+		<meta property="og:site_name" content="Stanley Center for Peace and Security" />
+		<meta property="og:type" content="activity" />
+		<meta property="og:title" content="Iran Project – Stanley Center for Peace and Security" />
+		<meta property="og:description" content="Released in January 2001, “The Iran Project: The Struggle for Iran” coincided with the 20th anniversary of the release of the American hostages from Iran and examines the changes in modern Iran. This one-hour public radio documentary was hosted by Walter Cronkite and produced by Reese Erlich in association with KQED Public Radio." />
+		<meta property="og:url" content="https://stanleycenter.org/about/our-story/radio-archive/iran-project/" />
+		<meta property="og:image" content="https://stanleycenter.org/wp-content/uploads/2019/11/SC_Default.jpg" />
+		<meta property="og:image:secure_url" content="https://stanleycenter.org/wp-content/uploads/2019/11/SC_Default.jpg" />
+		<meta property="og:image:width" content="1200" />
+		<meta property="og:image:height" content="630" />
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:title" content="Iran Project – Stanley Center for Peace and Security" />
+		<meta name="twitter:description" content="Released in January 2001, “The Iran Project: The Struggle for Iran” coincided with the 20th anniversary of the release of the American hostages from Iran and examines the changes in modern Iran. This one-hour public radio documentary was hosted by Walter Cronkite and produced by Reese Erlich in association with KQED Public Radio." />
+		<meta name="twitter:image" content="https://stanleycenter.org/wp-content/uploads/2019/11/SC_Default.jpg" />
+		<!-- All in One SEO -->
+
+<link rel='dns-prefetch' href='//cdnjs.cloudflare.com' />
+<link rel='dns-prefetch' href='//www.formstack.com' />
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="https://stanleycenter.org/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fstanleycenter.org%2Fabout%2Four-story%2Fradio-archive%2Firan-project%2F" />
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="https://stanleycenter.org/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fstanleycenter.org%2Fabout%2Four-story%2Fradio-archive%2Firan-project%2F&#038;format=xml" />
+<style id="wp-emoji-styles-inline-css">
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+/*# sourceURL=wp-emoji-styles-inline-css */
+</style>
+<style id="classic-theme-styles-inline-css">
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+/*# sourceURL=/wp-includes/css/classic-themes.min.css */
+</style>
+
+<style id="global-styles-inline-css">
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgb(6,147,227) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgb(252,185,0) 0%,rgb(255,105,0) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgb(255,105,0) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgb(255, 255, 255), 6px 6px rgb(0, 0, 0);--wp--preset--shadow--crisp: 6px 6px 0px rgb(0, 0, 0);}.wp-block-button{--wp--preset--dimension--25: 25%;--wp--preset--dimension--50: 50%;--wp--preset--dimension--75: 75%;--wp--preset--dimension--100: 100%;}:where(body) { margin: 0; }:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}body{padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;}:root :where(.wp-element-button, .wp-block-button__link){background-color: #32373c;border-width: 0;color: #fff;font-family: inherit;font-size: inherit;font-style: inherit;font-weight: inherit;letter-spacing: inherit;line-height: inherit;padding-top: calc(0.667em + 2px);padding-right: calc(1.333em + 2px);padding-bottom: calc(0.667em + 2px);padding-left: calc(1.333em + 2px);text-decoration: none;text-transform: inherit;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+/*# sourceURL=global-styles-inline-css */
+</style>
+
+<link rel='stylesheet' id='formstack-css-css' href='//www.formstack.com/forms/css/2/wordpress-post.css?ver=7.1.2' media='all' />
+<link rel='stylesheet' id='swiper-css' href='https://stanleycenter.org/wp-content/themes/stanley-center/node_modules/swiper/swiper-bundle.min.css?ver=7.1.2' media='all' />
+<link rel='stylesheet' id='splide2-css' href='https://stanleycenter.org/wp-content/themes/stanley-center/node_modules/@splidejs/splide/dist/css/splide.min.css?ver=7.1.2' media='all' />
+<link rel='stylesheet' id='site2_style-css' href='https://stanleycenter.org/wp-content/themes/stanley-center/css/style.php?p=style2.scss&#038;ver=v1776098351' media='all' />
+<link rel="https://api.w.org/" href="https://stanleycenter.org/wp-json/" /><link rel="alternate" title="JSON" type="application/json" href="https://stanleycenter.org/wp-json/wp/v2/pages/3409" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://stanleycenter.org/xmlrpc.php?rsd" />
+<link rel='shortlink' href='https://stanleycenter.org/?p=3409' />
+	<link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+        
+</head>
+<body class="wp-singular page-template page-template-template-standard-interior page-template-template-standard-interior-php page page-id-3409 page-child parent-pageid-3238 wp-theme-stanley-center  site-1" >
+                        <div id="site-announcement">
+                        <div>
+                            <p>
+                                We recently made updates to our Privacy Policy (25 September 2026).                            </p>
+                            <p>
+                                <a href="https://stanleycenter.org/privacy-policy/">
+                                    Learn More                                </a>
+                            </p>
+                        </div>
+                        <button title="Close"></button>
+                    </div>
+                    <script>
+                        (function() {
+                            if (sessionStorage.getItem('site_announcement_closed')) {
+                                document.getElementById('site-announcement').remove();
+                            }
+                        })();
+                    </script>
+                    <div id="menu-v2">
+    <div class="menu-actions">
+         <div class="search-box">
+            <form action="/search/" method="GET">
+                <label for="menu-v2-q" class="visually-hidden">Search</label>
+                <input id="menu-v2-q" type="text" name="q" placeholder="Search" value="">
+                <button type="submit" class="search" title="Search"></button>
+            </form>
+        </div>
+        <button title="Close"></button>
+    </div>
+    <div class="side-left">
+        <div class="logo"></div>
+        <div class="menu-top">
+            <div class="mt-intro">
+            <h2>Global Challenges</h2>
+<p>Our work focuses on three global challenges critical to shared and lasting peace. Within each, we search for new answers to the most timely policy questions.</p>
+            </div>
+            <div class="mt-menu">
+                <ul id="menu-issue-areas" class="menu"><li id="menu-item-15349" class="green menu-item menu-item-type-post_type menu-item-object-page menu-item-15349"><a href="https://stanleycenter.org/climate-change/">Climate Change</a></li>
+<li id="menu-item-15368" class="yellow menu-item menu-item-type-post_type menu-item-object-page menu-item-15368"><a href="https://stanleycenter.org/nuclear-weapons/">Nuclear Weapons</a></li>
+<li id="menu-item-15363" class="blue menu-item menu-item-type-post_type menu-item-object-page menu-item-15363"><a href="https://stanleycenter.org/mass-violence-atrocities/">Mass Violence &#038; Atrocities</a></li>
+</ul>            </div>
+        </div>
+        <div class="menu-bottom">
+            <div>
+                <h2><span><a href="/about/">About Us</a></span><button>About Us</button></h2>
+                <ul id="menu-about-us" class="menu"><li id="menu-item-15384" class="mobile-only menu-item menu-item-type-post_type menu-item-object-page current-page-ancestor menu-item-15384"><a href="https://stanleycenter.org/about/">Overview</a></li>
+<li id="menu-item-15373" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-15373"><a href="https://stanleycenter.org/about/our-approach/">Our Approach</a></li>
+<li id="menu-item-14106" class="menu-item menu-item-type-post_type menu-item-object-page current-page-ancestor menu-item-14106"><a href="https://stanleycenter.org/about/our-story/">Our Story</a></li>
+<li id="menu-item-15346" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-15346"><a href="https://stanleycenter.org/about/our-team/">Our Team</a></li>
+<li id="menu-item-15345" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-15345"><a href="https://stanleycenter.org/about/our-values/">Our Values</a></li>
+<li id="menu-item-14109" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14109"><a href="https://stanleycenter.org/about/careers/">Careers</a></li>
+<li id="menu-item-14110" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14110"><a href="https://stanleycenter.org/contact/">Contact Us</a></li>
+</ul>            </div>
+            <div>
+                <h2><span>Engagement</span><button>Engagement</button></h2>
+                <ul id="menu-engagement" class="menu"><li id="menu-item-15356" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-15356"><a href="https://stanleycenter.org/journalism-media/">Programs for Journalists</a></li>
+<li id="menu-item-14112" class="menu-item menu-item-type-post_type_archive menu-item-object-publications menu-item-14112"><a href="https://stanleycenter.org/publications/">Publications</a></li>
+<li id="menu-item-14113" class="menu-item menu-item-type-post_type_archive menu-item-object-events menu-item-14113"><a href="https://stanleycenter.org/events/">Events</a></li>
+<li id="menu-item-15380" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-15380"><a href="https://stanleycenter.org/local-commitment/">Local Commitment</a></li>
+<li id="menu-item-15387" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-15387"><a target="_blank" href="https://livingbuilding.stanleycenter.org/">Living Building</a></li>
+</ul>            </div>
+            <div>
+                <h2><span>Projects</span><button>Projects</button></h2>
+                <ul id="menu-projects" class="menu"><li id="menu-item-14114" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14114"><a target="_blank" href="https://riskreduction.stanleycenter.org/">Adventures in Nuclear Risk Reduction</a></li>
+<li id="menu-item-14115" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14115"><a target="_blank" href="https://ibmv.org/">Identity-Based Mass Violence  in Urban Contexts: Uncovered</a></li>
+<li id="menu-item-14116" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14116"><a target="_blank" href="https://peaceinourcities.org/">Peace in Our Cities</a></li>
+</ul>            </div>
+        </div>
+    </div>
+    <div class="side-right">
+        <div>
+            <h2>Connect With Us</h2>
+              <div class="Subscribe-form-2025 bg--dark-blue">
+    <h3 class="Subscribe-form-2025__form-title">Subscribe</h3>    <form class="Subscribe-form-2025__form" action="https://go.stanleycenter.org/l/1015752/2026-01-20/59d4f" method="post">
+      <div class="Subscribe-form-2025__input-group">
+        <label for="sf25-1-firstname" class="Subscribe-form-2025__label">First Name*</label>
+        <input class="Subscribe-form-2025__input" type="text" id="sf25-1-firstname" name="firstname" autocomplete="on" required="required" />
+      </div>
+      <div class="Subscribe-form-2025__input-group">
+        <label for="sf25-1-lastname" class="Subscribe-form-2025__label">Last Name*</label>
+        <input class="Subscribe-form-2025__input" type="text" id="sf25-1-lastname" name="lastname" autocomplete="on" required="required" />
+      </div>
+      <div class="Subscribe-form-2025__input-group">
+        <label for="sf25-1-email" class="Subscribe-form-2025__label">Email Address*</label>
+        <input class="Subscribe-form-2025__input" type="email" id="sf25-1-email" name="email" autocomplete="on" required="required" />
+      </div>
+      <div class="Subscribe-form-2025__input-group">
+        <label for="sf25-1-company" class="Subscribe-form-2025__label">Organization</label>
+        <input class="Subscribe-form-2025__input" type="text" id="sf25-1-company" name="company" autocomplete="on" />
+      </div>
+      <div class="Subscribe-form-2025__form-footer">
+        <button class="" type="submit">Subscribe</button>
+        <a href="/subscribe" class="Subscribe-form-2025__form-link">Subscription Options</a>
+      </div>
+    </form>
+    <div class="Subscribe-form-2025__form-message"></div>
+  </div>
+            <div class="side-right-bottom">
+                <ul id="menu-social-media" class="menu"><li id="menu-item-13162" class="bluesky menu-item menu-item-type-custom menu-item-object-custom menu-item-13162"><a target="_blank" href="https://bsky.app/profile/stanleycenter.org">Bluesky</a></li>
+<li id="menu-item-58" class="linkedin menu-item menu-item-type-custom menu-item-object-custom menu-item-58"><a target="_blank" href="https://www.linkedin.com/company/stanley-center">LinkedIn</a></li>
+<li id="menu-item-14827" class="instagram menu-item menu-item-type-custom menu-item-object-custom menu-item-14827"><a target="_blank" href="https://www.instagram.com/thestanleycenter/">Instagram</a></li>
+<li id="menu-item-56" class="facebook menu-item menu-item-type-custom menu-item-object-custom menu-item-56"><a target="_blank" href="https://www.facebook.com/StanleyCenterforPeaceandSec">Facebook</a></li>
+</ul>                <p><a href="/cdn-cgi/l/email-protection#b2dbdcd4ddf2c1c6d3dcded7cbd1d7dcc6d7c09cddc0d5" target="_blank"><span class="__cf_email__" data-cfemail="771e19111837040316191b120e14121903120559180510">[email&#160;protected]</span></a></p>
+            </div>
+        </div>
+    </div>
+</div>
+<header id="header">
+    <a href="/"><img src="/wp-content/themes/stanley-center/images/StanleyCenter_Logo.svg" alt="Stanley Center"></a>
+        <div class="navigation">
+            <ul id="menu-issue-areas-1" class="menu"><li class="green menu-item menu-item-type-post_type menu-item-object-page menu-item-15349"><a href="https://stanleycenter.org/climate-change/">Climate Change</a></li>
+<li class="yellow menu-item menu-item-type-post_type menu-item-object-page menu-item-15368"><a href="https://stanleycenter.org/nuclear-weapons/">Nuclear Weapons</a></li>
+<li class="blue menu-item menu-item-type-post_type menu-item-object-page menu-item-15363"><a href="https://stanleycenter.org/mass-violence-atrocities/">Mass Violence &#038; Atrocities</a></li>
+</ul>            <div class="mobile-btn-wrapper">
+                <button class="mobile-menu-btn" aria-label="Toggle Mobile Menu">
+                    <span></span>
+                </button>
+            </div>
+        </div>
+            </header>
+<div class="subpage-hero-v2">
+	<div class="inner">
+		<div class="wrapper">
+			<div class="hero-row">
+				<div class="hero-left">
+					<div>
+						<h1 class="underline">Iran Project</h1>
+									<div class="wysiwyg-subsection">
+				<p>Released in January 2001, “The Iran Project: The Struggle for Iran” coincided with the 20th anniversary of the release of the American hostages from Iran and examines the changes in modern Iran. This one-hour public radio documentary was hosted by Walter Cronkite and produced by Reese Erlich in association with KQED Public Radio.</p>
+
+			</div>
+					</div>
+				</div>
+				<div class="hero-right"><div class="bg-img" style="background-image: url('');"></div></div>
+			</div>
+		</div>
+	</div>
+	<div class="hero-image-caption"></div>
+</div><div class="content-block html-section white-bg"><div class="wrapper">			<div class="wysiwyg-subsection">
+				<p>(Shouts from Iranian students outside the US Embassy)</p>
+<p><b>WALTER CRONKITE:</b> In 1979, Iranian students seized the US Embassy in Tehran. The Iranians held the American diplomats&#8217; hostage for 444 days.</p>
+<p><b>BARRY ROSEN:</b> They put guns to your head, counted from 10 to 1 and said, &#8220;either answer or we&#8217;ll shoot you.&#8221;</p>
+<p><b>CRONKITE:</b> The embassy takeover and its political aftermath led to 21 years of hostility, economic sanctions and terrorist attacks. But now, many in the US and Iran say time has healed the wounds. One of the former hostages says he&#8217;s willing to return to Iran if it will promote peace.</p>
+<p><b>BARRY ROSEN:</b> Bring the hostages back to Iran to visit with the Iranian leadership. If we could be there, anything could happen.</p>
+<p><b>CRONKITE:</b> Stay tuned for &#8220;The Struggle for Iran,&#8221; a special, one hour public radio documentary. I&#8217;m your host Walter Cronkite. More after this.</p>
+<p>Twenty years ago, 52 US Embassy hostages flew home from Iran after 444 days in captivity. Their ordeal forever marked recent American history. It helped doom the re-election of President Jimmy Carter in 1980. It set the basis for the Reagan administration&#8217;s Iran-Contra scandal. To this day, the US continues economic sanctions against Iran.</p>
+<p>Yet many people in the United States and Iran say enough time has passed to heal the wounds.</p>
+<p>At the end of the program, we&#8217;ll explain how you can find out more about these topics by visiting our website: www.iranproject.org.</p>
+<p>I am Walter Cronkite. Stay tuned for &#8220;The Struggle for Iran,&#8221; a one hour special report from the Iran Project.</p>
+<p>(music up)</p>
+<p>The 1979 seizure of the US embassy in Tehran traumatized the American hostages and the American nation. But the with passage of time, at least some of the hostages and their captors have come to closure about the incident. Some now share a common hope for a democratic Iran. Most of the former students who seized the embassy are today fighting against Iranian conservatives and for democratic reform. Producer Reese Erlich gathered material for this story in New York and Tehran.</p>
+<p><b>BARRY ROSEN:</b> I spent most of my life in New York, New York City and New York State.</p>
+<p><b>REESE ERLICH:</b> Barry Rosen grew up in a middle class Jewish family.</p>
+<p><b>BARRY ROSEN:</b> My first foreign experience in my entire life happened to be as a Peace Corps volunteer in Iran in 1967 to 1969. So I was a Brooklyn boy, actually, totally out of my element landing up in Iran and I really loved it. It was a place that I really felt that it was my second home and in many ways I still do.</p>
+<p><b>MASSOUMEH EBTEKAR:</b> My father was studying in the University of Pennsylvania for his Ph.D. in mechanical engineering.</p>
+<p><b>ERLICH:</b> Massoumeh Ebtekar was born in Tehran but spent part of her childhood in a suburb of Philadelphia.</p>
+<p><b>MASSOUMEH EBTEKAR:</b> I have memories of going to school there. I had very, very good friends in the school that I went to there. Of course this was as a child in elementary school.</p>
+<p><b>ERLICH:</b> Fast-forward a few years. In 1979, Rosen as press officer at the US Embassy in Tehran, Ebtekar is enrolled as a first year student at Tehran&#8217;s Polytechnic Institute. They didn&#8217;t know each other, not yet.</p>
+<p>(Shouts from students)</p>
+<p>For over twenty-five years, Shah Mohammad Reza Pahlavi had run a brutal dictatorship in Iran backed by the US government. In early 1979, the Shah fled Iran in the face of a popular uprising of Muslims, Nationalists and Leftists. They were united in a hatred of the Shah and of what they saw as US domination of Iran. Some in the Shah&#8217;s military fought to stay in power.</p>
+<p>(Gunfire and shouting in the streets)</p>
+<p><b>NEWS CORRESPONDENT:</b> The most incredible thing is that after each fusillade of bullets, these people are returning to this square. You can hear the shooting right now. They&#8217;ve been telling us for weeks they&#8217;re willing to put their lives on the line and that&#8217;s exactly what they&#8217;re doing.</p>
+<p><b>ERLICH:</b> The popular uprising triumphed and an Islamic government came to power. In October 1979, President Jimmy Carter allowed the Shah to enter the US to receive medical treatment. Many Iranians believed the US was planning to restore the Shah&#8217;s rule. On November 4th, Muslim students stormed the US Embassy in protest of Carter&#8217;s actions. Massoumeh Ebtekar became their press spokesperson. The western media called her &#8220;Tehran Mary.&#8221;</p>
+<p><b>MASSOUMEH EBTEKAR:</b> The marines, they were shocked to see, you know, a group of students coming in like this and maybe initially they didn&#8217;t think that these people were organized.</p>
+<p><b>BARRY ROSEN:</b> They had pictures of Khomeini pinned to their shirts and their sweaters and they had clubs our guards seemed to disappear. They came directly to my office, which was very close to the gate. In a very foolish way I said, &#8220;Look, um, this is American property and you have to exit this place.&#8221; (Laughs) I figured, well you know, what can I lose I&#8217;m in deep trouble already. And the Iranians said you know, told me to shut up in Farsi and they held an automatic weapon against my head.</p>
+<p><b>MASSOUMEH EBTEKAR:</b> Initially, everybody thought that it wouldn&#8217;t take more than a couple days, maybe a couple hours.</p>
+<p><b>ERLICH:</b> The students assumed that Iranian police would quickly remove them from the Embassy but Ayatollah Khomeini, the revolutions top leader, saw an opportunity to humble the US government while garnering popular support at home. He backed the Embassy take-over.</p>
+<p>(Shouting at Embassy)</p>
+<p><b>BARRY ROSEN:</b> It started to rain harder and harder and I felt that it had a certain symbolism to it all, you know, my life was getting bleaker and bleaker and I didn&#8217;t know if I was going to live at all, or if I was marching toward an execution. We were tied hand and foot. They would take some of the cord from drapes and tie you up. I was forced to sleep bound hand and foot for several days. They were so frightened of us. They thought that we were all members of the CIA and they had seen many motion pictures of James Bond over the years so they were frightened and they thought that we were supermen. There were moments when the Iranians did interrogate us and there were moments when they would put guns to your head and count from 10 to 1 and say either answer or we&#8217;ll shoot you.</p>
+<p><b>ERLICH:</b> Rosen said after a few weeks their physical conditions got better but the hostages were to endure 444 days of mental anguish. Sometimes held in dank cellars and prisons. Even today, however, Ebtekar doesn&#8217;t apologize for that treatment.</p>
+<p><b>MASSOUMEH EBTEKAR:</b> It&#8217;s a matter of collective rights, individual rights, it&#8217;s very difficult to compare the suffering that the Iranian nation felt during fifty years of foreign domination. And comparing that with the sufferings, or the pain that they may have faced during these days.</p>
+<p><b>ERLICH:</b> Abbas Abdi, one of the main leaders of the Embassy take-over, says the hostage&#8217;s treatment flowed from a kind of violence that American taught Iran for nearly 30 years.</p>
+<p><b>ABBAS ABDI:</b> Somebody asked us, well why did you occupy the Embassy. Why did you take those people hostage? We say well, we were raised by you. We were trained by you.</p>
+<p>(Persian music)</p>
+<p><b>ERLICH:</b> Ayatollah Khomeini and his conservative supporters used the hostage crisis to consolidate power. They established an authoritarian Islamic State that imprisoned, tortured and killed opponents. In the 1980&#8217;s, Iran also fought a bitter eight-year war with Iraq. It devastated Iran&#8217;s economy. By the 1990&#8217;s, Iranians were ready for change.</p>
+<p>(Persian music)</p>
+<p>The former captors became leading advocates of political reform. They wanted an Islamic government and continued to oppose US domination of Iran. But they also opposed government corruption and the growing gap between rich and poor. Former student leader, Abbas Abdi says his ideas about Iran&#8217;s revolution matured.</p>
+<p><b>ABBAS ABDI:</b> At the time of the shock, our picture, our image of a democratic system was not a very realistic one. Obviously people who live in this, under this despotic regime may aspire and wish for democratic regime but the image that they have of that regime may be a variation of that same despotic regime.</p>
+<p><b>ERLICH:</b> Abdi, Ebtekar and other former student leaders strongly supported reformist, Mohammad Khatami when he was elected president in 1997. Later that year, relishing the relative freedom of the new administration, Abdi flew to Paris to meet with Barry Rosen. The meeting was heavily covered in the Iranian media.</p>
+<p><b>BARRY ROSEN:</b> I didn&#8217;t know if I could forgive. I don&#8217;t forget what went on. I will never forget that but as soon as we met each other, and that was over dinner, we started to talk and it&#8217;s as if everything melted away. We still had different points of view but Abbas Abdi right now is a man who&#8217;s fighting for some law and order in Iran, to build a democratic system within the country.</p>
+<p><b>ERLICH:</b> In private meetings, Rosen and Abdi reconciled themselves on a personal level but the rendezvous did nothing to warm up relations between the US and Iranian governments.</p>
+<p>(Persian music)</p>
+<p>Today, Barry Rosen is an administrator at Columbia University&#8217;s Teachers College. Massoumeh Ebtekar is a Vice President of Iran in charge of environmental affairs. Abbas Abdi heads a research institute in Iran.</p>
+<p>In a sense, Rosen has exchanged rolls with his two former captors. He no longer feels the pressure of being an Embassy spokesperson but Epticar and Abdi face tremendous responsibilities as prominent political reformers in Iran. Today, says Rosen, people like Abdi are fighting the up-hill battle.</p>
+<p><b>BARRY ROSEN:</b> I&#8217;m almost sure the regime is on his back all the time. I feel very close to the man in many ways cause he&#8217;s going through a lot of difficulty right now and I remember when I said goodbye to him when he was going back to Tehran, I said, be careful. I was worried about him.</p>
+<p><b>ERLICH:</b> Rosen says, when the time is right, he&#8217;d like to return to Iran with the other former hostages to hold discussions with Iranian leaders. That, he says, would be the final closure for an incident that traumatized him and the two nations.</p>
+<p><b>BARRY ROSEN:</b> If we could be there, anything can happen.</p>
+<p><b>ERLICH:</b> For the Iran project, I&#8217;m Reese Erlich.</p>
+<p><b>WALTER CRONKITE:</b> American news coverage of Iran often focuses on conflicts with the US or disputes among Iran&#8217;s governing elite. But we hear less about the profound grassroots changes in Iran over the past 21 years. What do ordinary Iranians think of the Islamic revolution? And how do those views impact government policy? Producer Reese Erlich begins the story in Amaameh, a rural town northeast of Tehran.</p>
+<p>(sound of garage door opening)</p>
+<p><b>ERLICH:</b> Hassan Khavari gives a mighty shove and opens the door at his small oil change garage.</p>
+<p><b>HASSAN KHAVARI:</b> We put new oil and we change the filters and we do it in the old fashion way.</p>
+<p><b>ERLICH:</b> Khavari is a village elder. He holds no political office, but people go to him for advice and to informally settle disputes. Sitting in a bare office next to his garage, Khavari says the revolution has improved life for rural folks.</p>
+<p><b>HASSAN KHAVARI:</b> Before the revolution, all those boulevards and the streets that you see didn&#8217;t exist. We didn&#8217;t have electricity. We only had some small houses made out of clay and right now that you see that we have this boulevard and it&#8217;s much nicer than many neighborhoods in Tehran.</p>
+<p><b>ERLICH:</b> Khavari says in the old days, the US dominated Iran. Iranians resented American officials, military officers and businessmen in part because they enjoyed immunity from prosecution.</p>
+<p><b>HASSAN KHAVARI:</b> The Americans were controlling our lives. If an American citizen would commit a crime in Iran, he or she would be treated under the American law. And that&#8217;s like slavery. They could do whatever they wanted.</p>
+<p><b>ERLICH:</b> The US has maintained economic sanctions against Iran for over 21 years, something Khavari sees as a source of Iran&#8217;s economic problems today: 17% unemployment and 30% inflation. But even more than those issues, he worries about the decline in Islamic morality. Khavari&#8217;s brother Ahmad says the reforms have gone too far.</p>
+<p><b>AHMAD KHAVARI:</b> Islam tells us that people, who are not related to a woman, should not see one piece of her hair or one piece of skin. But now you do and this is not acceptable under Islam.</p>
+<p><b>ERLICH:</b> While they support President Khatami on other matters, these two brothers in rural Iran would close the door on him if Iran strays too far from a strict interpretation of Muslim morality.</p>
+<p>Such conservative attitudes on social issues are widespread in Iran and they set the parameters for Iranian politics, even for the reformers.</p>
+<p>(telephone ringing)</p>
+<p>Students here at the Organization for Fostering Unity, the country&#8217;s main student organization, say reformers are hardly a united group. Some are nationalists others are secular leftists. But the vast majority are firm believers in the Islamic republic, who want more democracy within the existing system.</p>
+<p>(door opening and closing)</p>
+<p>Student leader, Ali Afshari welcomes visitors into his office. It&#8217;s certainly a grassroots operation. Foam rubber peeks out of slits in the chair cushions and paint peels off the walls. Ashfari strongly supports close ties between Mosque and State. But he objects to the existence of a new, conservative elite.</p>
+<p><b>ALI AFSHARI:</b> When I entered the University, people in certain very conservative organizations got special treatment. So we formed local organizations to create equality.</p>
+<p><b>ERLICH:</b> In 1979, leaders of the Islamic revolution promised to fight poverty and create an egalitarian society. Today, a new elite of businessmen and clerics control the country. Iranian reformers advocate democratic change, but that doesn&#8217;t mean they want a US style system, says Afshari.</p>
+<p><b>ALI AFSHARI:</b> For over 50 years, America has worked to weaken democracy in Iran. America must acknowledge our right to sovereignty and our interests. The US must create trust, remove its military forces from the Persian Gulf, and end the sanctions against Iran.</p>
+<p><b>ERLICH:</b> Afshari says, many young people are losing patience with President Khatami, who has elected promising reforms, but frequently backs down in the face of conservative attacks. Afshari, for example, criticizes the President for failing to help reopen dozens of reformist newspapers closed by conservative judges last year.</p>
+<p><b>ALI AFSHARI:</b> Many reformers don&#8217;t have anyway to publish their views. There hasn&#8217;t been enough down to allow formation of new political parties. There is not enough freedom for organizations. But our main criticism is against the conservatives. They are making it hard for President Khatami to carry out reform.</p>
+<p><b>ERLICH:</b> Interestingly enough, Afshari turns out to be a rather mild critic of Khatami compared to some other young people.</p>
+<p>(Sounds of people walking and running)</p>
+<p>On Friday mornings, thousands of young people hike for miles along dirt paths here in the stone park above Tehran. A group of ten friends stop to listen to music from a boom box.</p>
+<p>(Music, talking and laughing)</p>
+<p>A casual conversation quickly turns angry as Roya, age 23, denounces the status of women in Iran.</p>
+<p><b>ROYA:</b> I would like to see move freedom, more equality. Girls can&#8217;t play certain sports, and there are few sports facilities for girls. The militias still come after us. At a birthday party for my family, they took us away for wearing makeup and claimed we were a mixed group of unrelated boys and girls. They held us for two days.</p>
+<p><b>ERLICH:</b> While it doesn&#8217;t happen frequently these days, government sanctioned militias can still detain women with inadequate head coverings, or groups of unrelated men and women congregating together. Roya was the victim of precisely the conservative policies advocated by auto garage owner Hassan Khavari.</p>
+<p>(Persian music and singing)</p>
+<p>Iran is a deeply divided society. A large majority of Iranians voted for reform when they elected President Khatami in 1997 and put a majority of reformists into the parliament in 2000. But the President and parliament don&#8217;t hold real power. Conservative clerics maintain control through the courts, right-wing vigilantes, police and military. And the conservatives certainly have a popular base of support. Mohammad Abtahi, first secretary to President Khatami says, some young people push too hard and give conservatives an excuse to crack down.</p>
+<p><b>MOHAMMAD ALI ABTAHI:</b> They elevate the demands of the society to a point that they&#8217;re not, it&#8217;s not possible to fulfill them and it just leads to confrontations and conflict.</p>
+<p><b>ERLICH:</b> Abtahi says youthful militants don&#8217;t appreciate the depth of conservative sentiment in Iran.</p>
+<p><b>MOHAMMAD ALI ABTAHI:</b> There are people inside who should limit their demands and expectations and balance their demands and expectations. So even if there are people who want this place to become like Switzerland, they should remember that apart from belief issues, there is a culture here and this culture is embedded in the people. And if a government comes into power, and it&#8217;s not saying that it regards or basically all it has to do is ignore or disregard this culture and they, honestly say, it would be an unsuccessful government. You should accept the fact that one of the main reasons for the downfall of the Shah was his neglecting of the religious issues of the people.</p>
+<p><b>ERLICH:</b> President Khatami, himself an Islamic clergyman, seems likely to continue with his go-slow policies. But pressure from below is constantly boiling up. Roya, interviewed in Stone Park, typifies the impatience of many young Iranians.</p>
+<p><b>ROYA:</b> President Khatami has made a lot of promises, but hasn&#8217;t come through. Maybe they haven&#8217;t allowed him to make the reforms but maybe he was just trying to get votes.</p>
+<p>(Persian music)</p>
+<p><b>ERLICH:</b> Because Iranian society itself is so deeply split the battle between conservatives and reformers will likely continue for some time. When presidential elections take place this spring, Iranians will have another chance to express their views about the need for reform &#8211; and how fast it should come. For the Iran Project, I&#8217;m Reese Erlich in Tehran.</p>
+<p><b>CRONKITE:</b> I&#8217;m Walter Cronkite and you&#8217;re listening to &#8220;The Struggle for Iran,&#8221; a special documentary on public radio.</p>
+<p>Iran&#8217;s neighbors face political and economic turmoil. As a result, Iran today hosts more refugees than any other country in the world and receives almost no international aid for them. Refugees from Iraq and Afghanistan are welcomed into Iranian communities—not held in refugee camps. But many Iranians now blame the refugees for the country&#8217;s high unemployment and other economic problems. Correspondent Keith Porter visited Mashad, an Iranian city 150 miles from the Afghan border.</p>
+<p>(Music from Afghan musicians)</p>
+<p><b>KEITH PORTER:</b> These Afghan musicians living in Mashad, sing mournfully of their homeland. They fled Afghanistan when the Taliban regime seized power in 1996 and banned all music as un-Islamic.</p>
+<p>(music continues)</p>
+<p>From 1979 to 1992, Iran accepted Afghan refugees both for humanitarian and political reasons. The government opposed the Soviet occupation of Afghanistan and later came to oppose the Taliban—an Islamic regime that is too fundamentalist even for the Iranians. Iran criticizes the Taliban for oppressing women and holds Taliban responsible for the murder of eight Iranian diplomats. But these days, Iran faces 17 % unemployment and 30% inflation. Many Iranians blame the refugees for these economic hardships.</p>
+<p>(Sounds from the streets)</p>
+<p><b>IRANIAN WORKER:</b> Yes they take away the jobs from Iranians and they work for lower wages and they work harder than us and get paid lower wages.</p>
+<p><b>PORTER:</b> This is Shohada Square, a load and busy traffic circle in the middle of Mashad. On one side of the street, Afghan day laborers stand, hoping to get low paying construction jobs. Across the street, Iranians congregate, competing for the identical work.</p>
+<p><b>IRANIAN WORKER:</b> The government should either throw them out of the country or they have to do something about our situation. They have war in their country we understand but they come here and they take the jobs away from us.</p>
+<p><b>PORTER:</b> During economic hard times, similar resentment is often voiced in the United States and other countries. Arguments favorable to the immigrants have a familiar ring as well. Amina Safi Afzali (ah-MEAN-uh saw-fee off-ZAHL-ee) is a leader of the Afghan Islamic women&#8217;s movement in Mashad.</p>
+<p><b>AMINA SAFI AFZALI:</b> Afghan refugees are not taking away jobs. Afghans work the hardest and lowest paying jobs, which the Iranians won&#8217;t do. Unemployment among Iranians is mostly among the educated people and they won&#8217;t do these jobs.</p>
+<p><b>PORTER:</b> Scapegoating immigrants is partly the result of shifting political priorities inside Iran, according to Carrol Faubert, head of the United Nations High Commission for refugees in Iran.</p>
+<p><b>CARROL FAUBERT:</b> The attitude has changed. During the early 80&#8217;s, the struggle of the Afghans was looked upon as a jihad and there was a lot of spontaneous sympathy. Solidarity was stressed. Now we&#8217;re very much in a state of civil war and a situation that is now entering its third decade. So in a sense, there is what I would call asylum fatigue.</p>
+<p><b>PORTER:</b> Mohammad Ali Abtahi (AHB-tuh-hee), first secretary to Iran&#8217;s President Mohammad Khatami (HAH-tah-mee) expresses the new, wary attitude of the Iranian government.</p>
+<p><b>MOHAMMAD ALI ABTAHI:</b> The world cannot expect us to host this many refugees without any help and without any aid. The fact is that they have taken away a lot of jobs from Iranian workers. Unemployment which is relatively high in the country, it would be natural for us to want to repatriate some of these refugees back to their own countries.</p>
+<p><b>PORTER:</b> About 2 million Afghans live in Iran today. In 1992, Iran stopped issuing identity documents to Afghan refugees that means hundreds of thousands live illegally and are subject to deportation. Last year the government of Iran and the UN High Commissioner for Refugees began a voluntary repatriation program that offers Afghan refugees a free trip back to Afghanistan—and 20 US dollars, the equivalent of several months pay.</p>
+<p><b>HAKIM:</b> After the invasion of Afghanistan I came to Iran, which is almost 20 years.</p>
+<p><b>PORTER:</b> Hakim, along with his wife and four children, has accepted the offer to return home. Hakim and his sons have barely scraped by working low paying jobs. They&#8217;re among hundreds of Afghan refugees at a repatriation center outside of Mashad preparing to board busses for an all night journey.</p>
+<p><b>HAKIM:</b> We had a fair life in Iran, but since recently it&#8217;s getting difficult to get work and in the media we hear that they tell the Afghans they should go back to their country. So we decided to go back before anything, you know, else happens.</p>
+<p><b>PORTER:</b> The UN and the government of Iran try to insure that these refugees are returning voluntarily and that genuine political refugees can apply for asylum. So far, officials say about 4,500 refugees&#8217; return to Afghanistan every week. But officials can&#8217;t say how many immediately come back to Iran.</p>
+<p><b>AMINA SAFI AFZALI:</b> I don&#8217;t think the refugees can endure the difficulties in Afghanistan.</p>
+<p><b>PORTER:</b> Afzali, from the Islamic Women&#8217;s Association, believes the repatriation program will fail because Iran and the UN can&#8217;t solve the underlying problem: political and economic turmoil inside Afghanistan.</p>
+<p><b>AMINA SAFI AFZALI:</b> I don&#8217;t think this program will be successful. People are fleeing the Taliban rule. I don&#8217;t think the Taliban have changed their attitude toward women, and they have not changed their policies. As long as we have the original problem people are fleeing from we cannot solve the repatriation problem.</p>
+<p>(Afghanian music)</p>
+<p><b>PORTER:</b> Back at the Afghan refugees&#8217; home, the musicians play a plaintive song about eternal wandering. Iranians have always been famous for their hospitality. Refugees were welcomed here on humanitarian grounds and as a way of spreading the Islamic revolution. But not Iranian hospitality is running out. For the Iran Project, I&#8217;m Keith Porter in Mashad, northern Iran.</p>
+<p><b>WALTER CRONKITE:</b> You&#8217;re listening to &#8220;The Struggle for Iran.&#8221; Coming up: biases in US media coverage of Iran and why Tehran is considered the &#8220;Bermuda Triangle&#8221; of US foreign policy. Also, pop music and sexy dancers as weapons in a cultural battle between Los Angeles and Tehran. For more information about Iran or to post your comments about this program, visit our website at: <a href="http://www.iranproject.org/">www.iranproject.org</a>. That&#8217;s www.iranproject.org. I&#8217;m Walter Cronkite. More after this.</p>
+<p>(Persian music)</p>
+<p>In Iran, conservative forces have closed reformist newspapers, afraid that people might learn the truth about government corruption and repression. But having a more open press in the US doesn&#8217;t mean Americans get accurate reporting about Iran. In fact, critics say for many years&#8217; major US media distorted events in Iran in furtherance of US foreign policy goals. Correspondent, Deepa Fernandes, reports from New York.</p>
+<p><b>DEEPA FERNANDES:</b> The 1950&#8217;s were a trying time for the US media.</p>
+<p><b>SENATOR JOE MCCARTHY (Archival Tape):</b> Last night I discussed the Communists in the State Department I stated that I had the names of 57 card-carrying members of the Communist Party. When I have the names of 57, you can be right well sure there are a lot more.</p>
+<p><b>FERNANDES:</b> Many major newspapers uncritically reported Senator Joseph McCarthy&#8217;s smears and many reported foreign policy issues from a simplistic anti-Communist perspective.</p>
+<p>In 1950, Mohammed Mossadegh became Prime Minister in Iran. He was a nationalist who favored greater democracy and initially enjoyed US support. But in 1953 he nationalized Western Oil holdings in order to give Iranians a greater share of the country&#8217;s oil wealth.</p>
+<p>Professor Mansoor Farhang, who now lives in New York, is a former Iranian Ambassador to the UN and has written a book analyzing US media coverage of Iran.</p>
+<p><b>MANSOOR FARHANG:</b> The press depicted it as very radical, that Iranians were not capable of doing this. It was going to disturb the international oil market. It was something unusual—which it was.</p>
+<p><b>FERNANDES:</b> Prime Minister Mossadegh allowed political parties and newspapers of all political stripes to function openly. But Professor Farhang says both the US Government and media vilified the Prime Minister because he wouldn&#8217;t side with the US against the USSR.</p>
+<p><b>MANSOOR FARHANG:</b> They didn&#8217;t believe in neutrality, they didn&#8217;t believe in authentic democratic development within a country that was not an ally of the west or the east. These articles portray Mossadegh as either a communist, which was absolutely outrageous or someone who really didn&#8217;t have a coherent view of what he wanted.</p>
+<p><b>FERNANDES:</b> US Government documents now confirm that in 1953 the CIA masterminded a coup against Prime Minister Mossadegh. The US installed the pro-western Shah Reza Pahlavi.</p>
+<p><b>CBS ANCHOR (Archival tape):</b> In the quick shift of power, Mossadegh was finally apprehended and awaits trial for treason. The Shah, who had fled to Rome, comes home. Backed by General Zahidi, military strongman who engineered his return to power. Iranian oil may again flow westward.</p>
+<p><b>MANSOOR FARHANG:</b> From 1953, after the coup to 1979, the image of Iran in the US media is a country going through the process of modernization. He is pursuing modernization and reform from the top. A modernizing monarch who, as Henry Kissinger said, &#8220;an unconditional ally.&#8221;</p>
+<p><b>CBS ANCHOR (Archival tape):</b> The Shah&#8217;s well-rounded personality is felt throughout Iran. Like his father, the present Shah has always had one thing uppermost in mind: to improve the lot of his people.</p>
+<p><b>FERNANDES:</b> Norman Solomon, a nationally syndicated media columnist, says the press rarely reported the repression, torture and lack of human rights in Iran. He says the major media took their cue from US Government policy, which saw those problems as secondary to maintaining a stable, pro-western regime.</p>
+<p><b>NORMAN SOLOMON:</b> This is chronic reliance on official sources, which is not what journalism should be. Authentic journalism should be independent, assertive, inquiry that is not tied to specific official sources. Instead we had something akin to stenography of the top officials in Washington.</p>
+<p><b>FERNANDES:</b> Elaine Sciolino disagrees. She is a senior correspondent with the New York Times who has covered Iran extensively for over 20 years. She says, given difficult circumstances, many US reporters covered the story well.</p>
+<p><b>ELAINE SCIOLINO:</b> Were there journalists who had special relationships with the Shah and with the US government at the time? Absolutely. Did American diplomats tend to curry favor with the Shah and not report on what was going on in the mosques? Absolutely. But I would argue that yes there was a lot of bad journalism before the revolution, but there was also a lot of good journalism.</p>
+<p><b>FERNANDES:</b> Professor Farhang says after the 1979 Islamic revolution, and particularly after the seizure of the US Embassy later that year, US media adopted a new set of biases.</p>
+<p><b>MANSOOR FARHANG:</b> Religion and fanaticism come to replace the modernizing frame.</p>
+<p><b>NEWS ANCHOR:</b> Religion in Iran has always been a passionate, pervasive force, and so Iran has turned its back on the outside world.</p>
+<p><b>MANSOOR FARHANG:</b> There was no economics, there was no politics, there was no culture. Their society was not pluralistic, their social classes having very diverse tendencies, not at all. The dominant tendency in the dominant frame became religion and virtually nothing else.</p>
+<p><b>FERNANDES:</b> In 1997, Iranians elected reformist president, Mohammad Khatami. Then in 2000 they elected a reformist majority to Parliament. But conservatives maintain control in other institutions. The political situation remains complicated, and US policy makers haven&#8217;t developed a unified policy towards Iran. In this context, says Prof. Farhang; the US media are less likely to take their cues from US policy makers.</p>
+<p><b>MANSOOR FARHANG:</b> Overall I would say the current press coverage is far better than what it was in the past, and the principle reason is that there is a distrust of the official&#8217;s sources, skepticism of what the officials say to the journalists.</p>
+<p><b>ELAINE SCIOLINO:</b> This is a country where a national experiment is going on between Islam and democracy. The country has not quite figured out how much of each chemical to put in the beaker to prevent a massive explosion.</p>
+<p>As a journalist this is both very exciting. It&#8217;s very dangerous. It&#8217;s very adventurous because every day one sees this experiment playing out in the streets, in the courts, in the parliament, in the presidential palace, in the villages, in the universities.</p>
+<p><b>FERNANDES:</b> When US policy makers focused a great deal of attention on Iran through the 1980&#8217;s, some major media delivered their most biased coverage. Today, with the end of the cold war and the situation in Iran far move complicated, at least some major media are providing far better information. For the Iran Project, I&#8217;m Deepa Fernandes in New York.</p>
+<p><b>WALTER CRONKITE:</b> Iran has been called the &#8220;Bermuda Triangle&#8221; of US foreign policy because four Washington administrations have gotten lost on the issue.</p>
+<p>How President Bush navigates relations with Iran will depend on a delicate balance in the US—and Iran. Correspondent Kristin McHugh begins our report in Washington, DC.</p>
+<p>(Sounds from Washington DC office)</p>
+<p><b>KRISTIN MCHUGH:</b> As President Bush takes up work, lobbyists and think tank analysts who advise the new administration are busy in offices near Dupont Circle, scanning the skies and oceans for any incoming political missiles that might hit the new administration.</p>
+<p>(Sonar blips)</p>
+<p>Iran is showing up on Washington&#8217;s sonar screen more often these days. The US broke diplomatic relations in 1979 and has imposed a series of sanctions over the last 20 years… including the Iran-Libya Sanctions Act of 1996. Neither Republican nor Democratic administrations have been able to bring Iran back into the US sphere of influence. What should President Bush do? Well, there&#8217;s no lack of advice.</p>
+<p><b>JIM PHILLIPS:</b> Iran is in a very volatile period.</p>
+<p><b>MCHUGH:</b> Jim Phillips is a Research Fellow on Middle Eastern Affairs at the conservative Heritage Foundation.</p>
+<p><b>JIM PHILLIPS:</b> Those that support terrorism against the US, against the west, and their own people, still retain considerable power in the security bureaucracies and the foundations in the intelligence services.</p>
+<p><b>MCHUGH:</b> Most conservative Republicans oppose a thaw in US relations with Iran. They are joined by some Democrats, particularly those who strongly support Israel. Israel supported Iran during the Iran-Iraq war of the 1980&#8217;s and even sold weapons to the conservative mullahs. But today Israel denounces Iran because of its opposition to the Middle East peace process and for its support of Hezbollah guerrillas in Lebanon. Ken Bricker is press secretary for the American Israeli Public Affairs Committee, or AIPAC.</p>
+<p><b>KEN BRICKER:</b> We believe that President Khatami is for real. Unfortunately, he&#8217;s not in charge over there. The Council of Guardians, which is the conservative mullahs who are opposed to any relations with the US, they&#8217;re the ones who are in charge.</p>
+<p><b>MCHUGH:</b> AIPAC backs the Clinton Administration criteria for normalizing relations with Iran. The US says Iran must support the Middle East peace process, end support for terrorism and stop developing weapons of mass destruction.</p>
+<p>For their part, Iranian officials criticize the pro-Israel lobby&#8217;s undue influence on US thinking. They say the US has no right to dictate Iran&#8217;s foreign policy. And Mohammad Ali Abtahi, first secretary to Iran&#8217;s president, flatly denies that his country is developing weapons of mass destruction.</p>
+<p><b>MOHAMMAD ALI ABTAHI:</b> Regardless of what America claims or says independently, we believe that all nuclear, chemical and biological weapons should be eradicated. Eliminated.</p>
+<p><b>REESE ERLICH:</b> So that means Iran is not developing such weapons?</p>
+<p><b>MOHAMMAD ALI ABTAHI:</b> Undoubtedly, that&#8217;s what it means.</p>
+<p><b>MCHUGH:</b> Some in the US argue that economic interests should take precedence in US relations with Iran. For example, Republicans such as Congressman Bob Ney and Senator Arlen Specter want to end US sanctions. They are supported by national trade groups and big oil companies. Mike Stinson, a Senior Vice President with Conoco Oil in Houston, warns that the US will lose out by ignoring Iran&#8217;s vast business potential.</p>
+<p><b>MIKE STINSON:</b> It would be a sad, sad thing if we stood by and watched European companies who want this desperately or Japanese companies who want this desperately to simply scoot in front of us and do yet another strategic deal with Iran.</p>
+<p><b>MCHUGH:</b> Conoco and other US oil companies are also worried about US backed plans to build a pipeline from the oil rich Caspian Sea to Turkey. Some oil companies would like to see it run through Iran, a route they argue is shorter and more practical. The ideological and economic splits over Iran policy are likely to continue in Washington for many months to come.</p>
+<p>(Shouts from Iranian demonstrators)</p>
+<p>Ruling circles back in Iran are also split about re-establishing relations with the US. Any major Iranian politician who openly advocates restoring diplomatic ties faces the wrath of militant conservatives.</p>
+<p>(Shouts from Iranian demonstrators)</p>
+<p>These Iranians demonstrating in Tehran may be chanting &#8220;death to America,&#8221; but a recent poll by Iran&#8217;s Culture Ministry shows 56 percent of Iranians want to restore normal diplomatic ties with the US. It remains to be seen if that popular opinion will translate into a changed policy.</p>
+<p>Former President Jimmy Carter has a unique perspective on this issue. He broke diplomatic ties with Iran in 1979 and initiated sanctions. He says today, the situation has changed and it&#8217;s time to move on.</p>
+<p><b>JIMMY CARTER:</b> I think the United States government should reach out to Iran with an effort to restore full diplomatic relations, full trade relations, obviously Iran would have to meet us halfway before definite steps are taken. But we should not wait until Iran takes the first step.</p>
+<p><b>MCHUGH:</b> Back in Washington the new president will have to confront the Iran debate, an issue that has frustrated four previous administrations. In August the Iran-Libya Sanctions Act will expire unless renewed by Congress. By then President Bush will have to decide whether to stay in the station or jump on board the train for a new Iran policy.</p>
+<p>(Sound of Metro rail doors closing &#8220;Please stand clear of the doors. Thank you.&#8221;)</p>
+<p>For the Iran Project, I&#8217;m Kristin McHugh in Washington.</p>
+<p><b>WALTER CRONKITE:</b> The United States has a long history of cultural influence in Iran. The Islamic Revolution in 1979 wiped out most popular culture. So, many Iranian entertainers moved to Los Angeles. Today their music, CD&#8217;s and videos are smuggled back to Iran. But, some Iranians resent what they consider a new attempt to westernize their culture. Correspondent Debra Baer [bear] begins the story in Los Angeles.</p>
+<p>[Traditional Persian music played by Sadeghi]</p>
+<p><b>MANOOCHEHR SADEGHI:</b> These are some of the Persian motifs and Persian rhythmic things…What I play, if you find a santur player in Tehran, you will hear this.</p>
+<p><b>DEBRA BAER:</b> UCLA Musicologist Manoocher Sadeghi began playing the santur, or hammer dulcimer, as a boy in Tehran. He studied with a master of the Persian Classical Tradition &#8211; a music with ancient roots that has evolved through centuries of Islamic and European cultural influence.</p>
+<p>By the time Sadeghi was a master musician himself in the late &#8217;50&#8217;s. A different sort of music was emerging in Iran.</p>
+<p>(Sound of Persian pop music)</p>
+<p><b>MANOOCHEHR SADEGHI:</b> They composed these new songs in the western style—pop songs like French and Italian and then they put Persian words to it. That&#8217;s how the pop music came about. It was pretty appealing to the younger people because they were the ones; they were under the influence of the west.</p>
+<p>(Music by Googoosh)</p>
+<p><b>BAER:</b> By the 1970&#8217;s, Persian pop was huge, and its reigning diva was Googoosh. She fused modern western rhythms with traditional Persian melodies and poetry. With the vocal talent of Barbara Streisand and the star power of Madonna, Googoosh set a new course in music and fashion—even introducing shorter hairstyles and hemlines.</p>
+<p>Musicologist Sadeghi says the pop scene didn&#8217;t emerge in a vacuum.</p>
+<p><b>MANOOCHEHR SADEGHI:</b> During the Shah, he had an ideology of westernization of Iran very rapidly. So it was not only the music. The whole country was going through this change. In industry, in culture, in arts, politics.</p>
+<p><b>BAER:</b> Iran was also trying to develop its economy. Shah Mohammed Reza Pahlavi opened the country to western oil companies, foreign investment, and his critics charged -foreign domination. Western culture flowed through the same pipeline—both the good and the bad.</p>
+<p><b>MANOOCHEHR SADEGHI:</b> The negative things were like promiscuity, breaking the family ties, pornography, uses of drug, and gradually losing the faith in their religion.</p>
+<p><b>BAER:</b> Anger was building over growing western domination of the economy, US support of the Shah&#8217;s dictatorship, and an increasingly repressive military. Conservative clerics mobilized anti-western sentiment into a popular movement that ended the Shah&#8217;s reign in 1979.</p>
+<p>(Protestors shouting in the streets)</p>
+<p>In the new Islamic republic, everything western was out. Prayers and dirges were in. Pop was banned. The industry virtually shut down. Women couldn&#8217;t perform in front of men. Googoosh stayed in Iran, and her career was frozen in time. But most of Iran&#8217;s pop singers fled to the west. Many ended up in Los Angeles—already home to a growing Iranian American community.</p>
+<p>(Sounds from Tehrangeles, Farsi language, Persian music…)</p>
+<p>West LA is the heart of what Iranians here call Tehrangeles. Iran&#8217;s music industry was transplanted and reemerged in the 1980&#8217;s. LA became the new capital of Persian pop. Old stars flourished and new ones emerged.</p>
+<p>(An-Dee&#8217;s promotional video &#8211; announcer in Farsi AN-DEE!)</p>
+<p><b>AN-DEE:</b> My name is An-Dee Andrahneek Mahdaden (an-DRAH-neek mah-DAD-ee-an). My friends call me An-Dee, which is the same as Andy.</p>
+<p>(An-Dee&#8217;s music)</p>
+<p><b>BAER:</b> Andy is the Ricky Martin of LA Persian pop. His music videos include lots of western instruments and sexy female dancers.</p>
+<p><b>AN-DEE:</b> I sing about girls, mostly about love; gained, love lost, beautiful girls, mostly beautiful Iranian girls. And dance music.</p>
+<p><b>BAER:</b> An-Dee&#8217;s musical roots are decidedly western. In the 1970&#8217;s in Iran, when everyone was going &#8220;ga-ga&#8221; over Googoosh, he was singing rock cover tunes in Tehran clubs catering to Europeans and Americans.</p>
+<p><b>AN-DEE:</b> In high school I got attracted to music because we had Voice of America blasting in radio stations in Iran, and I would listen to all of this rock music coming from America: Rod Stewart, Deep Purple, Pink Floyd, Elton John.</p>
+<p><b>BAER:</b> In 1978—Dreaming of becoming an American rock star—An-dee moved to LA where he became a Persian American pop star instead. An-dee&#8217;s big with the under 30 crowd in North America, Europe and Iran—where pop, though illegal, continued to thrive underground. His smuggled tapes are widely bootlegged from Iran to Uzbekistan and Azerbaijan.</p>
+<p><b>AN-DEE:</b> When something is banned people want more. Because we are banned in Iran, even people who don&#8217;t like us will buy us.</p>
+<p><b>BAER:</b> Until a few years ago, Iranians caught with banned pop music faced fines, whippings, even jail. But today, the reformist government of President Mohammad Khatami is more tolerant.</p>
+<p>(Sounds from teen hangout)</p>
+<p>At a teen hangout in the foothills above Tehran, kids break dance to western music blaring from a boom box… Just about everyone knows An-Dee&#8217;s music.</p>
+<p><b>TEEN MALE:</b> I like him partially because of his personality. And his music is very happy; it&#8217;s very alive.</p>
+<p><b>BAER:</b> An-Dee is both loved—and hated. Some Iranian teens think An-Dee and other LA Persian pop singers are too westernized.</p>
+<p><b>TEEN FEMALE:</b> They sing garbage. It doesn&#8217;t make sense. You can&#8217;t figure what they&#8217;re talking about. So I don&#8217;t listen to them.</p>
+<p><b>BAER:</b> To combat what it sees as the pernicious influence of western music, the government now allows Iranian musicians to perform indigenous pop. Fans like this teen consider it more compatible with Iranian culture.</p>
+<p><b>TEEN FEMALE:</b> The local pop music has meaning behind it. They take lyrics from the classic poets. There is a meaning and context to the song, which the kids relate to. It&#8217;s also Islamic. It stays with the boundary of the culture. The stuff made over there by An-Dee there&#8217;s no message to it.</p>
+<p><b>BAER:</b> While opinions are split on Andy, all of the young people interviewed idolize Googoosh. Banned from performing 20 years ago, the pop diva returned to the stage last year. She made a concert tour not in Iran, but in the West, after being granted permission to travel. While abroad, she released a new CD called &#8220;Zoroaster&#8221; featuring the song &#8220;Captive Land.&#8221;</p>
+<p>(Googoosh singing Captive Land)</p>
+<p><b>ALAN GHASEMMI:</b> It&#8217;s about a land that&#8217;s been captive.</p>
+<p><b>BAER:</b> Alan Ghasemmi promoted Googoosh&#8217;s sold out U.S. concerts.</p>
+<p><b>ALAN GHASEMMI:</b> She came from a captive land but she&#8217;s hoping like everybody that the new government will be more moderate. And it&#8217;s time after 20 years it&#8217;s time to be moderate. It&#8217;s time to be a little bit westernized.</p>
+<p><b>BAER:</b> Just how moderate or how westernized Iran should be is the subject of ongoing political and cultural debate.</p>
+<p><b>MANOOCHEHR SADEGHI:</b> The Persian people, whether they are fanatic or not fanatic, they have a different point of view toward their culture.</p>
+<p><b>BAER:</b> UCLA musicologist Manoochehr Sadeghi.</p>
+<p><b>MANOOCHEHR SADEGHI:</b> And whatever will happen for that country, it will be in the hands of those people there.</p>
+<p><b>BAER:</b> Gogoosh and LA&#8217;s Persian pop singers dream of performing again in their native land, and they are optimistic it will happen. Until then, they remain artists in exile, and the battle for Iran&#8217;s soul continues both in politics and culture.</p>
+<p><b>MANOOCHEHR SADEGHI:</b> In the opinion of many scholars, the rush was too fast toward modernization and industrialization and taking away people&#8217;s religion. And the culture could not take it. Now in the future the western influence and the Persian influence and the religion and the freedom will all take its own place and people will have a better system in the future. More music will be emerging.</p>
+<p><b>BAER:</b> For the Iran Project, I&#8217;m Debra Baer in Los Angeles.</p>
+<p><b>WALTER CRONKITE:</b> Whether the issue is pop music or political dissent, Iran has undergone profound changes since the 1979 revolution. The country has evolved from a repressive, theocratic state to one where reformers and conservatives do daily battle over democratic freedoms. Both sides say Iran must determine its future free from US domination. But they profoundly disagree on how or even whether to build a democratic Islamic state. The changes in Iran open up new possibilities for improving US-Iranian relations. But it remains to be seen if leaders on either side will take advantage of those possibilities.</p>
+<p>&#8220;The Struggle for Iran&#8221; was produced by Reese Erlich in association with KQED Radio in San Francisco. The show was made possible by the Stanley Foundation, producers of <i>Common Ground</i>, radio&#8217;s weekly program on world affairs.</p>
+<p>For more information about Iran or to post your comments about this program, visit our website at: www.iranproject.org. That&#8217;s www.iranproject.org.</p>
+<p>We want to thank Maziar Bahari and Babak Pirouz for their work in Tehran and Helene Papper for her reporting in Georgia.</p>
+<p>Thanks to WBEZ in Chicago. Special thanks to sound engineers Kenneth Mason and Katrine Gloukhov in Washington DC and Tim Scott Lissy of KWPC in Muscatine, Iowa.</p>
+<p>You&#8217;ve been listening to the Iran Project&#8217;s radio special, &#8220;The Struggle for Iran.&#8221; I&#8217;m your host Walter Cronkite.</p>
+
+			</div></div></div><footer class="footer">
+		<div class="column-wrapper">
+		<div class="col-1">
+			<a href="/"><img src="/wp-content/themes/stanley-center/images/logo-white-2025@2x.png" alt="Stanley Center"></a>
+			<p>304 Iowa Avenue<br />
+Muscatine, Iowa 52761<br />
+USA</p>
+			<p>+1 563 264 1500</p>
+			<p><a href="/cdn-cgi/l/email-protection#84edeae2ebc4f7f0e5eae8e1fde7e1eaf0e1f6aaebf6e3"><span class="__cf_email__" data-cfemail="fc95929a93bc8f889d929099859f999288998ed2938e9b">[email&#160;protected]</span></a></p>
+			<a class="btn grey-btn" href="/contact/">contact us</a>
+		</div>
+		<div class="col-2">
+			<h5>Global Challenges</h5>
+			<ul id="menu-issue-areas-2" class="menu"><li class="green menu-item menu-item-type-post_type menu-item-object-page menu-item-15349"><a href="https://stanleycenter.org/climate-change/">Climate Change</a></li>
+<li class="yellow menu-item menu-item-type-post_type menu-item-object-page menu-item-15368"><a href="https://stanleycenter.org/nuclear-weapons/">Nuclear Weapons</a></li>
+<li class="blue menu-item menu-item-type-post_type menu-item-object-page menu-item-15363"><a href="https://stanleycenter.org/mass-violence-atrocities/">Mass Violence &#038; Atrocities</a></li>
+</ul>		</div>
+		<div class="col-3">
+			<h5>Quick Links</h5>
+			<ul id="menu-quick-links" class="menu"><li id="menu-item-15382" class="menu-item menu-item-type-post_type menu-item-object-page current-page-ancestor menu-item-15382"><a href="https://stanleycenter.org/about/">About Us</a></li>
+<li id="menu-item-455" class="menu-item menu-item-type-taxonomy menu-item-object-article_type menu-item-455"><a href="https://stanleycenter.org/article_type/publication/">Publications</a></li>
+<li id="menu-item-47" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-47"><a href="https://stanleycenter.org/events/">Events</a></li>
+<li id="menu-item-15358" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-15358"><a href="https://stanleycenter.org/journalism-media/">Programs for Journalists</a></li>
+<li id="menu-item-15381" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-15381"><a href="https://stanleycenter.org/local-commitment/">Local Commitment</a></li>
+<li id="menu-item-15386" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-15386"><a target="_blank" href="https://livingbuilding.stanleycenter.org/">Living Building</a></li>
+</ul>		</div>
+		<div class="col-4">
+			<h5>Stay connected</h5>
+			<ul id="menu-social-media-1" class="menu"><li class="bluesky menu-item menu-item-type-custom menu-item-object-custom menu-item-13162"><a target="_blank" href="https://bsky.app/profile/stanleycenter.org">Bluesky</a></li>
+<li class="linkedin menu-item menu-item-type-custom menu-item-object-custom menu-item-58"><a target="_blank" href="https://www.linkedin.com/company/stanley-center">LinkedIn</a></li>
+<li class="instagram menu-item menu-item-type-custom menu-item-object-custom menu-item-14827"><a target="_blank" href="https://www.instagram.com/thestanleycenter/">Instagram</a></li>
+<li class="facebook menu-item menu-item-type-custom menu-item-object-custom menu-item-56"><a target="_blank" href="https://www.facebook.com/StanleyCenterforPeaceandSec">Facebook</a></li>
+</ul>			<a class="btn grey-btn" href="/subscribe/">subscribe</a>
+		</div>
+	</div>
+	<div class="copyright">
+		<p>© 2026 Stanley Center for Peace and Security  |  <a href="/privacy-policy/">Privacy Policy &amp; Terms of Use</a>  |  <a href="/accessibility/">Accessibility Statement</a></p>
+	</div>
+</footer>
+<div id="cookie-notice">
+	<p>
+		The Stanley Center for Peace and Security takes your data privacy and security seriously. When you visit
+		our website, we use technologies like cookies to collect anonymized data so that we can better understand
+		and serve our audience. By accepting our use of cookies, your data will be aggregated with all other user
+		data. For more information, please read our
+		<a href="https://stanleycenter.org/privacy-policy/" target="_blank">privacy policy.</a><br>
+		<button class="accept">Accept</button>
+		<button class="decline">Decline</button>
+	</p>
+</div>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link rel="stylesheet" href="/wp-content/themes/stanley-center/css/fonts/icomoon/fonts.css">
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":["/wp-*.php","/wp-admin/*","/wp-content/uploads/*","/wp-content/*","/wp-content/plugins/*","/wp-content/themes/stanley-center/*","/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+<script id="jquery-js" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js?ver=7.1.2"></script>
+<script id="swiper-js" src="https://stanleycenter.org/wp-content/themes/stanley-center/node_modules/swiper/swiper-bundle.js?ver=7.1.2"></script>
+<script id="splide-js" src="https://stanleycenter.org/wp-content/themes/stanley-center/node_modules/@splidejs/splide/dist/js/splide.min.js?ver=7.1.2"></script>
+<script id="/js/lib.js-js" src="https://stanleycenter.org/wp-content/themes/stanley-center/js/lib.js?ver=v1568395213"></script>
+<script id="/js/script-v2.js-js" src="https://stanleycenter.org/wp-content/themes/stanley-center/js/script-v2.js?ver=v1783630202"></script>
+<script id="/js/eu-cookie-notice.js-js" src="https://stanleycenter.org/wp-content/themes/stanley-center/js/eu-cookie-notice.js?ver=v1684248286"></script>
+<script id="wp-emoji-settings" type="application/json">
+{"baseUrl":"https://s.w.org/images/core/emoji/17.0.2/72x72/","ext":".png","svgUrl":"https://s.w.org/images/core/emoji/17.0.2/svg/","svgExt":".svg","source":{"concatemoji":"https://stanleycenter.org/wp-includes/js/wp-emoji-release.min.js?ver=7.1.2"}}
+</script>
+<script type="module">
+/*! This file is auto-generated */
+var e="script#wp-emoji-settings",t=document.querySelector(e);if(!(t instanceof HTMLScriptElement))throw new Error("Element missing: "+e);const r=JSON.parse(t.text),s=(window._wpemojiSettings=r,"wpEmojiSettingsSupports"),o=["flag","emoji"];function i(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(s,JSON.stringify(t))}catch(e){}}function c(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0);const r=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);return t.every((e,t)=>e===r[t])}function p(e,t){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var n=e.getImageData(16,16,1,1);for(let e=0;e<n.data.length;e++)if(0!==n.data[e])return!1;return!0}function u(e,t,n,r){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\udde8\ud83c\uddf6","\ud83c\udde8\u200b\ud83c\uddf6")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!r(e,"\ud83e\u1fac8")}return!1}function f(e,t,n,r){let a;const s=(a="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):document.createElement("canvas")).getContext("2d",{willReadFrequently:!0}),o=(s.textBaseline="top",s.font="600 32px Arial",{});return e.forEach(e=>{o[e]=t(s,e,n,r)}),o}function a(e){var t=document.createElement("script");t.src=e,t.defer=!0,document.head.appendChild(t)}r.supports={everything:!0,everythingExceptFlag:!0},new Promise(t=>{let n=function(){try{var e=JSON.parse(sessionStorage.getItem(s));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(o),u.toString(),c.toString(),p.toString()].join(",")+"));",r=new Blob([e],{type:"text/javascript"});const a=new Worker(URL.createObjectURL(r),{name:"wpTestEmojiSupports"});return void(a.onmessage=e=>{i(n=e.data),a.terminate(),t(n)})}catch(e){}i(n=f(o,u,c,p))}t(n)}).then(e=>{for(const n in e)r.supports[n]=e[n],r.supports.everything=r.supports.everything&&r.supports[n],"flag"!==n&&(r.supports.everythingExceptFlag=r.supports.everythingExceptFlag&&r.supports[n]);var t;r.supports.everythingExceptFlag=r.supports.everythingExceptFlag&&!r.supports.flag,r.supports.everything||((t=r.source||{}).concatemoji?a(t.concatemoji):t.wpemoji&&t.twemoji&&(a(t.twemoji),a(t.wpemoji)))});
+//# sourceURL=https://stanleycenter.org/wp-includes/js/wp-emoji-loader.min.js
+</script>
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a435b8679a72c222',t:'MTc5MDc5NzQ0Ng=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
+<!-- Dynamic page generated in 0.188 seconds. -->
+<!-- Cached page generated by WP-Super-Cache on 2026-09-30 11:28:01 -->
+
+<!-- super cache -->

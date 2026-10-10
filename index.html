@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>NOTERA - Verifiable Research</title>
-<meta name="description" content="NOTERA produces deep, verifiable research on foreign policy, conflict, history, law and international relations. Every significant conclusion opens to evidence and the original source.">
+<meta name="description" content="Deep, verifiable research: every fact opens to a quotation and the original source, so you can show it. Foreign policy, conflict, history, law, international relations. From $50, from 5 hours.">
 <meta name="theme-color" content="#0e0d0c">
 <meta property="og:title" content="NOTERA - Proof behind every claim">
 <meta property="og:description" content="Research dossiers where every conclusion traces to a primary source: documents, archives, quotes, video and audio with timecodes.">
@@ -29,7 +29,7 @@
   <nav class="nav__links" aria-label="Primary">
     <a href="#dossier" data-i18n="nav.deliver">What you get</a>
     <a href="#process" data-i18n="nav.how">How it works</a>
-    <a href="#sources" data-i18n="nav.sources">Sources</a>
+    <a href="#price" data-i18n="nav.price">Price</a>
     <a href="projects/" data-i18n="nav.projects">Projects</a>
   </nav>
   <div class="nav__end">
@@ -48,10 +48,22 @@
 <section class="hero" aria-labelledby="hero-title">
   <div class="wrap hero__grid">
     <div class="hero__copy">
-      <h1 id="hero-title" class="display" data-i18n="hero.title">Proof behind every claim.</h1>
-      <p class="lede" data-i18n="hero.sub">Deep, verifiable research on foreign policy, conflict, history, law and international relations.</p>
+      <h1 id="hero-title" class="display" data-i18n="hero.title">Facts you can show on screen.</h1>
+      <p class="lede" data-i18n="hero.sub">You get conclusions, exact quotations and original sources on foreign policy, conflict, history, law and international relations, not an AI answer taken on faith.</p>
+      <div class="roles" role="group" aria-label="Who are you?" data-roles>
+        <p class="roles__q" data-i18n="roles.q">What do you make?</p>
+        <button type="button" data-role="video" aria-pressed="true"><i class="ph-bold ph-video-camera" aria-hidden="true"></i><span data-i18n="role.video">Videos</span></button>
+        <button type="button" data-role="channel" aria-pressed="false"><i class="ph-bold ph-paper-plane-tilt" aria-hidden="true"></i><span data-i18n="role.channel">Channel or newsletter</span></button>
+        <button type="button" data-role="podcast" aria-pressed="false"><i class="ph-bold ph-microphone" aria-hidden="true"></i><span data-i18n="role.podcast">Podcast</span></button>
+        <button type="button" data-role="press" aria-pressed="false"><i class="ph-bold ph-newspaper" aria-hidden="true"></i><span data-i18n="role.press">Investigations</span></button>
+        <button type="button" data-role="other" aria-pressed="false"><i class="ph-bold ph-dots-three" aria-hidden="true"></i><span data-i18n="role.other">Something else</span></button>
+      </div>
+      <div class="rolecard" aria-live="polite">
+        <p class="rolecard__pain"><span class="rolecard__tag" data-i18n="rc.pain">The problem</span><span data-role-pain></span></p>
+        <p class="rolecard__get"><span class="rolecard__tag rolecard__tag--ok" data-i18n="rc.get">What you get</span><span data-role-get></span></p>
+      </div>
       <div class="cta-row">
-        <a class="btn" href="projects/"><i class="ph-bold ph-folder-open" aria-hidden="true"></i><span data-i18n="cta.projects">Projects</span></a>
+        <a class="btn" href="projects/great-satan/"><i class="ph-bold ph-folder-open" aria-hidden="true"></i><span data-i18n="cta.see">Open a sample study</span></a>
         <a class="btn btn--ghost" href="#request" data-i18n="cta.request">Request a research project</a>
       </div>
     </div>
@@ -101,6 +113,19 @@
   </div>
 </section>
 
+<!-- RECOGNITION -->
+<section id="pain" class="sec recog" aria-labelledby="pain-title">
+  <div class="wrap">
+    <h2 id="pain-title" class="h2" data-reveal data-i18n="pain.title">Sound familiar?</h2>
+    <ul class="recog__list">
+      <li data-reveal><span class="recog__n mono">01</span><p data-i18n="pain.1">The AI gave me a link, and the page says something else.</p></li>
+      <li data-reveal><span class="recog__n mono">02</span><p data-i18n="pain.2">The video goes live in three days and I still cannot find the quote in the original.</p></li>
+      <li data-reveal><span class="recog__n mono">03</span><p data-i18n="pain.3">The comments ask &ldquo;source?&rdquo; and I have nothing to show.</p></li>
+    </ul>
+    <p class="recog__fix sub sub--wide" data-reveal data-i18n="pain.fix">NOTERA closes this gap: every conclusion opens to the quotation, the page or minute, and the original.</p>
+  </div>
+</section>
+
 <!-- WHAT YOU GET -->
 <section id="dossier" class="sec dossier" aria-labelledby="dossier-title">
   <div class="wrap">
@@ -108,6 +133,7 @@
       <div class="board__head b-head" data-reveal>
         <h2 id="dossier-title" class="h2" data-i18n="dossier.title">A research dossier, not a report.</h2>
         <p class="sub" data-i18n="dossier.sub">Every engagement ends in a complete case file you can open, question and cite.</p>
+        <p class="hint"><i class="ph-bold ph-cursor-click" aria-hidden="true"></i><span data-i18n="dossier.hint">Click any card to light up what it connects to.</span></p>
       </div>
 
       <article class="item b-conc" style="--r:-1.5deg" data-reveal>
@@ -202,6 +228,7 @@
       <div data-reveal>
         <h2 id="trail-title" class="h2" data-i18n="trail.title">Open any claim. See the proof.</h2>
         <p class="sub" data-i18n="trail.sub">Each significant conclusion unfolds into evidence, and each piece of evidence into its original source.</p>
+        <p class="hint"><i class="ph-bold ph-hand-pointing" aria-hidden="true"></i><span data-i18n="trail.hint">Pick a claim below. Each one has its own proof.</span></p>
       </div>
       <div class="item tabs-item" style="--r:-1deg" data-reveal>
         <div class="paper tabs" role="tablist" aria-label="Sample claims">
@@ -327,7 +354,7 @@
       <li class="step" style="--i:2" data-reveal><i class="pin" data-pin="p-3" data-to="p-4" style="--x:0;--y:50%"></i><h3 data-i18n="s3">Verify</h3><p data-i18n="s3.t">Every source is checked for origin and reliability.</p></li>
       <li class="step" style="--i:3" data-reveal><i class="pin" data-pin="p-4" data-to="p-5" style="--x:0;--y:50%"></i><h3 data-i18n="s4">Connect</h3><p data-i18n="s4.t">Findings join an evidence graph of claims and proof.</p></li>
       <li class="step" style="--i:4" data-reveal><i class="pin" data-pin="p-5" data-to="p-6" style="--x:0;--y:50%"></i><h3 data-i18n="s5">Challenge</h3><p data-i18n="s5.t">Independent AI review agents try to break the conclusions.</p></li>
-      <li class="step" style="--i:5" data-reveal><i class="pin" data-pin="p-6" data-to="x-1" style="--x:0;--y:50%"></i><h3 data-i18n="s6">Deliver</h3><p data-i18n="s6.t">The final report ships with every link intact.</p></li>
+      <li class="step" style="--i:5" data-reveal><i class="pin" data-pin="p-6" data-to="a-1" style="--x:0;--y:50%"></i><h3 data-i18n="s6">Deliver</h3><p data-i18n="s6.t">The final report ships with every link intact.</p></li>
     </ol>
   </div>
 </section>
@@ -351,45 +378,29 @@
       <li><i class="ph-bold ph-video-camera"></i><span data-i18n="tg.video">Video</span></li>
     </ul>
 
-    <div class="spread" aria-hidden="true">
-      <article class="item clip clip--en" lang="en" style="--r:-3deg" data-reveal>
-        <div class="paper torn-b"><div class="clip__mast">DAILY RECORD</div><h3>Hostages seized in Tehran</h3><p>Militants stormed the U.S. embassy on November 4, 1979.</p><span class="clip__lines"></span></div>
-        <i class="pin" data-pin="x-1" data-to="x-2" style="--x:50%;--y:8px"></i>
-      </article>
-      <article class="item clip clip--he" lang="he" dir="rtl" style="--r:2.5deg" data-reveal>
-        <div class="paper torn-a"><div class="clip__mast">עיתון</div><h3>הסכמי קמפ דייוויד</h3><p>נחתמו בבית הלבן, 17 בספטמבר 1978.</p><span class="clip__lines"></span></div>
-        <i class="pin" data-pin="x-2" data-to="x-3" style="--x:50%;--y:8px"></i>
-      </article>
-      <article class="item clip clip--ru" lang="ru" style="--r:-1.8deg" data-reveal>
-        <div class="paper torn-c"><div class="clip__mast">ГАЗЕТА</div><h3>Шах покинул Иран</h3><p>Мохаммед Реза Пехлеви выехал из страны 16 января 1979 года.</p><span class="clip__lines"></span></div>
-        <i class="pin" data-pin="x-3" data-to="x-4" style="--x:50%;--y:8px"></i>
-      </article>
-      <article class="item clip clip--fr" lang="fr" style="--r:3.2deg" data-reveal>
-        <div class="paper torn-b"><div class="clip__mast">JOURNAL</div><h3>Le Shah a quitt&eacute; l'Iran</h3><p>Le souverain a quitt&eacute; T&eacute;h&eacute;ran le 16 janvier 1979.</p><span class="clip__lines"></span></div>
-        <i class="pin" data-pin="x-4" data-to="x-5" style="--x:50%;--y:8px"></i>
-      </article>
-      <article class="item clip clip--ar" lang="ar" dir="rtl" style="--r:-2.6deg" data-reveal>
-        <div class="paper torn-c"><div class="clip__mast">جريدة</div><h3>اتفاقيات كامب ديفيد</h3><p>وُقّعت الاتفاقيات في واشنطن في 17 سبتمبر 1978.</p><span class="clip__lines"></span></div>
-        <i class="pin" data-pin="x-5" data-to="x-6" style="--x:50%;--y:8px"></i>
-      </article>
-      <article class="item clip clip--de" lang="de" style="--r:1.6deg" data-reveal>
-        <div class="paper torn-a"><div class="clip__mast">ZEITUNG</div><h3>Geiselnahme in Teheran</h3><p>Studenten besetzten am 4. November 1979 die US-Botschaft.</p><span class="clip__lines"></span></div>
-        <i class="pin" data-pin="x-6" data-to="a-1" style="--x:50%;--y:8px"></i>
-      </article>
-    </div>
+    <p class="note-line" data-reveal><i class="ph-bold ph-translate" aria-hidden="true"></i><span data-i18n="src.langs">Originals in Persian, Hebrew, Arabic, Russian, French, German and English are kept in the language they were written in.</span></p>
   </div>
 </section>
 
 <!-- AUDIENCE -->
 <section id="audience" class="sec audience" aria-labelledby="aud-title">
   <div class="wrap">
-    <h2 id="aud-title" class="h2" data-reveal data-i18n="aud.title">Built for people who have to be right.</h2>
+    <h2 id="aud-title" class="h2" data-reveal data-i18n="aud.title">Built for people who answer for every word.</h2>
     <ul class="rows">
-      <li data-reveal><i class="pin" data-pin="a-1" data-to="a-2" style="--x:0;--y:50%"></i><h3 data-i18n="a1">Journalists</h3><p data-i18n="a1.t">Check a story against primary documents.</p></li>
-      <li data-reveal><i class="pin" data-pin="a-2" data-to="a-3" style="--x:0;--y:50%"></i><h3 data-i18n="a2">YouTube and media authors</h3><p data-i18n="a2.t">Script from sources you can show on screen.</p></li>
-      <li data-reveal><i class="pin" data-pin="a-3" data-to="a-4" style="--x:0;--y:50%"></i><h3 data-i18n="a3">Researchers</h3><p data-i18n="a3.t">Start from a mapped base of evidence.</p></li>
-      <li data-reveal><i class="pin" data-pin="a-4" data-to="f-1" style="--x:0;--y:50%"></i><h3 data-i18n="a4">Analysts</h3><p data-i18n="a4.t">Brief decision makers with claims that hold.</p></li>
+      <li data-reveal><i class="pin" data-pin="a-1" data-to="a-2" style="--x:0;--y:50%"></i><h3 data-i18n="a1">Video authors</h3><p data-i18n="a1.t">Script from sources you can show on screen, with the minute of each clip.</p></li>
+      <li data-reveal><i class="pin" data-pin="a-2" data-to="a-3" style="--x:0;--y:50%"></i><h3 data-i18n="a2">Channels and newsletters</h3><p data-i18n="a2.t">Publish a post with the original behind each claim, ready to link.</p></li>
+      <li data-reveal><i class="pin" data-pin="a-3" data-to="a-4" style="--x:0;--y:50%"></i><h3 data-i18n="a3">Podcasters</h3><p data-i18n="a3.t">Put the quotation, its minute and the original in the show notes.</p></li>
+      <li data-reveal><i class="pin" data-pin="a-4" data-to="a-5" style="--x:0;--y:50%"></i><h3 data-i18n="a4">Journalists</h3><p data-i18n="a4.t">Check a story against primary documents before it goes out.</p></li>
+      <li data-reveal><i class="pin" data-pin="a-5" data-to="f-1" style="--x:0;--y:50%"></i><h3 data-i18n="a5">Researchers and analysts</h3><p data-i18n="a5.t">Start from a mapped base of evidence and brief with claims that hold.</p></li>
     </ul>
+    <div class="not" data-reveal>
+      <h3 class="not__h" data-i18n="not.title">What NOTERA is not</h3>
+      <ul class="not__list">
+        <li><i class="ph-bold ph-x-circle" aria-hidden="true"></i><span data-i18n="not.1">Not a chatbot: you get a dossier with sources, not a chat reply.</span></li>
+        <li><i class="ph-bold ph-x-circle" aria-hidden="true"></i><span data-i18n="not.2">Not a verdict without proof: where sources disagree or the answer is unknown, we say so.</span></li>
+        <li><i class="ph-bold ph-x-circle" aria-hidden="true"></i><span data-i18n="not.3">Not a replacement for your editing: you decide what to publish and how.</span></li>
+      </ul>
+    </div>
   </div>
 </section>
 
@@ -429,9 +440,35 @@
         <ol class="gates__list">
           <li><i class="pin" data-pin="g-1" data-to="g-2" style="--x:0;--y:50%"></i><h3 data-i18n="g1">Evidence check</h3><p data-i18n="g1.t">Review agents match every claim to a primary source.</p></li>
           <li><i class="pin" data-pin="g-2" data-to="g-3" style="--x:0;--y:50%"></i><h3 data-i18n="g2">Red-team</h3><p data-i18n="g2.t">Adversarial AI agents try to disprove each conclusion.</p></li>
-          <li><i class="pin" data-pin="g-3" data-to="r-1" style="--x:0;--y:50%"></i><h3 data-i18n="g3">Human review</h3><p data-i18n="g3.t">A person reviews the result before it ships.</p></li>
+          <li><i class="pin" data-pin="g-3" data-to="pr-in" style="--x:0;--y:50%"></i><h3 data-i18n="g3">Human review</h3><p data-i18n="g3.t">A person reviews the result before it ships.</p></li>
         </ol>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRICE -->
+<section id="price" class="sec price" aria-labelledby="price-title">
+  <div class="wrap price__grid">
+    <div>
+      <h2 id="price-title" class="h2" data-reveal data-i18n="price.title">The price depends on scale. Move the slider.</h2>
+      <p class="sub" data-reveal data-i18n="price.sub">From $50 and 5 hours for a small check to $1000 and a week for a large investigation. Most projects land between the two.</p>
+    </div>
+    <div class="item price__card" style="--r:1.2deg" data-reveal>
+      <div class="paper index scale">
+        <h3 class="lbl" data-i18n="scale.title">Estimate</h3>
+        <label for="scale-v"><span data-i18n="scale.q">How big is the task?</span> <output id="scale-kind" class="mono"></output></label>
+        <input id="scale-v" type="range" min="0" max="100" step="1" value="35">
+        <div class="scale__ends mono" aria-hidden="true"><span data-i18n="scale.min">small check</span><span data-i18n="scale.max">large investigation</span></div>
+        <dl class="scale__out">
+          <div><dt data-i18n="scale.price">Price</dt><dd id="scale-price" class="mono"></dd></div>
+          <div><dt data-i18n="scale.time">Time</dt><dd id="scale-time" class="mono"></dd></div>
+        </dl>
+        <p class="calc__note" data-i18n="scale.note">A guide inside the range. We name the exact price and deadline after your brief.</p>
+        <a class="btn" href="#request" data-i18n="cta.request">Request a research project</a>
+      </div>
+      <i class="pin" data-pin="pr-in" style="--x:50%;--y:8px"></i>
+      <i class="pin" data-pin="pr-out" data-to="r-1" style="--x:50%;--y:calc(100% - 10px)"></i>
     </div>
   </div>
 </section>
@@ -445,14 +482,44 @@
     </div>
     <form class="item form" style="--r:1deg" data-reveal id="request-form" novalidate>
       <div class="paper index">
-        <label for="brief" data-i18n="req.label">What should we investigate?</label>
-        <textarea id="brief" name="brief" rows="5" required></textarea>
-        <p class="form__err" id="brief-err" role="alert" hidden data-i18n="req.err">Describe the question in a sentence or two.</p>
-        <label for="email" class="form__label2" data-i18n="req.email">Email for our reply</label>
-        <input id="email" name="email" type="email" autocomplete="email" inputmode="email" spellcheck="false" required>
-        <p class="form__err" id="email-err" role="alert" hidden data-i18n="req.emailErr">Enter an email address we can reply to.</p>
+        <p class="wiz__count mono" id="wiz-count" aria-live="polite"></p>
+
+        <fieldset class="fstep" data-step="1">
+          <legend data-i18n="req.s1">What do you make?</legend>
+          <div class="opts">
+            <label class="opt"><input type="radio" name="role" value="video" checked><span data-i18n="role.video">Videos</span></label>
+            <label class="opt"><input type="radio" name="role" value="channel"><span data-i18n="role.channel">Channel or newsletter</span></label>
+            <label class="opt"><input type="radio" name="role" value="podcast"><span data-i18n="role.podcast">Podcast</span></label>
+            <label class="opt"><input type="radio" name="role" value="press"><span data-i18n="role.press">Investigations</span></label>
+            <label class="opt"><input type="radio" name="role" value="other"><span data-i18n="role.other">Something else</span></label>
+          </div>
+        </fieldset>
+
+        <fieldset class="fstep" data-step="2" hidden>
+          <legend><label for="brief" data-i18n="req.label">What should we investigate?</label></legend>
+          <textarea id="brief" name="brief" rows="5" required></textarea>
+          <p class="form__err" id="brief-err" role="alert" hidden data-i18n="req.err">Describe the question in a sentence or two.</p>
+        </fieldset>
+
+        <fieldset class="fstep" data-step="3" hidden>
+          <legend data-i18n="req.s3">When do you need it?</legend>
+          <div class="opts">
+            <label class="opt"><input type="radio" name="deadline" value="within a day"><span data-i18n="dl.1">Within a day</span></label>
+            <label class="opt"><input type="radio" name="deadline" value="2-3 days" checked><span data-i18n="dl.2">2–3 days</span></label>
+            <label class="opt"><input type="radio" name="deadline" value="up to a week"><span data-i18n="dl.3">Up to a week</span></label>
+            <label class="opt"><input type="radio" name="deadline" value="flexible"><span data-i18n="dl.4">Not urgent</span></label>
+          </div>
+          <label for="email" class="form__label2" data-i18n="req.email">Email for our reply</label>
+          <input id="email" name="email" type="email" autocomplete="email" inputmode="email" spellcheck="false" required>
+          <p class="form__err" id="email-err" role="alert" hidden data-i18n="req.emailErr">Enter an email address we can reply to.</p>
+        </fieldset>
+
         <input type="checkbox" name="botcheck" class="form__hp" tabindex="-1" autocomplete="off" aria-hidden="true">
-        <button type="submit" class="btn"><span data-i18n="cta.request">Request a research project</span></button>
+        <div class="wiz__nav">
+          <button type="button" class="btn btn--back" id="wiz-back" hidden><span data-i18n="req.back">Back</span></button>
+          <button type="button" class="btn" id="wiz-next"><span data-i18n="req.next">Next</span></button>
+          <button type="submit" class="btn" id="wiz-send" hidden><span data-i18n="cta.request">Request a research project</span></button>
+        </div>
         <p class="form__status" id="form-status" role="status" aria-live="polite" hidden></p>
         <p class="form__note" data-i18n="req.note">We use your email only to reply about this request.</p>
       </div>
@@ -469,7 +536,7 @@
       <nav class="foot__links" aria-label="Footer">
         <a href="#dossier" data-i18n="nav.deliver">What you get</a>
         <a href="#process" data-i18n="nav.how">How it works</a>
-        <a href="#sources" data-i18n="nav.sources">Sources</a>
+        <a href="#price" data-i18n="nav.price">Price</a>
         <a href="projects/" data-i18n="nav.projects">Projects</a>
       </nav>
       <div class="foot__cta">

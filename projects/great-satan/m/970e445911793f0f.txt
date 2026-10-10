@@ -1,0 +1,323 @@
+<!doctype html>
+<html amp lang="en">
+<head>
+	<meta charset="utf-8">
+	<link as="script" href="https://cdn.ampproject.org/v0.js" rel="preload"> 
+	<script async src="https://cdn.ampproject.org/v0.js"></script>
+	<title>Iranian Prime Minister Mohammad Ali Rajai heaped contempt on... - UPI Archives</title>
+	<link rel="canonical" href="https://www.upi.com/Archives/1980/10/17/Iranian-Prime-Minister-Mohammad-Ali-Rajai-heaped-contempt-on/7294340603200/"/>
+	<link rel="shortcut icon" href="https://www.upi.com/favicon.ico"/>
+	<meta name="viewport" content="width=device-width">
+	<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": "NewsArticle",
+		"mainEntityOfPage": "https://www.upi.com/Archives/1980/10/17/Iranian-Prime-Minister-Mohammad-Ali-Rajai-heaped-contempt-on/7294340603200/",
+		"headline": "Iranian Prime Minister Mohammad Ali Rajai heaped contempt on...",
+		"description": "Iranian Prime Minister Mohammad Ali Rajai heaped contempt on Iraq and the United States at a U.N. Security Council meeting Friday, dashing hopes for...",  
+		"author": {"@type": "Organization","name": "UPI Archives", "url": "https://www.upi.com/Archives/"},
+				"publisher": {
+			"@type": "NewsMediaOrganization",
+			"name": "upi",
+			"logo": {"@type": "ImageObject","url": "https://www.upi.com/img/upi-logo-amp.png","width": 600, "height": 60}
+		}
+			,"image": {
+			"@type": "ImageObject",
+			"url": "https://www.upi.com/img/upi-archives-logo.jpg?lg=4",
+			"width": 1200,
+			"height": 630
+		}
+			
+	}
+	</script>
+	<meta property="og:site_name" content="UPI"/>
+	<meta property="fb:app_id" content="130795020312660"/>
+	<meta property="fb:pages" content="101911273177707"/>
+	<meta property="og:description" content="Iranian Prime Minister Mohammad Ali Rajai heaped contempt on Iraq and the United States at a U.N. Security Council meeting Friday, dashing hopes for..."/><meta property="og:url" content="https://www.upi.com/Archives/1980/10/17/Iranian-Prime-Minister-Mohammad-Ali-Rajai-heaped-contempt-on/7294340603200/"/><meta property="og:title" content="Iranian Prime Minister Mohammad Ali Rajai heaped contempt on..."/><meta property="og:type" content="article"/><meta property="og:image" content="https://www.upi.com/img/upi-archives-logo.jpg"/> 
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" content="@UPI">	<meta name="twitter:title" content="Iranian Prime Minister Mohammad Ali Rajai heaped contempt on...">
+	<meta name="twitter:description" content="Iranian Prime Minister Mohammad Ali Rajai heaped contempt on Iraq and the United States at a U.N. Security Council meeting Friday, dashing hopes for...">
+	<meta name="twitter:image" content="https://www.upi.com/img/upi-archives-logo.jpg?lg=4">
+	<script async custom-element="amp-ad" src="https://cdn.ampproject.org/v0/amp-ad-0.1.js"></script>
+	<script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
+	<script async custom-element="amp-fit-text" src="https://cdn.ampproject.org/v0/amp-fit-text-0.1.js"></script>
+	<script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
+	<script async custom-element="amp-selector" src="https://cdn.ampproject.org/v0/amp-selector-0.1.js"></script>
+	<script async custom-element="amp-bind" src="https://cdn.ampproject.org/v0/amp-bind-0.1.js"></script>
+	<script async custom-element="amp-lightbox-gallery" src="https://cdn.ampproject.org/v0/amp-lightbox-gallery-0.1.js"></script>
+	<script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
+	<script async custom-element="amp-lightbox" src="https://cdn.ampproject.org/v0/amp-lightbox-0.1.js"></script>
+	<script async custom-element="amp-social-share" src="https://cdn.ampproject.org/v0/amp-social-share-0.1.js"></script>
+	<script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+	<script async custom-element="amp-sticky-ad" src="https://cdn.ampproject.org/v0/amp-sticky-ad-1.0.js"></script>
+	<script async custom-element="amp-fx-flying-carpet" src="https://cdn.ampproject.org/v0/amp-fx-flying-carpet-0.1.js"></script>
+	<meta name="amp-consent-blocking" content="amp-ad">
+	<script async custom-element="amp-consent" src="https://cdn.ampproject.org/v0/amp-consent-0.1.js"></script>
+	<style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+	<style amp-custom>.content--chopped{ max-height: 1900px; overflow: hidden; position: relative; }.content--chopped:after{ content: ""; position: absolute; bottom: -3rem; left: 0; z-index: 1; display: block; width: 100%; height: 7rem; background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0, white 50%, white 100%); }.chop-button{ display: none; border-radius: 0; border: 1px solid #2e6da4; font-size: 16px; padding: 1rem; line-height: 1; width: 90%; max-width: 270px; margin-left: auto; margin-right: auto; color:#ffffff;background-color:#337ab7;}.content--chopped + .chop-button{ display: block; }.amp-flying-carpet-text-border {background-color: black;color: white;text-align: center;}.m-t-30{margin-top:30px;}amp-lightbox amp-iframe{-webkit-transform:translateY(-50%);-moz-transform:translateY(-50%);-ms-transform:translateY(-50%);-o-transform:translateY(-50%);transform:translateY(-50%)}amp-lightbox amp-iframe{width:100%;background-color:#fff;padding:15px;top:50%;max-height:600px;overflow-y:scroll;height:100%;max-width:750px}.amp-sidebar-image,.btn,img{vertical-align:middle}#sidebar-right nav.amp-sidebar-toolbar-target-shown,.caption>span,[hidden],template{display:none}amp-lightbox{background-color:rgba(0,0,0,.8)}amp-lightbox .lightbox{height:100%}hr,li{margin-bottom:20px}.previewOnly,b,optgroup,strong{font-weight:700}amp-iframe{max-width:750px;margin:0 auto}amp-carousel{margin:0;max-width:750px}.caption{max-width:750px;width:100%;margin:0 auto;color:#bbb}.caption span.current,article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display:block}amp-sidebar{width:250px;padding-right:10px;background-color:#12679b;color:#fff;text-transform:uppercase;font-size:16px}amp-sidebar ul{padding-left:20px}amp-sidebar .logo{padding:30px 30px 10px}amp-sidebar .logo svg{width:80px;fill:#fff}amp-sidebar a{color:#fff}.amp-sidebar-image{line-height:100px}.amp-close-image{top:15px;left:225px;cursor:pointer}li{margin-left:10px;margin-right:10px;list-style:none}.text-hide,a,p{background-color:transparent}hr,img,legend{border:0}legend,td,th{padding:0}body,figure{margin:0}.cta-button:hover,a,nav a:hover{text-decoration:none}html{font-family:arial,sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}.container{max-width:991px}audio,canvas,progress,video{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}a{color:#337ab7}a:active,a:hover{outline:0}abbr[title]{border-bottom:1px dotted}dfn{font-style:italic}mark{background:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}svg:not(:root){overflow:hidden}hr{-webkit-box-sizing:content-box;-moz-box-sizing:content-box;box-sizing:content-box;height:0}pre,textarea{overflow:auto}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}.img-thumbnail,body{background-color:#fff;line-height:1.42857143}button{overflow:visible}button,select{text-transform:none}button,html input[type=button],input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}input[type=checkbox],input[type=radio]{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;padding:0}input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-spin-button{height:auto}input[type=search]{-webkit-appearance:textfield;-webkit-box-sizing:content-box;-moz-box-sizing:content-box;box-sizing:content-box}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}table{border-collapse:collapse;border-spacing:0}*,:after,:before{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}html{font-size:10px;-webkit-tap-highlight-color:transparent}body{font-family:arial,sans-serif;font-size:14px;color:#333}button,input,select,textarea{font-family:inherit;font-size:inherit;line-height:inherit}.author,.btn{font-size:14px; font-weight: bold;}a:focus,a:hover{color:#23527c;text-decoration:underline}a:focus{outline:-webkit-focus-ring-color auto 5px;outline-offset:-2px}.img-responsive{display:block;max-width:100%;height:auto}.img-rounded{border-radius:6px}.img-thumbnail{padding:4px;border:1px solid #ddd;border-radius:4px;-webkit-transition:all .2s ease-in-out;-o-transition:all .2s ease-in-out;transition:all .2s ease-in-out;display:inline-block;max-width:100%;height:auto}.img-circle{border-radius:50%}hr{margin-top:20px;border-top:1px solid #eee}.sr-only{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0,0,0,0);border:0}.sr-only-focusable:active,.sr-only-focusable:focus{position:static;width:auto;height:auto;margin:0;overflow:visible;clip:auto}.container,.container-fluid{margin-right:auto;margin-left:auto;padding-left:15px;padding-right:15px}[role=button]{cursor:pointer}@media (min-width:768px){.container{width:750px}}@media (min-width:992px){.container{width:970px}}@media (min-width:1200px){.container{width:1170px}}.row{margin-left:-15px;margin-right:-15px}.col-lg-1,.col-lg-10,.col-lg-11,.col-lg-12,.col-lg-2,.col-lg-3,.col-lg-4,.col-lg-5,.col-lg-6,.col-lg-7,.col-lg-8,.col-lg-9,.col-md-1,.col-md-10,.col-md-11,.col-md-12,.col-md-2,.col-md-3,.col-md-4,.col-md-5,.col-md-6,.col-md-7,.col-md-8,.col-md-9,.col-sm-1,.col-sm-10,.col-sm-11,.col-sm-12,.col-sm-2,.col-sm-3,.col-sm-4,.col-sm-5,.col-sm-6,.col-sm-7,.col-sm-8,.col-sm-9,.col-xs-1,.col-xs-10,.col-xs-11,.col-xs-12,.col-xs-2,.col-xs-3,.col-xs-4,.col-xs-5,.col-xs-6,.col-xs-7,.col-xs-8,.col-xs-9{position:relative;min-height:1px;padding-left:25px;padding-right:25px}.col-xs-1,.col-xs-10,.col-xs-11,.col-xs-12,.col-xs-2,.col-xs-3,.col-xs-4,.col-xs-5,.col-xs-6,.col-xs-7,.col-xs-8,.col-xs-9{float:left}.col-xs-12{width:100%}.col-xs-11{width:91.66666667%}.col-xs-10{width:83.33333333%}.col-xs-9{width:75%}.col-xs-8{width:66.66666667%}.col-xs-7{width:58.33333333%}.col-xs-6{width:50%}.col-xs-5{width:41.66666667%}.col-xs-4{width:33.33333333%}.col-xs-3{width:25%}.col-xs-2{width:16.66666667%}.col-xs-1{width:8.33333333%}.col-xs-pull-12{right:100%}.col-xs-pull-11{right:91.66666667%}.col-xs-pull-10{right:83.33333333%}.col-xs-pull-9{right:75%}.col-xs-pull-8{right:66.66666667%}.col-xs-pull-7{right:58.33333333%}.col-xs-pull-6{right:50%}.col-xs-pull-5{right:41.66666667%}.col-xs-pull-4{right:33.33333333%}.col-xs-pull-3{right:25%}.col-xs-pull-2{right:16.66666667%}.col-xs-pull-1{right:8.33333333%}.col-xs-pull-0{right:auto}.col-xs-push-12{left:100%}.col-xs-push-11{left:91.66666667%}.col-xs-push-10{left:83.33333333%}.col-xs-push-9{left:75%}.col-xs-push-8{left:66.66666667%}.col-xs-push-7{left:58.33333333%}.col-xs-push-6{left:50%}.col-xs-push-5{left:41.66666667%}.col-xs-push-4{left:33.33333333%}.col-xs-push-3{left:25%}.col-xs-push-2{left:16.66666667%}.col-xs-push-1{left:8.33333333%}.col-xs-push-0{left:auto}.col-xs-offset-12{margin-left:100%}.col-xs-offset-11{margin-left:91.66666667%}.col-xs-offset-10{margin-left:83.33333333%}.col-xs-offset-9{margin-left:75%}.col-xs-offset-8{margin-left:66.66666667%}.col-xs-offset-7{margin-left:58.33333333%}.col-xs-offset-6{margin-left:50%}.col-xs-offset-5{margin-left:41.66666667%}.col-xs-offset-4{margin-left:33.33333333%}.col-xs-offset-3{margin-left:25%}.col-xs-offset-2{margin-left:16.66666667%}.col-xs-offset-1{margin-left:8.33333333%}.col-xs-offset-0{margin-left:0}@media (min-width:768px){.col-sm-1,.col-sm-10,.col-sm-11,.col-sm-12,.col-sm-2,.col-sm-3,.col-sm-4,.col-sm-5,.col-sm-6,.col-sm-7,.col-sm-8,.col-sm-9{float:left}.col-sm-12{width:100%}.col-sm-11{width:91.66666667%}.col-sm-10{width:83.33333333%}.col-sm-9{width:75%}.col-sm-8{width:66.66666667%}.col-sm-7{width:58.33333333%}.col-sm-6{width:50%}.col-sm-5{width:41.66666667%}.col-sm-4{width:33.33333333%}.col-sm-3{width:25%}.col-sm-2{width:16.66666667%}.col-sm-1{width:8.33333333%}.col-sm-pull-12{right:100%}.col-sm-pull-11{right:91.66666667%}.col-sm-pull-10{right:83.33333333%}.col-sm-pull-9{right:75%}.col-sm-pull-8{right:66.66666667%}.col-sm-pull-7{right:58.33333333%}.col-sm-pull-6{right:50%}.col-sm-pull-5{right:41.66666667%}.col-sm-pull-4{right:33.33333333%}.col-sm-pull-3{right:25%}.col-sm-pull-2{right:16.66666667%}.col-sm-pull-1{right:8.33333333%}.col-sm-pull-0{right:auto}.col-sm-push-12{left:100%}.col-sm-push-11{left:91.66666667%}.col-sm-push-10{left:83.33333333%}.col-sm-push-9{left:75%}.col-sm-push-8{left:66.66666667%}.col-sm-push-7{left:58.33333333%}.col-sm-push-6{left:50%}.col-sm-push-5{left:41.66666667%}.col-sm-push-4{left:33.33333333%}.col-sm-push-3{left:25%}.col-sm-push-2{left:16.66666667%}.col-sm-push-1{left:8.33333333%}.col-sm-push-0{left:auto}.col-sm-offset-12{margin-left:100%}.col-sm-offset-11{margin-left:91.66666667%}.col-sm-offset-10{margin-left:83.33333333%}.col-sm-offset-9{margin-left:75%}.col-sm-offset-8{margin-left:66.66666667%}.col-sm-offset-7{margin-left:58.33333333%}.col-sm-offset-6{margin-left:50%}.col-sm-offset-5{margin-left:41.66666667%}.col-sm-offset-4{margin-left:33.33333333%}.col-sm-offset-3{margin-left:25%}.col-sm-offset-2{margin-left:16.66666667%}.col-sm-offset-1{margin-left:8.33333333%}.col-sm-offset-0{margin-left:0}}@media (min-width:992px){.col-md-1,.col-md-10,.col-md-11,.col-md-12,.col-md-2,.col-md-3,.col-md-4,.col-md-5,.col-md-6,.col-md-7,.col-md-8,.col-md-9{float:left}.col-md-12{width:100%}.col-md-11{width:91.66666667%}.col-md-10{width:83.33333333%}.col-md-9{width:75%}.col-md-8{width:66.66666667%}.col-md-7{width:58.33333333%}.col-md-6{width:50%}.col-md-5{width:41.66666667%}.col-md-4{width:33.33333333%}.col-md-3{width:25%}.col-md-2{width:16.66666667%}.col-md-1{width:8.33333333%}.col-md-pull-12{right:100%}.col-md-pull-11{right:91.66666667%}.col-md-pull-10{right:83.33333333%}.col-md-pull-9{right:75%}.col-md-pull-8{right:66.66666667%}.col-md-pull-7{right:58.33333333%}.col-md-pull-6{right:50%}.col-md-pull-5{right:41.66666667%}.col-md-pull-4{right:33.33333333%}.col-md-pull-3{right:25%}.col-md-pull-2{right:16.66666667%}.col-md-pull-1{right:8.33333333%}.col-md-pull-0{right:auto}.col-md-push-12{left:100%}.col-md-push-11{left:91.66666667%}.col-md-push-10{left:83.33333333%}.col-md-push-9{left:75%}.col-md-push-8{left:66.66666667%}.col-md-push-7{left:58.33333333%}.col-md-push-6{left:50%}.col-md-push-5{left:41.66666667%}.col-md-push-4{left:33.33333333%}.col-md-push-3{left:25%}.col-md-push-2{left:16.66666667%}.col-md-push-1{left:8.33333333%}.col-md-push-0{left:auto}.col-md-offset-12{margin-left:100%}.col-md-offset-11{margin-left:91.66666667%}.col-md-offset-10{margin-left:83.33333333%}.col-md-offset-9{margin-left:75%}.col-md-offset-8{margin-left:66.66666667%}.col-md-offset-7{margin-left:58.33333333%}.col-md-offset-6{margin-left:50%}.col-md-offset-5{margin-left:41.66666667%}.col-md-offset-4{margin-left:33.33333333%}.col-md-offset-3{margin-left:25%}.col-md-offset-2{margin-left:16.66666667%}.col-md-offset-1{margin-left:8.33333333%}.col-md-offset-0{margin-left:0}}@media (min-width:1200px){.col-lg-1,.col-lg-10,.col-lg-11,.col-lg-12,.col-lg-2,.col-lg-3,.col-lg-4,.col-lg-5,.col-lg-6,.col-lg-7,.col-lg-8,.col-lg-9{float:left}.col-lg-12{width:100%}.col-lg-11{width:91.66666667%}.col-lg-10{width:83.33333333%}.col-lg-9{width:75%}.col-lg-8{width:66.66666667%}.col-lg-7{width:58.33333333%}.col-lg-6{width:50%}.col-lg-5{width:41.66666667%}.col-lg-4{width:33.33333333%}.col-lg-3{width:25%}.col-lg-2{width:16.66666667%}.col-lg-1{width:8.33333333%}.col-lg-pull-12{right:100%}.col-lg-pull-11{right:91.66666667%}.col-lg-pull-10{right:83.33333333%}.col-lg-pull-9{right:75%}.col-lg-pull-8{right:66.66666667%}.col-lg-pull-7{right:58.33333333%}.col-lg-pull-6{right:50%}.col-lg-pull-5{right:41.66666667%}.col-lg-pull-4{right:33.33333333%}.col-lg-pull-3{right:25%}.col-lg-pull-2{right:16.66666667%}.col-lg-pull-1{right:8.33333333%}.col-lg-pull-0{right:auto}.col-lg-push-12{left:100%}.col-lg-push-11{left:91.66666667%}.col-lg-push-10{left:83.33333333%}.col-lg-push-9{left:75%}.col-lg-push-8{left:66.66666667%}.col-lg-push-7{left:58.33333333%}.col-lg-push-6{left:50%}.col-lg-push-5{left:41.66666667%}.col-lg-push-4{left:33.33333333%}.col-lg-push-3{left:25%}.col-lg-push-2{left:16.66666667%}.col-lg-push-1{left:8.33333333%}.col-lg-push-0{left:auto}.col-lg-offset-12{margin-left:100%}.col-lg-offset-11{margin-left:91.66666667%}.col-lg-offset-10{margin-left:83.33333333%}.col-lg-offset-9{margin-left:75%}.col-lg-offset-8{margin-left:66.66666667%}.col-lg-offset-7{margin-left:58.33333333%}.col-lg-offset-6{margin-left:50%}.col-lg-offset-5{margin-left:41.66666667%}.col-lg-offset-4{margin-left:33.33333333%}.col-lg-offset-3{margin-left:25%}.col-lg-offset-2{margin-left:16.66666667%}.col-lg-offset-1{margin-left:8.33333333%}.col-lg-offset-0{margin-left:0}}.clearfix:after,.clearfix:before,.container-fluid:after,.container-fluid:before,.container:after,.container:before,.row:after,.row:before{content:" ";display:table}.clearfix:after,.container-fluid:after,.container:after,.row:after{clear:both}.row-eq-height{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex}.author div,.btn,.btn-group{display:inline-block}.btn-group>.btn:last-child:not(:first-child),.btn-group>.dropdown-toggle:not(:first-child){border-bottom-left-radius:0;border-top-left-radius:0}.btn-group .btn+.btn,.btn-group .btn+.btn-group,.btn-group .btn-group+.btn,.btn-group .btn-group+.btn-group{margin-left:-1px}.btn-group-vertical>.btn,.btn-group>.btn{position:relative;float:left}.sm-switch-text-right{text-align:right}.btn,.text-center{text-align:center}.btn{margin-bottom:0;font-weight:400;-ms-touch-action:manipulation;touch-action:manipulation;cursor:pointer;background-image:none;border:1px solid transparent;white-space:nowrap;padding:6px 12px;line-height:1.42857143;border-radius:4px;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.author span{float:left;width:25px;color:#bbb}.author div{float:left;width:calc(100% - 25px)}.m-t-60{margin-top:60px}.center-block{display:block;margin-left:auto;margin-right:auto}.pull-right{float:right}.pull-left{float:left}.hide{display:none}.show{display:block}.invisible{visibility:hidden}.text-hide{font:0/0 a;color:transparent;text-shadow:none;border:0}.bold,h1{font-weight:600}.hidden{display:none}.affix{position:fixed}p{font-size:18px;margin-top:25px;margin-bottom:25px;color:#3f3f42;line-height:26px;text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased}.related-article,article .related-article{background-color:#f1f1f1;padding:10px}article p:first-child{margin-top:10px}article p {font-family: Georgia, sans-serif; font-size: 20px; line-height: 34px;}.related-article{display:block;font-size:15px;border-left:2px solid #069;color:#7a7a7a;margin:15px 0 0}.instaread-audio-player {  margin: 0px;  box-sizing: border-box;}@media only screen and (min-width: 1200px) {      .instaread-audio-player {        width: 100%;      }    }    @media only screen and (max-width: 1199px) {      .instaread-audio-player {        width: 100%;        height: 135px;      }    }.next-article .next-article-arrow{position:absolute;right:20px;top:50%;-webkit-transform:translateY(-50%);-moz-transform:translateY(-50%);-ms-transform:translateY(-50%);-o-transform:translateY(-50%);transform:translateY(-50%)}.cta-button{float:left;background-color:#12679b;padding:10px 15px;color:#fff;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;letter-spacing:.1em;display:inline-block}.cta-button:hover{color:#fff;opacity:.8}.cta-button.right{float:right}.news-block .related-article span{color:#000}.text-right{text-align:right}.text-uppercase{text-transform:uppercase}h1{font-family:arial,sans-serif; font-size:24px;margin:.67em 0}.semi-bold{font-weight:500}.grey{color:#6d6d6d}footer{background-color:#eaeaea;margin-top:60px}footer.stories{background-color:#fff}footer .upi-logo-svg{fill:#12679b;width:75px}footer .footer-logo{padding:30px 0;line-height:40px;position:relative}footer .footer-logo a{color:#242527}footer .footer-logo:before{content:'';margin:0 15px;width:calc(100% - 30px);position:absolute;bottom:0;border-bottom:1px solid #d1d1d1}footer .footer-col-3{width:59%;padding:0 15px;float:left;position:relative}footer .footer-col-2{width:41%;padding:0 15px;float:left}footer .footer-title{line-height:42px;font-size:15px;position:relative}footer .footer-col-3.left .footer-col-1:last-child::before,footer .footer-title.left:before,footer .footer-title.right:before{position:absolute;bottom:0;content:''}footer .footer-title.left:before{width:calc(100% - 15px);border-bottom:1px solid #d1d1d1}footer .footer-col-3.left .footer-col-1:last-child::before{height:100%;right:15px;border-right:1px solid #d1d1d1}footer .link-group{margin:10px 0 30px;width:100%; line-height: 40px; }footer.stories .link-group{margin:15px 0}footer .app-store a:first-child{margin-right:15px}footer.stories .app-store a:first-child{margin-right:10px;padding-right:15px}footer .app-store a{display:inline-block;margin:0}footer .link-group>div a{display:block;margin-bottom:20px;color:#242527;letter-spacing:.015em}footer.stories .link-group>div a{display:inline-block;font-size:14px;margin-bottom:0;padding-right:30px}footer .link-group>div a:hover{color:#12679b}footer .link-group>div a:last-child{display:block;margin-bottom:0}footer.stories .link-group>div a:last-child{display:inline-block;padding-right:0}footer .link-group>div a:first-child{margin-top:20px}footer.stories .link-group>div a:first-child{margin-top:0}footer .footer-title.right:before{width:calc(100%);border-bottom:1px solid #d1d1d1}footer .footer-col-1{min-width:170px;width:33.33333333333333%;display:inline-block;position:relative;vertical-align:top}footer .footer-col-2 .footer-inner-col-2{width:50%;position:relative;display:inline-block;vertical-align:top;min-width:170px}footer .footer-logo>div{height:40px}footer .top-chevron{margin-right:15px}.f-s-15{font-size:15px}.f-s-12{font-size:12px}footer .row-divider{line-height:70px;font-size:12px;color:#d1d1d1;letter-spacing:.015em;font-weight:700;position:relative}footer .row-divider:before{content:'';position:absolute;top:0;width:calc(100% - 30px);border-top:1px solid #d1d1d1;left:15px}footer .row-divider .legal a{position:relative;color:#d1d1d1}footer .row-divider .legal a:hover{color:#12679b}footer .row-divider .legal a:first-child{padding-right:9px}footer .row-divider .legal a:first-child::before{content:'';border-right:1px solid #d1d1d1;position:absolute;right:0;width:1px;top:50%;-webkit-transform:translateY(-50%);-moz-transform:translateY(-50%);-ms-transform:translateY(-50%);-o-transform:translateY(-50%);transform:translateY(-50%);height:100%}footer .row-divider .legal a:last-child{padding-left:9px}nav{line-height:70px;min-height:70px;box-shadow:0 3px 7px 0 rgba(0,0,0,.06);background-color:#12679b;margin-bottom:5px}nav.white{background-color:#fff}nav .col-md-12{position:static}nav .logo{display:inline-block;margin-right:10px;position:relative;max-width:75px;width:100%;top:-5px}nav .logo .upi-logo-svg{fill:#fff;transition:opacity .2s ease-in-out;max-width:75px;width:100%;position:absolute;top:50%;bottom:50%;transform:translateY(-50%)}nav.white .logo .upi-logo-svg{fill:#12679b}nav .hamburger-svg,nav .user-svg{top:5px;position:relative}nav .mega-more .hamburger-svg{margin-left:10px}nav .menu-item:hover{cursor:pointer}nav .hamburger-icon{fill:#fff}nav.white .hamburger-icon{fill:#232427}nav .hamburger-svg:hover .hamburger-icon,nav .menu-item:hover .hamburger-icon{opacity:.9;fill:#fff;cursor:pointer}nav.white .hamburger-svg:hover .hamburger-icon,nav.white .menu-item:hover .hamburger-icon{opacity:1;fill:#12679b;cursor:pointer}nav .trending-news{position:absolute;top:80px;width:100%;left:0;z-index:4;line-height:15px;display:block}nav .menu .nav-close:after,nav .menu .nav-close:before{content:'';height:40px;border-left:3px solid #232427;left:19px;position:absolute}nav .menu,nav .menu-item{display:inline-block}nav .trending-news .container{padding:0 15px}nav .trending-news .content-container{max-height:50px;overflow:hidden;font-size:0;border-bottom:1px solid #ebebeb}nav .trending-news .content-container div a{color:#3f3f42}nav .trending-news .content-container div{display:inline-block;text-transform:none;font-family:arial,sans-serif;padding:0 10px;border-right:1px solid #e8e8e8;font-weight:400;margin-top:20px;margin-bottom:20px;font-size:14px}nav .breaking-news .title,nav .trending-news .content-container div:first-of-type{font-family:arial,sans-serif;text-transform:uppercase}nav .trending-news .content-container div:last-of-type{border-right:0}nav .trending-news .content-container div:first-of-type{font-weight:700;border-right:0;padding-left:0;color:#242527}nav .breaking-news .container,nav .mobile-search .container{padding:0 15px}nav .breaking-news .content-container{width:calc(100% - 40px)}nav .breaking-news .title{color:#d00;font-size:14px;font-weight:700}nav .breaking-news .content{color:#d00;font-family:arial,sans-serif;font-size:18px;margin-top:20px;font-weight:700}nav .menu-item{font-weight:600;font-family:arial,sans-serif;letter-spacing:.015em;text-transform:uppercase}nav .menu-item>a{display:block}nav .menu .menu-item{font-size:13px;margin:0 10px}nav .menu .nav-close{position:absolute;top:21px;right:15px;width:40px;height:40px}nav .menu .nav-close:after{transform:rotate(45deg)}nav .menu .nav-close:before{transform:rotate(-45deg)}nav .menu .menu-item .expand.active span:first-of-type,nav .menu .menu-item .expand.active span:last-of-type{transform:rotate(90deg);border-left:3px solid #12679b}nav .menu .menu-item .expand.active span:last-of-type{left:50%;right:50%}.mobile-menu-button{display:none}nav .menu .menu-item,nav .menu .menu-item a{color:#fff}nav.white .menu .menu-item,nav.white .menu .menu-item a{color:#242527}nav .menu .menu-item:hover{color:#fff}nav.white .menu .menu-item a{opacity:1}nav.white .menu .menu-item>a{opacity:1;color:#242527}nav.white .menu .menu-item:hover{opacity:1;color:#12679b}nav .menu .menu-item:not(.no-hover):hover{box-shadow:inset 0 -2px 0 0 #12679b}nav .menu .menu-item-content{text-transform:none;display:none;position:absolute;background-color:#fff;min-width:155px;color:#7a7a7a;box-shadow:0 3px 7px 0 rgba(0,0,0,.06);-moz-transition:all .2s;-webkit-transition:all .2s;-o-transition:all .2s;transition:all .2s;z-index:50;padding:18px 20px 25px;opacity:1}nav .menu .menu-item:hover>a{opacity:.9;color:#fff}nav .menu .menu-item-content a:hover,nav.white .menu .menu-item:hover>a{color:#12679b}nav .menu .menu-item-content a{display:block;color:#7a7a7a;line-height:35px}nav .menu .menu-item:not(.no-drop):hover .menu-item-content,nav.white .menu .menu-item:not(.no-drop):hover .menu-item-content{display:block}nav .menu .menu-item .mega-menu-icon.active,nav .menu .menu-item .mega-menu-icon.active .hamburger-icon,nav .menu .menu-item .mega-menu-icon:hover,nav .menu .menu-item .mega-menu-icon:hover .hamburger-icon{color:#042a61;fill:#042a61}nav .menu-item-content{cursor:default}@media (max-width:1199px){nav .menu .menu-item{font-size:13px}}@media (max-width:991px){nav .menu{display:none}nav .menu .menu-item>a{display:inline-block}.mobile-menu-header{margin:0 15px;position:relative;min-height:80px;font-size:0}.mobile-menu-header>div{font-size:15px;display:inline-block;width:50%}.mobile-menu-header>div:last-of-type{text-align:right}nav .logo{display:block;margin:0 auto;max-width:93px;height:65px;top:0}.mobile-menu-button{display:block;position:absolute;top:0;left:20px;font-size:15px;font-family:arial,sans-serif;font-weight:700;text-transform:uppercase;z-index:900}nav .mobile-menu-button:hover{opacity:.9}nav.white .mobile-menu-button{color:#242527}.hamburger-svg{margin-right:10px}nav .mobile-menu-button{color:#fff}.mobile-menu-button img{position:relative;top:-2px;margin-right:10px}footer.stories .footer-col-2{width:25%}footer.stories .link-group>div a{font-size:14px;padding-right:15px}footer.stories .link-group>div a:last-child{padding-right:0}footer .footer-col-2,footer .footer-col-3{width:100%}footer .footer-col-3.left .footer-col-1:last-child::before{border-right:none}footer.stories .footer-col-3{width:75%}footer .footer-title.left:before{width:100%}}@media (max-width:768px){.author{margin-top:5px;position:static;top:0;margin-bottom:20px;-webkit-transform:none;-moz-transform:none;-ms-transform:none;-o-transform:none;transform:none}.m-t-margin-15{margin-top:25px}.sm-switch-text-right{text-align:left}.row-eq-height{display:block}footer.stories .app-store a:first-child,footer.stories .app-store a:last-child{padding:0;display:inline-block}nav{margin-bottom:5px}nav .trending-news{display:none}.xs-text-center,footer.stories .link-group{text-align:center}footer.stories .footer-col-2,footer.stories .footer-col-2 .footer-inner-col-2,footer.stories .footer-col-3{width:100%}footer.stories .link-group>div a{text-align:center;display:block;padding:0;font-size:14px}footer .link-group,footer.stories .link-group>div a:last-child{display:inline-block}footer .row-divider{line-height:20px;padding:10px 0}p{font-size:16px;line-height:24px}}.embed-block{ margin-bottom: 20px; }amp-social-share.rounded {    border-radius: 50%;    background-size: 60%;    background-color: #9C9D9E;  }</style>
+</head>
+<body>
+
+
+
+<amp-state id="chop"><script type="application/json">{ "state": "chopped", "chopped": "content content--chopped", "unchopped": "content" }</script></amp-state>
+<amp-analytics type="chartbeat">
+	<script type="application/json">{"vars": {"uid": "4027", "domain": "upi.com", "sections": "UPI Archives", "type": "article"}}</script>
+</amp-analytics>
+<amp-sidebar id="sidebar" layout="nodisplay" side="right">
+	<div class="logo">
+		<a href="/">
+		  <svg version="1.1" xmlns="https://www.w3.org/2000/svg" x="0px" y="0px"
+				 viewBox="0 0 206.424 110.304" xml:space="preserve">
+							<g>
+								<g>
+									<g>
+										<path class="upi-logo" d="M32.362-0.011v75.629c0,5.557,3.716,8.424,7.434,8.424c3.721,0,7.437-2.867,7.437-8.424V-0.011h32.343V68.71
+											c0,32.676-20.076,41.605-38.663,41.605h-2.975c-21.004,0-37.921-12.301-37.921-33.52V-0.011H32.362z"/>
+										<path class="upi-logo" d="M87.322-0.011h29.932c28.252,0,49.628,10.271,49.628,37.386c0,18.362-7.25,36.22-43.868,36.22
+											c-0.934,0-2.419-0.171-3.348-0.171v34.53H87.322V-0.011z M121.525,49.839c8.367,0,12.826-6.398,12.826-12.464
+											c-1.113-7.069-6.133-13.639-14.684-13.639v25.939C120.224,49.674,120.966,49.839,121.525,49.839z"/>
+										<path class="upi-logo" d="M174.064-0.011h32.344v107.965h-32.344V-0.011z"/>
+									</g>
+								</g>
+							</g>
+						</svg>
+		</a>
+	</div>
+	<ul>
+		<li><a href="/Top_News/US/?amp=nav&tn">U.S. News</a></li>
+		<li><a href="/Top_News/World-News/?amp=nav&tn">World News</a></li>
+		<li><a href="/Featured/?amp=nav&tn">Featured News</a></li>
+		<li><a href="/Entertainment_News/?amp=nav&en">Entertainment</a></li>
+		<li><a href="/Odd_News/?amp=nav&on">Odd News</a></li>
+		<li><a href="/Sports_News/?amp=nav&sn">Sports</a></li>
+		<li><a href="/Science_News/?amp=nav&scn">Science</a></li>
+		<li><a href="/Health_News/?amp=nav&hn">Health</a></li>
+		<li><a href="/News_Photos/?amp=nav&ph">Photos</a></li>
+	</ul>
+</amp-sidebar>
+
+<nav class="white">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+
+				<div class="logo">
+					<a href="/">
+						<svg class="upi-logo-svg" version="1.1" xmlns="https://www.w3.org/2000/svg" x="0px" y="0px"
+							 viewBox="0 0 206.424 110.304" xml:space="preserve">
+							<g>
+								<g>
+									<g>
+										<path class="upi-logo" d="M32.362-0.011v75.629c0,5.557,3.716,8.424,7.434,8.424c3.721,0,7.437-2.867,7.437-8.424V-0.011h32.343V68.71
+											c0,32.676-20.076,41.605-38.663,41.605h-2.975c-21.004,0-37.921-12.301-37.921-33.52V-0.011H32.362z"/>
+										<path class="upi-logo" d="M87.322-0.011h29.932c28.252,0,49.628,10.271,49.628,37.386c0,18.362-7.25,36.22-43.868,36.22
+											c-0.934,0-2.419-0.171-3.348-0.171v34.53H87.322V-0.011z M121.525,49.839c8.367,0,12.826-6.398,12.826-12.464
+											c-1.113-7.069-6.133-13.639-14.684-13.639v25.939C120.224,49.674,120.966,49.839,121.525,49.839z"/>
+										<path class="upi-logo" d="M174.064-0.011h32.344v107.965h-32.344V-0.011z"/>
+									</g>
+								</g>
+							</g>
+						</svg>
+					</a>
+				</div>
+				<div class="mobile-menu-button pull-right" on="tap:sidebar.toggle" tabindex="1" role=button>
+				<svg style="width:20px;top:7px;" class="hamburger-svg" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars"  role="img" xmlns="https://www.w3.org/2000/svg" viewBox="0 0 448 512"><path  d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"></path></svg>
+					
+				</div>
+				<div class="menu">
+					<div class="menu-item mega-block">
+						<a href="/Top_News/?nav=tn" title="Top News">Top News</a>
+						<div class="menu-item-content">
+							<a href="/Top_News/US/?nav=tn_us" title="U.S. News">U.S. News</a>
+							<a href="/Top_News/World-News/?nav=tn_wn" title="World News">World News</a>
+							<a href="/Top_News/Voices/?nav=tn_an" title="Voices">Voices</a>
+						</div>
+					</div>
+					<div class="menu-item mega-block">
+						<a href="/Odd_News/?nav=on" title="Odd News">Odd News</a>
+					</div>
+					<div class="menu-item mega-block">
+						<a href="/Entertainment_News/?nav=en" title="Entertainment">Entertainment</a>
+						<div class="menu-item-content">
+							<a href="/Entertainment_News/Movies/?nav=en_mo" title="Movies">Movies</a>
+							<a href="/Entertainment_News/Music/?nav=en_mu" title="Music">Music</a>
+							<a href="/Entertainment_News/TV/?nav=en_tv" title="TV">TV</a>
+						</div>
+					</div>
+					<div class="menu-item mega-block">
+						<a href="/Sports_News/?nav=spn" title="Sports">Sports</a>
+						<div class="menu-item-content">
+							<a href="/Sports_News/Soccer/?nav=scr" title="Soccer">Soccer</a>
+							<a href="/Sports_News/NFL/?nav=nfl" title="NFL">NFL</a>
+							<a href="/Sports_News/NBA/?nav=nba" title="NBA">NBA</a>
+							<a href="/Sports_News/MLB/?nav=mlb" title="MLB">MLB</a>
+						</div>
+					</div>
+					<div class="menu-item mega-block"><a href="#">Energy</a></div>
+					<div class="menu-item mega-block"><a href="#">Security</a></div>
+					<div class="menu-item mega-block"><a href="#">Science</a></div>
+					<div class="menu-item mega-block"><a href="#">Health</a></div>
+					<div class="menu-item mega-block">
+						<a href="/News_Photos/?nav=ph" title="Photos">Photos</a>
+						<div class="menu-item-content">
+							<a href="/News_Photos/collections/2018-Olympics/?nav=ol" title="2018 Olympics">2018
+								Olympics</a>
+							<a href="/News_Photos/collections/News/?nav=nw" title="News">News</a>
+							<a href="/News_Photos/collections/Entertainment/?nav=en"
+							   title="Entertainment">Entertainment</a>
+							<a href="/News_Photos/collections/Sports/?nav=sp" title="Sports">Sports</a>
+							<a href="/News_Photos/collections/Features/?nav=fe" title="Features">Features</a>
+							<a href="/News_Photos/collections/Archives/?nav=ar" title="Archives">Archives</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+</nav>	
+	
+	<div class="container" style="max-width: 600px;">
+		<div class="row">
+			<div class="col-md-12"><br>
+				<a href="/Archives/" title="Archives" style="font-weight:bold;">Archives</a>	
+				
+				<h1>Iranian Prime Minister Mohammad Ali Rajai heaped contempt on...</h1>
+				
+				<div>
+					<div class="" style="margin-left: 10px; float: right;">
+						<div class="btn-group" role="group">
+							<amp-social-share width="40" height="40" class="rounded" type="facebook" data-param-app_id="130795020312660" data-param-url="https://upi.com/ar/7294340603200" aria-label="Share on Facebook"></amp-social-share>
+							<amp-social-share width="40" height="40" class="rounded" type="twitter" data-param-app_id="130795020312660" data-param-url="https://upi.com/ar/7294340603200" aria-label="Share on Twitter"></amp-social-share>
+						</div>
+					</div>
+					<div class="author semi-bold">							By 						
+						  |  													Oct. 17, 1980											</div>
+				</div>
+				<div style="clear: both;"></div>
+				
+			</div>
+			<div class="col-md-12">
+				<article>
+					<div class="instaread-audio-player">
+					  <amp-iframe
+					    width="600"
+					    height="150"
+					    layout="responsive"
+					    sandbox="allow-scripts allow-same-origin allow-popups"
+					    frameborder="0"
+					    src="https://instaread.co/player?article=7294340603200&publication=upi&article_url=https%3A%2F%2Fwww.upi.com%2FArchives%2F1980%2F10%2F17%2FIranian-Prime-Minister-Mohammad-Ali-Rajai-heaped-contempt-on%2F7294340603200%2F&version=340603200&amp=1"
+					    title="Instaread AMP Player"
+					    class="instaread-audio-player">
+						<div placeholder style="display: flex; align-items: center; justify-content: center; height: 100%; background: #f9f9f9;"><p style="font-size: 16px; color: #555;">Loading...</p></div>
+					  </amp-iframe>
+					</div>
+					<div style="clear:both;"></div>
+										
+					<div class="text-center" style="margin-top: 35px;">
+										<amp-ad width="300" height="250" type="doubleclick" data-slot="/103512698,1009753/AMP-AD-UNIT"   json='{"targeting":{"ap_amp_site_id":"43966","ap_amp_section_id":"fffbbbe9-c938-4cdf-81cd-f8e08c1a8e8f","adpushup_ran":"1"}}'></amp-ad>
+										</div>
+					
+					
+<p><span class="story_dl">UNITED NATIONS -- </span> Iranian Prime Minister Mohammad Ali Rajai heaped contempt on Iraq and the United States at a U.N. Security Council meeting Friday, dashing hopes for immediate negotiations on a cease-fire or the release of the 52 American hostages.</p>
+<p>Rajai, the highest-ranking Iranian to visit the United States since the hostages were seized 349 days ago, told hundreds of diplomats crowded into the council chamber: 'Our people are resolute and determined to fight, even if the war must be prolonged.'</p>
+<p>He denounced Iraq as 'guided by the forces of evil, playing into the hands of the great satan,' and asked why the United States 'sees in this attack an opportunity for the hostages to be freed.'</p>
+<p>Asked at a later news conference whether he would meet with American representatives during his New York stay, Rajai replied categorically: 'No, never.'</p>
+<p>U.S. Ambassador Donald McHenry said later he regretted that Rajai's only mention of the hostages in his speech to the council was a rhetorical question.</p>
+<p>He said that the families of the 52 Americans had been listening to Rajai hoping for the release of the hostages. The same principles of law, honor and dignity, under which Rajai appealed to the council, he said, should be applied to the hostages.</p>
+<p>McHenry recalled past U.N. efforts to free the captive Americans and reminded Rajai that 'Iran stands in defiance of numerous resolutions of this Council.</p>
+<p>At his news conference, Rajai refused to discuss the hostages, but said he would do so at a meeting with the press Saturday.</p>
+<p>Before the council meeting, Rajai had spent 90 minutes with Secretary-General Kurt Waldheim, who had been expected to raise the question of the hostages, but afterwards a U.N. spokesman would only say they discussed the war and 'a number of other issues.'</p>
+<p>In his council speech, Rajai denounced 'U.S. imperialism' and said 'the superpowers wish to impose a new Israel on the Middle East. The crimes of the United States against the people of Palestine and South Lebanon are not enough. Today, they are trying to erect a new Israel under the banner of Arab nationalism.'</p>
+<p>He charged Iraq was committing 'open aggression' against his country.</p>
+<p>'It has engaged 12 divisions, more than 2,500 tanks, large quantities of weapons and hundreds of war planes,' he charged.</p>
+<p>'I come straight from the front,' he said. 'The spectacle of the dead and the wounded would have moved the most heartless of men. I saw that spectacle with my own eyes. Ground to ground missiles which struck the city of Dizful, destroyed a large part of the city and many of its population.'</p>
+<p>'Our people are resolute and determined,' he said, 'to fight even if the war must be prolonged. It must be a peoples' war ... With the help of God we will win'$(TEXT OMITTED FROM SOURCE$).</p>
+					
+									</article>
+				
+				
+ 
+							</div>
+			<div class="col-md-12 text-center">
+				<amp-ad layout="responsive" height="2660" width="390" type="revcontent" data-revcontent data-id="269593"></amp-ad>
+			</div>
+						
+<div class="col-md-12 m-t-30">
+<div class="text-center">
+					<amp-sticky-ad layout="nodisplay">					<amp-ad  width="320" height="50" type="doubleclick" data-slot="/103512698,1009753/AMP-AD-UNIT" json='{"targeting":{"ap_amp_site_id":"43966","ap_amp_section_id":"919589da-4858-4056-8eac-cee05436d55a","adpushup_ran":"1"}}'></amp-ad>
+					</amp-sticky-ad>
+</div>
+</div>
+		</div>
+	</div>
+	<amp-iframe width="1" title="User Sync" height="1" sandbox="allow-scripts" frameborder="0" src="https://cdn.jsdelivr.net/npm/prebid-universal-creative@latest/dist/load-cookie.html"><amp-img layout="fill" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" placeholder></amp-img></amp-iframe>
+	<amp-analytics>
+		<script type="application/json">
+		{
+			"requests": {
+				"pageview": "https://www.upi.com/story/stat/7294340603200/?amp=1"
+			},
+			"triggers": {
+				"trackPageview": {
+					"on": "visible",
+					"request": "pageview"
+				}
+			}
+		}
+		</script>
+	</amp-analytics>
+	<amp-consent id="googlefc" layout="nodisplay" type="googlefc"><script type="application/json">{"clientConfig":{"publisherIdentifier":"pub-1325340429823502"}}</script></amp-consent>
+
+<footer class="stories">
+	<div class="container">
+		<div class="row footer-logo">
+			<div class="col-md-6 col-sm-6 col-xs-6">
+				<a href="/"><svg class="upi-logo-svg" version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 206.424 110.304" xml:space="preserve"><g><g><g><path class="upi-logo" d="M32.362-0.011v75.629c0,5.557,3.716,8.424,7.434,8.424c3.721,0,7.437-2.867,7.437-8.424V-0.011h32.343V68.71 c0,32.676-20.076,41.605-38.663,41.605h-2.975c-21.004,0-37.921-12.301-37.921-33.52V-0.011H32.362z"></path><path class="upi-logo" d="M87.322-0.011h29.932c28.252,0,49.628,10.271,49.628,37.386c0,18.362-7.25,36.22-43.868,36.22 c-0.934,0-2.419-0.171-3.348-0.171v34.53H87.322V-0.011z M121.525,49.839c8.367,0,12.826-6.398,12.826-12.464 c-1.113-7.069-6.133-13.639-14.684-13.639v25.939C120.224,49.674,120.966,49.839,121.525,49.839z"></path><path class="upi-logo" d="M174.064-0.011h32.344v107.965h-32.344V-0.011z"></path></g></g></g></svg></a>
+			</div>
+			<div class="col-md-6 col-sm-6 col-xs-6 text-right text-uppercase f-s-12">
+				<a href="#" class="scroll-top"><i class="top-chevron"></i> <span class="bold">Back to top</span></a>
+			</div>
+		</div>
+
+		<div class="row footer-row bold">
+			<div class="footer-col-3 left f-s-15">
+				<div class="link-group text-right">
+					<div>
+						<a href="https://about.upi.com/" target="_blank">About UPI</a>
+						<a href="https://about.upi.com/contact/" target="_blank">Contact</a>
+						<a href="https://about.upi.com/advertising/advertise-online" target="_blank">Advertisements</a>
+						<a href="https://www.upi.com/feedback/news-tips" target="_blank">Submit News Tips</a>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<div class="row row-divider">
+			<div class="col-md-8 col-sm-8 xs-text-center">
+				Copyright © 2026 United Press International, Inc. All Rights Reserved.
+			</div>
+			<div class="col-md-4 col-sm-4 legal text-right xs-text-center">
+				<a href="https://about.upi.com/terms" target="_blank">Terms of Use</a><a href="https://about.upi.com/privacy-policy" target="_blank">Privacy Policy</a>
+			</div>
+		</div>
+	</div>
+	<amp-analytics type="googleanalytics">
+<script type="application/json">
+{
+  "vars": {
+    "account": "UA-1342607-1"
+  },
+  "triggers": {
+    "trackPageview": {
+      "on": "visible",
+      "request": "pageview"
+    }
+  }
+}
+</script>
+</amp-analytics>
+</footer>
+</body>
+</html>

@@ -1,12 +1,15 @@
 [
   {
     "slug": "great-satan",
-    "visibility": "closed",
+    "visibility": "public",
     "title": {
       "en": "Great Satan: a documented designation, an unresolved origin",
       "ru": "«Великий сатана»: документированное обозначение и неустановленное происхождение"
     },
-    "question": null,
+    "question": {
+      "en": "When and in what context did the expression become a designation for the United States in Iranian revolutionary rhetoric?",
+      "ru": "Когда и в каком контексте выражение стало обозначением США в иранской революционной риторике?"
+    },
     "date": "2026-10-04",
     "languages": [
       "en",

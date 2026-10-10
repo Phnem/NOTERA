@@ -5,7 +5,7 @@
      request to the address registered for FORM_ACCESS_KEY (the key is public by design).
      Without a key the form falls back to the visitor's mail client addressed to CONTACT_EMAIL. */
   const FORM_ENDPOINT = 'https://api.web3forms.com/submit';
-  const FORM_ACCESS_KEY = '';
+  const FORM_ACCESS_KEY = '060c7992-0ec5-4883-852f-2ae743b6fa68';
   const CONTACT_EMAIL = '';
   const FIND_PROJECT_URL = 'projects/';
 
@@ -16,10 +16,22 @@
   /* ---------------------------------------------------------------- i18n */
   /* English lives in the markup; only Russian is stored here. */
   const RU = {
-    'nav.deliver': 'Что вы получаете', 'nav.how': 'Как это работает', 'nav.sources': 'Источники', 'nav.projects': 'Проекты',
+    'nav.deliver': 'Что вы получаете', 'nav.how': 'Как это работает', 'nav.sources': 'Источники', 'nav.projects': 'Проекты', 'nav.price': 'Цена',
     'cta.request': 'Заказать исследование', 'cta.find': 'Найти проект', 'cta.projects': 'Проекты',
-    'hero.title': 'Каждый вывод подтверждён.',
-    'hero.sub': 'Глубокие проверяемые исследования внешней политики, конфликтов, истории, права и международных отношений.',
+    'cta.see': 'Открыть пример исследования',
+    'hero.title': 'Факты, которые можно показать в кадре.',
+    'hero.sub': 'Вы получаете выводы, точные цитаты и первоисточники по внешней политике, конфликтам, истории, праву и международным отношениям, а не ответ нейросети «на веру».',
+    'roles.q': 'Что вы делаете?',
+    'role.video': 'Видео', 'role.channel': 'Канал или рассылка', 'role.podcast': 'Подкаст', 'role.press': 'Расследования', 'role.other': 'Другое',
+    'rc.pain': 'Проблема', 'rc.get': 'Что вы получаете',
+    'pain.title': 'Знакомо?',
+    'pain.1': 'Нейросеть дала ссылку, а на странице написано другое.',
+    'pain.2': 'Выпуск через три дня, а цитату я так и не нашёл в оригинале.',
+    'pain.3': 'В комментариях пишут «источник?», и мне нечего показать.',
+    'pain.fix': 'NOTERA закрывает этот разрыв: каждый вывод открывается до цитаты, страницы или минуты и оригинала.',
+    'dossier.hint': 'Нажмите на любую карточку, и подсветится то, с чем она связана.',
+    'trail.hint': 'Выберите вывод слева. У каждого своё доказательство.',
+    'src.langs': 'Оригиналы на персидском, иврите, арабском, русском, французском, немецком и английском хранятся на том языке, на котором написаны.',
     'dossier.title': 'Досье, а не отчёт.',
     'dossier.sub': 'Каждое исследование завершается полным делом, которое можно открыть, проверить и процитировать.',
     'd.conc': 'Выводы', 'd.conc.t': 'Заключения, ранжированные по силе доказательств.',
@@ -55,11 +67,25 @@
     'src.sub': 'Только открытые источники: от официальных текстов до сырой съёмки.',
     'tg.web': 'Веб', 'tg.gov': 'Официальные документы', 'tg.acad': 'Научные работы', 'tg.books': 'Книги и архивы',
     'tg.social': 'X и соцсети', 'tg.img': 'Изображения', 'tg.audio': 'Аудио', 'tg.video': 'Видео',
-    'aud.title': 'Для тех, кому нельзя ошибаться.',
-    'a1': 'Журналисты', 'a1.t': 'Сверка материала с первичными документами.',
-    'a2': 'YouTube и медиаавторы', 'a2.t': 'Сценарий из источников, которые можно показать в кадре.',
-    'a3': 'Исследователи', 'a3.t': 'Старт с готовой картой доказательств.',
-    'a4': 'Аналитики', 'a4.t': 'Записки для решений с выводами, которые выдерживают проверку.',
+    'aud.title': 'Для тех, кто отвечает за каждое слово.',
+    'a1': 'Видеоавторы', 'a1.t': 'Сценарий из источников, которые можно показать в кадре, с минутой каждого фрагмента.',
+    'a2': 'Каналы и рассылки', 'a2.t': 'Пост с оригиналом за каждым утверждением, на который можно сослаться.',
+    'a3': 'Подкастеры', 'a3.t': 'Цитата, её минута и оригинал прямо в описании выпуска.',
+    'a4': 'Журналисты', 'a4.t': 'Сверка материала с первичными документами до выхода.',
+    'a5': 'Исследователи и аналитики', 'a5.t': 'Старт с готовой картой доказательств и записки с выводами, которые выдерживают проверку.',
+    'not.title': 'Чем NOTERA не является',
+    'not.1': 'Не чат-бот: вы получаете досье с источниками, а не реплику в чате.',
+    'not.2': 'Не вердикт без доказательств: где источники расходятся или ответа нет, мы так и пишем.',
+    'not.3': 'Не замена вашей редактуры: что публиковать и как, решаете вы.',
+    'price.title': 'Цена зависит от масштаба. Подвигайте ползунок.',
+    'price.sub': 'От 50 $ и 5 часов за небольшую проверку до 1000 $ и недели за крупное расследование. Большинство проектов попадает между этими границами.',
+    'scale.title': 'Оценка', 'scale.q': 'Насколько большая задача?',
+    'scale.min': 'небольшая проверка', 'scale.max': 'крупное расследование',
+    'scale.price': 'Цена', 'scale.time': 'Срок',
+    'scale.note': 'Ориентир внутри диапазона. Точную цену и срок называем после вашего брифа.',
+    'req.s1': 'Что вы делаете?', 'req.s3': 'Когда нужно?',
+    'dl.1': 'В течение суток', 'dl.2': '2–3 дня', 'dl.3': 'До недели', 'dl.4': 'Не срочно',
+    'req.back': 'Назад', 'req.next': 'Далее',
     'prin.title': 'Две формы выдачи. Три проверки.',
     'f1': 'Интерактивное досье', 'f1.t': 'Выводы, доказательства, хронология и оригиналы в браузере.',
     'f2': 'PDF и экспорт', 'f2.t': 'Чистая копия, из которой удобно цитировать и публиковать.',
@@ -97,9 +123,97 @@
     });
     $$('.lang button').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.lang === next)));
     try { localStorage.setItem('notera-lang', next); } catch (_) { /* storage may be blocked */ }
+    renderDynamic();
     scheduleBuild();
   }
   $$('.lang button').forEach(b => b.addEventListener('click', () => applyLang(b.dataset.lang)));
+
+  /* ------------------------------------------------- interactive blocks
+     Text that depends on a control (role card, calculator, scale, wizard counter) is rendered here
+     in both languages, so a language switch only needs to call renderDynamic(). */
+  const ROLES = {
+    video: {
+      en: { pain: 'You script from AI summaries and cannot show viewers where a fact came from.', get: 'A table of claim, exact quotation with its minute, and original, ready for the edit and for the comments.' },
+      ru: { pain: 'Сценарий собран из пересказов нейросети, а зрителю нечем подтвердить, откуда взялся факт.', get: 'Таблица: утверждение, точная цитата с минутой, оригинал. Годится для монтажа и для ответа в комментариях.' }
+    },
+    channel: {
+      en: { pain: 'A post goes out fast, and one wrong date or bent quotation costs the channel its trust.', get: 'Post-ready material where every claim carries a link to the original.' },
+      ru: { pain: 'Пост выходит быстро, а одна неверная дата или искажённая цитата подрывает доверие к каналу.', get: 'Материал для поста, где у каждого утверждения есть ссылка на оригинал.' }
+    },
+    podcast: {
+      en: { pain: 'You quote documents and speeches from memory and cannot cue the exact words.', get: 'Quotations with page or minute, plus a source list for the show notes.' },
+      ru: { pain: 'Вы цитируете документы и речи по памяти, а точные слова и минуту найти нечем.', get: 'Цитаты со страницей или минутой и список источников для описания выпуска.' }
+    },
+    other: {
+      en: { pain: 'You need claims you can stand behind, whatever you are making.', get: 'A dossier: conclusions ranked by evidence, quotations and originals, disputed and unknown points stated plainly.' },
+      ru: { pain: 'Вам нужны утверждения, за которые можно ответить, чем бы вы ни занимались.', get: 'Досье: выводы по силе доказательств, цитаты и оригиналы, спорное и неизвестное названо прямо.' }
+    },
+    press: {
+      en: { pain: 'A story needs primary documents, and you have days, not weeks.', get: 'A dossier: conclusions ranked by evidence, contradictions side by side, open questions stated plainly.' },
+      ru: { pain: 'Материалу нужны первичные документы, а у вас дни, а не недели.', get: 'Досье: выводы по силе доказательств, противоречия рядом, открытые вопросы названы прямо.' }
+    }
+  };
+  const SCALE_KINDS = [
+    { en: 'a few claims to check', ru: 'несколько утверждений' },
+    { en: 'one script or post', ru: 'один сценарий или пост' },
+    { en: 'a series or a complex topic', ru: 'серия или сложная тема' },
+    { en: 'a large investigation', ru: 'крупное расследование' }
+  ];
+  const WIZ_COUNT = { en: 'Step {n} of 3', ru: 'Шаг {n} из 3' };
+  const PRICE_MIN = 50, PRICE_MAX = 1000, HOURS_MIN = 5, HOURS_MAX = 168;
+  let role = 'video';
+  let wizStep = 1;
+
+  function fmtHours(h) {
+    const ru = lang === 'ru';
+    if (h < 24) { const n = Math.round(h * 10) / 10; return (Number.isInteger(n) ? n : n.toFixed(1)) + (ru ? ' ч' : ' h'); }
+    const d = Math.round(h / 24);
+    return d + (ru ? ' дн.' : (d === 1 ? ' day' : ' days'));
+  }
+  function renderRole() {
+    const data = ROLES[role][lang === 'ru' ? 'ru' : 'en'];
+    const pain = $('[data-role-pain]'), get = $('[data-role-get]');
+    if (pain) pain.textContent = data.pain;
+    if (get) get.textContent = data.get;
+    $$('[data-role]').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.role === role)));
+    const radio = $(`input[name="role"][value="${role}"]`);
+    if (radio) radio.checked = true;
+  }
+  function renderScale() {
+    const v = +$('#scale-v').value, t = v / 100;
+    const price = Math.round((PRICE_MIN + (PRICE_MAX - PRICE_MIN) * t) / 10) * 10;
+    $('#scale-kind').textContent = SCALE_KINDS[Math.min(3, Math.floor(v / 25))][lang === 'ru' ? 'ru' : 'en'];
+    $('#scale-price').textContent = '≈ $' + price;
+    $('#scale-time').textContent = '≈ ' + fmtHours(HOURS_MIN + (HOURS_MAX - HOURS_MIN) * t);
+  }
+  function renderWiz() {
+    const c = $('#wiz-count');
+    if (c) c.textContent = (WIZ_COUNT[lang === 'ru' ? 'ru' : 'en']).replace('{n}', wizStep);
+  }
+  function renderDynamic() { renderRole(); renderScale(); renderWiz(); }
+
+  $$('[data-role]').forEach(b => b.addEventListener('click', () => { role = b.dataset.role; renderRole(); scheduleBuild(); }));
+  $$('input[name="role"]').forEach(i => i.addEventListener('change', () => { role = i.value; renderRole(); }));
+  $('#scale-v').addEventListener('input', renderScale);
+
+  /* A click on a dossier card lights up the cards its thread leads to, and brings them into view. */
+  const pinOwner = id => $(`[data-pin="${id}"]`)?.closest('.item');
+  function pingFrom(item) {
+    const targets = [];
+    item.querySelectorAll(':scope > .pin[data-to]').forEach(p => p.dataset.to.split(/\s+/).forEach(id => { const o = pinOwner(id); if (o && o !== item) targets.push(o); }));
+    if (!targets.length) return;
+    targets.forEach(t => { t.classList.remove('ping'); void t.offsetWidth; t.classList.add('ping'); setTimeout(() => t.classList.remove('ping'), 1800); });
+    const r = targets[0].getBoundingClientRect();
+    if (r.top < 80 || r.bottom > innerHeight - 20) targets[0].scrollIntoView({ block: 'center', behavior: reduceMotion ? 'auto' : 'smooth' });
+  }
+  $$('.board .item').forEach(it => {
+    if (!it.querySelector(':scope > .pin[data-to]')) return;
+    it.classList.add('is-link');
+    it.tabIndex = 0;
+    it.setAttribute('role', 'button');
+    it.addEventListener('click', () => pingFrom(it));
+    it.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); pingFrom(it); } });
+  });
 
   /* -------------------------------------------------------------- reveal setup */
   /* Papers swing about their own pin, so the pin stays put while the card settles. */
@@ -525,19 +639,40 @@
       msg.hidden = !bad;
     };
     const say = (key, kind) => { status.hidden = false; status.dataset.kind = kind; status.textContent = tr(key); };
+
+    /* three steps: what you make, the question, deadline + email */
+    const steps = $$('.fstep', form);
+    const back = $('#wiz-back'), next = $('#wiz-next'), send = $('#wiz-send');
+    const checkText = () => { const bad = box.value.trim().length < 8; setInvalid(box, err, bad); return !bad; };
+    const checkMail = () => { const bad = !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(mail.value.trim()); setInvalid(mail, mailErr, bad); return !bad; };
+    function showStep(n, focus) {
+      wizStep = n;
+      steps.forEach(s => { s.hidden = Number(s.dataset.step) !== n; });
+      back.hidden = n === 1;
+      next.hidden = n === 3;
+      send.hidden = n !== 3;
+      renderWiz();
+      if (focus) (n === 2 ? box : n === 3 ? mail : form.querySelector('input[name="role"]:checked'))?.focus();
+      scheduleBuild();
+    }
+    next.addEventListener('click', () => {
+      if (wizStep === 2 && !checkText()) { box.focus(); scheduleBuild(); return; }
+      showStep(wizStep + 1, true);
+    });
+    back.addEventListener('click', () => showStep(wizStep - 1, true));
+    showStep(1, false);
+
     form.addEventListener('submit', async (e) => {
       e.preventDefault();
+      if (wizStep !== 3) { next.click(); return; }
+      if (!checkText()) { showStep(2, true); return; }
+      if (!checkMail()) { mail.focus(); scheduleBuild(); return; }
       const text = box.value.trim(), email = mail.value.trim();
-      const badText = text.length < 8;
-      const badMail = !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
-      setInvalid(box, err, badText);
-      setInvalid(mail, mailErr, badMail);
-      scheduleBuild();
-      if (badText) { box.focus(); return; }
-      if (badMail) { mail.focus(); return; }
+      const pick = n => form.querySelector(`input[name="${n}"]:checked`)?.value || '';
+      const brief = 'Role: ' + pick('role') + '\nDeadline: ' + pick('deadline') + '\n\n' + text;
       if (form.elements.botcheck.checked) return;
       if (!FORM_ACCESS_KEY) {
-        const body = encodeURIComponent(text + '\n\nReply to: ' + email);
+        const body = encodeURIComponent(brief + '\n\nReply to: ' + email);
         window.location.href = 'mailto:' + CONTACT_EMAIL + '?subject=' + encodeURIComponent('Research request') + '&body=' + body;
         return;
       }
@@ -551,12 +686,13 @@
             access_key: FORM_ACCESS_KEY,
             subject: 'NOTERA research request',
             from_name: 'NOTERA website',
-            email, replyto: email, message: text, language: lang
+            email, replyto: email, message: brief, role: pick('role'), deadline: pick('deadline'), language: lang
           })
         });
         const data = await res.json().catch(() => ({}));
         if (!res.ok || !data.success) throw new Error('send failed');
         form.reset();
+        showStep(1, false);
         say('req.sent', 'ok');
       } catch (_) {
         say('req.failed', 'error');
@@ -567,7 +703,7 @@
   }
 
   /* --------------------------------------------------------------- start */
-  let saved = 'en';
-  try { saved = localStorage.getItem('notera-lang') || 'en'; } catch (_) { /* ignore */ }
-  if (saved === 'ru') applyLang('ru');
+  let saved = (navigator.language || '').toLowerCase().startsWith('ru') ? 'ru' : 'en';
+  try { saved = localStorage.getItem('notera-lang') || saved; } catch (_) { /* ignore */ }
+  if (saved === 'ru') applyLang('ru'); else renderDynamic();
 })();
