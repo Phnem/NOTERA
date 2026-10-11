@@ -72,7 +72,10 @@
     const p = bundle.people?.[pid];
     if (!p) return '';
     const L = window.NOTERA.lang;
-    return `<button type="button" class="cite cite--person" data-person="${esc(pid)}" data-anchor="${anchorRef}" aria-label="${esc(t('r.about') + ' ' + (p.name[L] || p.name.en))}" aria-haspopup="dialog" aria-expanded="false"><span class="bub bub--face"><img alt="" data-file="${esc(p.photo.preview || p.photo.file)}" data-mime="${esc(p.photo.preview_mime || p.photo.mime)}"></span></button>`;
+    const face = p.photo
+      ? `<img alt="" data-file="${esc(p.photo.preview || p.photo.file)}" data-mime="${esc(p.photo.preview_mime || p.photo.mime)}">`
+      : `<span class="bub__initials" aria-hidden="true">${esc(Array.from((p.name[L] || p.name.en).trim())[0] || '?')}</span>`;
+    return `<button type="button" class="cite cite--person" data-person="${esc(pid)}" data-anchor="${anchorRef}" aria-label="${esc(t('r.about') + ' ' + (p.name[L] || p.name.en))}" aria-haspopup="dialog" aria-expanded="false"><span class="bub bub--face">${face}</span></button>`;
   }
 
   /* ------------------------------------------------------------ render */
@@ -201,15 +204,21 @@
   function personHtml(p) {
     const L = window.NOTERA.lang;
     const photo = p.photo;
-    const cap = photo.caption?.[L] || photo.caption?.en || '';
-    const credit = [photo.author, photo.date, photo.license].filter(Boolean).join(' · ');
-    const links = p.links.slice().sort((a, b) => (b.lang === L) - (a.lang === L));
+    const cap = photo ? (photo.caption?.[L] || photo.caption?.en || '') : '';
+    const credit = photo ? [photo.author, photo.date, photo.license].filter(Boolean).join(' · ') : '';
+    const links = (p.links || []).slice().sort((a, b) => (b.lang === L) - (a.lang === L));
+    const photoHtml = photo
+      ? `<div class="person__photo">${thumb(photo, cap)}</div>`
+      : '';
+    const creditHtml = photo
+      ? `<p class="person__credit">${esc(t('r.photo'))}: ${photo.source_url ? `<a href="${esc(photo.source_url)}" target="_blank" rel="noopener noreferrer">${esc(credit)}</a>` : esc(credit)}</p>`
+      : `<p class="person__credit">${esc(t('r.photoNone'))}</p>`;
     return `<div class="person">
-      <div class="person__photo">${thumb(photo, cap)}</div>
-      <p class="person__years">${esc(p.years)}</p>
+      ${photoHtml}
+      ${p.years ? `<p class="person__years">${esc(p.years)}</p>` : ''}
       <p class="person__role">${esc(p.role[L] || p.role.en)}</p>
-      <p class="person__credit">${esc(t('r.photo'))}: ${photo.source_url ? `<a href="${esc(photo.source_url)}" target="_blank" rel="noopener noreferrer">${esc(credit)}</a>` : esc(credit)}</p>
-      <div class="side__group"><p class="side__h"><i class="ph-bold ph-book-open" aria-hidden="true"></i>${esc(t('r.whois'))}</p>
+      ${creditHtml}
+      ${links.length ? `<div class="side__group"><p class="side__h"><i class="ph-bold ph-book-open" aria-hidden="true"></i>${esc(t('r.whois'))}</p>` : '<div>'}
       ${links.map(l => `<a class="link-out" href="${esc(l.url)}" target="_blank" rel="noopener noreferrer"><i class="ph-bold ph-arrow-square-out" aria-hidden="true"></i><span>${esc(l.label)} (${esc(l.lang.toUpperCase())})</span></a>`).join('')}</div>
     </div>`;
   }
@@ -385,7 +394,8 @@
         try { bundle = await openSealed(sealed, k); key = k; render(); return; } catch (_) { sessionStorage.removeItem(KEY_STORE); }
       }
       gate(sealed);
-    } catch (_) {
+    } catch (error) {
+      console.error('report failed to render', error);
       app.innerHTML = `<p class="loading">${esc(t('r.failed'))}</p>`;
     }
   })();

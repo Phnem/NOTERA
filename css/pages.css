@@ -101,8 +101,9 @@
 }
 .cite .bub + .bub { margin-left: -.5em; }
 .cite .bub--icon { background: var(--paper-ink); color: var(--paper); padding: 0; }
-.cite .bub--icon i { font-size: 1.3em; }
+.cite .bub--icon i { font-size: 1.3em; color: var(--paper); }
 .cite .bub--face { padding: 0; width: 2.1em; height: 2.1em; overflow: hidden; background: var(--paper-2); border-color: var(--red); }
+.cite .bub--face .bub__initials { display: grid; place-items: center; width: 100%; height: 100%; font: 600 .8em/1 var(--ui, system-ui, sans-serif); color: var(--red); }
 .cite .bub--face img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 18%; filter: grayscale(.25) sepia(.15); }
 .cite:hover .bub, .cite:focus-visible .bub, .cite[aria-expanded="true"] .bub { transform: translateY(-2px); }
 .cite:hover .bub + .bub, .cite:focus-visible .bub + .bub { margin-left: -.15em; }
@@ -223,6 +224,12 @@
   .side.is-open { transform: none; }
   .doc p.par { font-size: 1.02rem; }
   .doc td:first-child { white-space: normal; }
+  /* A four-column table must fit the sheet: fixed columns, text wraps, the source bubble keeps its own column. */
+  .doc table { table-layout: fixed; font-size: .78rem; }
+  .doc th, .doc td { padding: 8px 4px; overflow-wrap: anywhere; }
+  .doc th:nth-child(1), .doc td:nth-child(1) { width: 25%; }
+  .doc th:nth-child(2), .doc td:nth-child(2) { width: 24%; }
+  .doc th:nth-child(4), .doc td:nth-child(4) { width: 12%; }
   .file { flex-wrap: wrap; }
   .file__acts { margin-left: 36px; }
 }

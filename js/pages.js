@@ -19,6 +19,7 @@ window.NOTERA = (() => {
       'r.original': 'Original address', 'r.copy': 'Copy with source', 'r.copied': 'Quotation and source copied',
       'r.copyQuote': 'Copy the quotation only', 'r.copiedQuote': 'Quotation copied',
       'r.about': 'About', 'r.person': 'Person', 'r.photo': 'Photo', 'r.whois': 'Who this is',
+      'r.photoNone': 'No freely licensed period portrait has been established.',
       'r.open': 'Open', 'r.download': 'Download', 'r.zoom': 'Zoom', 'r.closeView': 'Close',
       'r.snapshot': 'Saved page (HTML source as text)', 'r.supp': 'Assistant reading of a preserved artifact, not human-verified',
       'r.materials': 'materials', 'r.text': 'quotation', 'r.texts': 'quotations',
@@ -28,6 +29,7 @@ window.NOTERA = (() => {
       'r.failed': 'Could not load this report.', 'r.loading': 'Loading report…',
       'r.date.ATTRIBUTED_SPEECH_DATE': 'Speech, by edition', 'r.date.BROADCAST_DATE': 'Broadcast',
       'r.date.PUBLICATION_DATE': 'Publication', 'r.date.ISSUE_DATE': 'Issue', 'r.date.COVER_DATE': 'Cover',
+      'r.date.EVENT': 'Event, by investigators', 'r.date.OFFICIAL': 'Official statement', 'r.date.REPORTED': 'As reported', 'r.date.COURT': 'Court record',
       'r.th.date': 'Date', 'r.th.kind': 'Date type', 'r.th.record': 'Record', 'r.th.src': 'Source',
       'k.CROP': 'Fragment', 'k.PAGE_IMAGE': 'Page', 'k.ARCHIVAL_COPY': 'Archival copy', 'k.ORIGINAL_ARTIFACT': 'Original', 'k.RAW_HTML': 'Saved page', 'k.page': 'PDF p.'
     },
@@ -47,6 +49,7 @@ window.NOTERA = (() => {
       'r.original': 'Исходный адрес', 'r.copy': 'С источником', 'r.copied': 'Цитата и источник скопированы',
       'r.copyQuote': 'Скопировать только цитату', 'r.copiedQuote': 'Цитата скопирована',
       'r.about': 'Кто это:', 'r.person': 'Личность', 'r.photo': 'Фото', 'r.whois': 'Кто это',
+      'r.photoNone': 'Свободно лицензированный портрет того времени не установлен.',
       'r.open': 'Открыть', 'r.download': 'Скачать', 'r.zoom': 'Увеличить', 'r.closeView': 'Закрыть',
       'r.snapshot': 'Сохранённая страница (HTML как текст)', 'r.supp': 'Чтение сохранённого артефакта ассистентом, человеком не проверено',
       'r.materials': 'материалов', 'r.text': 'цитата', 'r.texts': 'цитаты',
@@ -56,6 +59,7 @@ window.NOTERA = (() => {
       'r.failed': 'Не удалось загрузить отчёт.', 'r.loading': 'Загружаем отчёт…',
       'r.date.ATTRIBUTED_SPEECH_DATE': 'Речь, по изданию', 'r.date.BROADCAST_DATE': 'Эфир',
       'r.date.PUBLICATION_DATE': 'Публикация', 'r.date.ISSUE_DATE': 'Выпуск', 'r.date.COVER_DATE': 'Обложка',
+      'r.date.EVENT': 'Событие, по версии следствия', 'r.date.OFFICIAL': 'Официальное заявление', 'r.date.REPORTED': 'По сообщениям', 'r.date.COURT': 'Судебная запись',
       'r.th.date': 'Дата', 'r.th.kind': 'Что датировано', 'r.th.record': 'Запись', 'r.th.src': 'Источник',
       'k.CROP': 'Фрагмент', 'k.PAGE_IMAGE': 'Страница', 'k.ARCHIVAL_COPY': 'Архивная копия', 'k.ORIGINAL_ARTIFACT': 'Оригинал', 'k.RAW_HTML': 'Сохранённая страница', 'k.page': 'PDF, с.'
     }

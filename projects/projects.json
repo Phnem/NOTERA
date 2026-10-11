@@ -20,5 +20,27 @@
       "full": 14
     },
     "sources_referenced": 14
+  },
+  {
+    "slug": "kirk",
+    "visibility": "public",
+    "title": {
+      "en": "The Murder of Charlie Kirk: Identity, Circumstances of the Attack, Motive, Investigation, and the Accused’s Fate",
+      "ru": "Убийство Чарли Кирка: личность, обстоятельства нападения, мотив, расследование и судьба обвиняемого"
+    },
+    "question": {
+      "en": "Who was Charlie Kirk, how was he killed, who is accused of the murder, what is the accusation based on, and what has been established, disputed, or remains unknown as of October 10, 2026?",
+      "ru": "Кем был Чарли Кирк, как он был убит, кто обвиняется в убийстве, на чём держится обвинение и что установлено, оспаривается или остаётся неизвестным на 10 октября 2026 года?"
+    },
+    "date": "2026-10-10",
+    "languages": [
+      "en",
+      "ru"
+    ],
+    "reading_minutes": {
+      "compact": 8,
+      "full": 24
+    },
+    "sources_referenced": 191
   }
 ]
